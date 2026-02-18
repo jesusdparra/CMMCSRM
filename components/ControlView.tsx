@@ -1,15 +1,20 @@
 'use client';
 
-import { memo, useCallback, useState } from 'react';
+import { memo, useCallback, useState, useMemo, useEffect } from 'react';
 import { NISTFamily, NISTControl, NISTObjective } from '@/types/nist';
 import { useSRMStore, Responsibility } from '@/store/useSRMStore';
-import { Users, User, ShieldCheck, ChevronDown, ChevronUp } from 'lucide-react';
+import { Users, User, ShieldCheck, FileText, Lightbulb } from 'lucide-react';
 
 interface ControlViewProps {
   family: NISTFamily | undefined;
 }
 
-const INITIAL_OBJECTIVES_TO_SHOW = 5;
+interface TipsData {
+  [controlLabel: string]: {
+    evidence_artifacts: string[];
+    implementation_tips: string;
+  };
+}
 
 interface ObjectiveRowProps {
   obj: NISTObjective;
@@ -104,15 +109,13 @@ ObjectiveRow.displayName = 'ObjectiveRow';
 
 interface ControlSectionProps {
   control: NISTControl;
+  tips?: {
+    evidence_artifacts: string[];
+    implementation_tips: string;
+  };
 }
 
-const ControlSection = memo(function ControlSection({ control }: ControlSectionProps) {
-  const [showAll, setShowAll] = useState(false);
-  const hasMore = control.objectives.length > INITIAL_OBJECTIVES_TO_SHOW;
-  const displayedObjectives = showAll 
-    ? control.objectives 
-    : control.objectives.slice(0, INITIAL_OBJECTIVES_TO_SHOW);
-
+const ControlSection = memo(function ControlSection({ control, tips }: ControlSectionProps) {
   return (
     <section key={control.id} className="space-y-6">
       <div className="bg-slate-900/50 rounded-2xl p-6 border border-slate-800 shadow-sm">
@@ -129,33 +132,50 @@ const ControlSection = memo(function ControlSection({ control }: ControlSectionP
             {control.statement.replace(/\\n/g, '\n')}
           </p>
         </div>
+
+        {tips && (
+          <div className="mt-6 pt-6 border-t border-slate-800 space-y-4">
+            {tips.implementation_tips && (
+              <div className="bg-amber-900/20 border border-amber-700/50 rounded-lg p-4">
+                <div className="flex items-start gap-3">
+                  <Lightbulb className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h5 className="text-sm font-semibold text-amber-400 mb-2">Implementation Tips</h5>
+                    <p className="text-sm text-slate-300 leading-relaxed">{tips.implementation_tips}</p>
+                  </div>
+                </div>
+              </div>
+            )}
+            
+            {tips.evidence_artifacts && tips.evidence_artifacts.length > 0 && (
+              <div className="bg-blue-900/20 border border-blue-700/50 rounded-lg p-4">
+                <div className="flex items-start gap-3">
+                  <FileText className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h5 className="text-sm font-semibold text-blue-400 mb-2">Evidence / Artifacts</h5>
+                    <ul className="text-sm text-slate-300 space-y-1">
+                      {tips.evidence_artifacts.map((artifact, idx) => (
+                        <li key={idx} className="flex items-start gap-2">
+                          <span className="text-blue-400">•</span>
+                          <span>{artifact}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
       <div className="space-y-4 pl-4 border-l-2 border-slate-800">
         <h4 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">
           Assessment Objectives ({control.objectives.length})
         </h4>
-        {displayedObjectives.map((obj) => (
+        {control.objectives.map((obj) => (
           <ObjectiveRow key={obj.id} obj={obj} />
         ))}
-        {hasMore && (
-          <button
-            onClick={() => setShowAll(!showAll)}
-            className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-slate-800/50 hover:bg-slate-800 text-slate-400 hover:text-white rounded-lg transition-colors text-sm font-medium"
-          >
-            {showAll ? (
-              <>
-                <ChevronUp className="w-4 h-4" />
-                Show less
-              </>
-            ) : (
-              <>
-                <ChevronDown className="w-4 h-4" />
-                Show {control.objectives.length - INITIAL_OBJECTIVES_TO_SHOW} more
-              </>
-            )}
-          </button>
-        )}
       </div>
     </section>
   );
@@ -164,6 +184,28 @@ const ControlSection = memo(function ControlSection({ control }: ControlSectionP
 ControlSection.displayName = 'ControlSection';
 
 export default memo(function ControlView({ family }: ControlViewProps) {
+  const [tipsData, setTipsData] = useState<TipsData | null>(null);
+
+  useEffect(() => {
+    fetch('/data/control-tips.json', { cache: 'no-store' })
+      .then(res => res.json())
+      .then(data => {
+        const tipsMap: TipsData = {};
+        if (data.CMC_Level_2_Practices) {
+          data.CMC_Level_2_Practices.forEach((family: { practices: { id: string; evidence_artifacts: string[]; implementation_tips: string }[] }) => {
+            family.practices.forEach(practice => {
+              tipsMap[practice.id] = {
+                evidence_artifacts: practice.evidence_artifacts || [],
+                implementation_tips: practice.implementation_tips || '',
+              };
+            });
+          });
+        }
+        setTipsData(tipsMap);
+      })
+      .catch(err => console.error('Failed to load tips:', err));
+  }, []);
+
   if (!family) return null;
 
   return (
@@ -179,7 +221,11 @@ export default memo(function ControlView({ family }: ControlViewProps) {
 
         <div className="space-y-16">
           {family.controls.map((control) => (
-            <ControlSection key={control.id} control={control} />
+            <ControlSection 
+              key={control.id} 
+              control={control} 
+              tips={tipsData ? tipsData[control.label] : undefined}
+            />
           ))}
         </div>
       </div>
