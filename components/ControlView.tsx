@@ -1,6 +1,6 @@
 'use client';
 
-import { memo, useCallback, useState, useMemo, useEffect } from 'react';
+import { memo, useCallback, useState, useEffect } from 'react';
 import { NISTFamily, NISTControl, NISTObjective } from '@/types/nist';
 import { useSRMStore, Responsibility } from '@/store/useSRMStore';
 import { Users, User, ShieldCheck, FileText, Lightbulb } from 'lucide-react';
@@ -133,7 +133,7 @@ const ControlSection = memo(function ControlSection({ control, tips }: ControlSe
           </p>
         </div>
 
-        {tips && (
+        {tips && (tips.implementation_tips || (tips.evidence_artifacts && tips.evidence_artifacts.length > 0)) && (
           <div className="mt-6 pt-6 border-t border-slate-800 space-y-4">
             {tips.implementation_tips && (
               <div className="bg-amber-900/20 border border-amber-700/50 rounded-lg p-4">
@@ -183,10 +183,16 @@ const ControlSection = memo(function ControlSection({ control, tips }: ControlSe
 
 ControlSection.displayName = 'ControlSection';
 
-export default memo(function ControlView({ family }: ControlViewProps) {
-  const [tipsData, setTipsData] = useState<TipsData | null>(null);
+let globalTipsData: TipsData | null = null;
+let tipsLoading = false;
+
+function useTipsData() {
+  const [tips, setTips] = useState<TipsData | null>(globalTipsData);
 
   useEffect(() => {
+    if (globalTipsData || tipsLoading) return;
+    
+    tipsLoading = true;
     fetch('/data/control-tips.json', { cache: 'no-store' })
       .then(res => res.json())
       .then(data => {
@@ -201,10 +207,20 @@ export default memo(function ControlView({ family }: ControlViewProps) {
             });
           });
         }
-        setTipsData(tipsMap);
+        globalTipsData = tipsMap;
+        setTips(tipsMap);
       })
-      .catch(err => console.error('Failed to load tips:', err));
+      .catch(err => {
+        console.error('Failed to load tips:', err);
+        tipsLoading = false;
+      });
   }, []);
+
+  return tips;
+}
+
+export default function ControlView({ family }: ControlViewProps) {
+  const tipsData = useTipsData();
 
   if (!family) return null;
 
@@ -231,4 +247,4 @@ export default memo(function ControlView({ family }: ControlViewProps) {
       </div>
     </div>
   );
-});
+}
