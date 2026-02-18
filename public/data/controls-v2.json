@@ -1,0 +1,2582 @@
+{
+  "families": [
+    {
+      "id": "03.01",
+      "title": "Access Control",
+      "label": "Access Control (03.01)",
+      "controls": [
+        {
+          "id": "03.01.3.1.1",
+          "title": "Control 03.01.3.1.1",
+          "label": "AC.L2-3.1.1",
+          "statement": "AC.3.1.1.a authorized users are identified.\n\nAC.3.1.1.b processes acting on behalf of authorized users are identified.\n\nAC.3.1.1.c devices (and other systems) authorized to connect to the system are identified.\n\nAC.3.1.1.d system access is limited to authorized users.\n\nAC.3.1.1.e system access is limited to processes acting on behalf of authorized users.\n\nAC.3.1.1.f system access is limited to authorized devices (including other systems).",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.1a",
+              "prose": "authorized users are identified.",
+              "label": "AC.L2-3.1.1[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.1b",
+              "prose": "processes acting on behalf of authorized users are identified.",
+              "label": "AC.L2-3.1.1[b]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.1c",
+              "prose": "devices (and other systems) authorized to connect to the system are identified.",
+              "label": "AC.L2-3.1.1[c]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.1d",
+              "prose": "system access is limited to authorized users.",
+              "label": "AC.L2-3.1.1[d]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.1e",
+              "prose": "system access is limited to processes acting on behalf of authorized users.",
+              "label": "AC.L2-3.1.1[e]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.1f",
+              "prose": "system access is limited to authorized devices (including other systems).",
+              "label": "AC.L2-3.1.1[f]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.2",
+          "title": "Control 03.01.3.1.2",
+          "label": "AC.L2-3.1.2",
+          "statement": "AC.3.1.2.a the types of transactions and functions that authorized users are permitted to execute are defined.\n\nAC.3.1.2.b system access is limited to the defined types of transactions and functions for authorized users.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.2a",
+              "prose": "the types of transactions and functions that authorized users are permitted to execute are defined.",
+              "label": "AC.L2-3.1.2[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.2b",
+              "prose": "system access is limited to the defined types of transactions and functions for authorized users.",
+              "label": "AC.L2-3.1.2[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.3",
+          "title": "Control 03.01.3.1.3",
+          "label": "AC.L2-3.1.3",
+          "statement": "AC.3.1.3.a information flow control policies are defined.\n\nAC.3.1.3.b methods and enforcement mechanisms for controlling the flow of CUI are defined.\n\nAC.3.1.3.c designated sources and destinations (e.g., networks, individuals, and devices) for CUI within the system and between interconnected systems are identified.\n\nAC.3.1.3.d authorizations for controlling the flow of CUI are defined.\n\nAC.3.1.3.e approved authorizations for controlling the flow of CUI are enforced.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.3a",
+              "prose": "information flow control policies are defined.",
+              "label": "AC.L2-3.1.3[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.3b",
+              "prose": "methods and enforcement mechanisms for controlling the flow of CUI are defined.",
+              "label": "AC.L2-3.1.3[b]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.3c",
+              "prose": "designated sources and destinations (e.g., networks, individuals, and devices) for CUI within the system and between interconnected systems are identified.",
+              "label": "AC.L2-3.1.3[c]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.3d",
+              "prose": "authorizations for controlling the flow of CUI are defined.",
+              "label": "AC.L2-3.1.3[d]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.3e",
+              "prose": "approved authorizations for controlling the flow of CUI are enforced.",
+              "label": "AC.L2-3.1.3[e]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.4",
+          "title": "Control 03.01.3.1.4",
+          "label": "AC.L2-3.1.4",
+          "statement": "AC.3.1.4.a the duties of individuals requiring separation are defined.\n\nAC.3.1.4.b responsibilities for duties that require separation are assigned to separate individuals.\n\nAC.3.1.4.c access privileges that enable individuals to exercise the duties that require separation are granted to separate individuals.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.4a",
+              "prose": "the duties of individuals requiring separation are defined.",
+              "label": "AC.L2-3.1.4[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.4b",
+              "prose": "responsibilities for duties that require separation are assigned to separate individuals.",
+              "label": "AC.L2-3.1.4[b]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.4c",
+              "prose": "access privileges that enable individuals to exercise the duties that require separation are granted to separate individuals.",
+              "label": "AC.L2-3.1.4[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.5",
+          "title": "Control 03.01.3.1.5",
+          "label": "AC.L2-3.1.5",
+          "statement": "AC.3.1.5.a privileged accounts are identified.\n\nAC.3.1.5.b access to privileged accounts is authorized in accordance with the principle of least privilege.\n\nAC.3.1.5.c security functions are identified.\n\nAC.3.1.5.d access to security functions is authorized in accordance with the principle of least privilege.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.5a",
+              "prose": "privileged accounts are identified.",
+              "label": "AC.L2-3.1.5[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.5b",
+              "prose": "access to privileged accounts is authorized in accordance with the principle of least privilege.",
+              "label": "AC.L2-3.1.5[b]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.5c",
+              "prose": "security functions are identified.",
+              "label": "AC.L2-3.1.5[c]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.5d",
+              "prose": "access to security functions is authorized in accordance with the principle of least privilege.",
+              "label": "AC.L2-3.1.5[d]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.6",
+          "title": "Control 03.01.3.1.6",
+          "label": "AC.L2-3.1.6",
+          "statement": "AC.3.1.6.a nonsecurity functions are identified.\n\nAC.3.1.6.b users are required to use non-privileged accounts or roles when accessing nonsecurity functions.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.6a",
+              "prose": "nonsecurity functions are identified.",
+              "label": "AC.L2-3.1.6[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.6b",
+              "prose": "users are required to use non-privileged accounts or roles when accessing nonsecurity functions.",
+              "label": "AC.L2-3.1.6[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.7",
+          "title": "Control 03.01.3.1.7",
+          "label": "AC.L2-3.1.7",
+          "statement": "AC.3.1.7.a privileged functions are defined.\n\nAC.3.1.7.b non-privileged users are defined.\n\nAC.3.1.7.c non-privileged users are prevented from executing privileged functions.\n\nAC.3.1.7.d the execution of privileged functions is captured in event logs.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.7a",
+              "prose": "privileged functions are defined.",
+              "label": "AC.L2-3.1.7[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.7b",
+              "prose": "non-privileged users are defined.",
+              "label": "AC.L2-3.1.7[b]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.7c",
+              "prose": "non-privileged users are prevented from executing privileged functions.",
+              "label": "AC.L2-3.1.7[c]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.7d",
+              "prose": "the execution of privileged functions is captured in event logs.",
+              "label": "AC.L2-3.1.7[d]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.8",
+          "title": "Control 03.01.3.1.8",
+          "label": "AC.L2-3.1.8",
+          "statement": "AC.3.1.8.a the means of limiting unsuccessful logon attempts is defined.\n\nAC.3.1.8.b the defined means of limiting unsuccessful logon attempts is implemented.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.8a",
+              "prose": "the means of limiting unsuccessful logon attempts is defined.",
+              "label": "AC.L2-3.1.8[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.8b",
+              "prose": "the defined means of limiting unsuccessful logon attempts is implemented.",
+              "label": "AC.L2-3.1.8[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.9",
+          "title": "Control 03.01.3.1.9",
+          "label": "AC.L2-3.1.9",
+          "statement": "AC.3.1.9.a privacy and security notices required by CUI-specified rules are identified, consistent, and associated with the specific CUI category.\n\nAC.3.1.9.b privacy and security notices are displayed.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.9a",
+              "prose": "privacy and security notices required by CUI-specified rules are identified, consistent, and associated with the specific CUI category.",
+              "label": "AC.L2-3.1.9[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.9b",
+              "prose": "privacy and security notices are displayed.",
+              "label": "AC.L2-3.1.9[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.10",
+          "title": "Control 03.01.3.1.10",
+          "label": "AC.L2-3.1.10",
+          "statement": "AC.3.1.10.a the period of inactivity after which the system initiates a session lock is defined.\n\nAC.3.1.10.b access to the system and viewing of data is prevented by initiating a session lock after the defined period of inactivity.\n\nAC.3.1.10.c previously visible information is concealed via a pattern-hiding display after the defined period of inactivity.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.10a",
+              "prose": "the period of inactivity after which the system initiates a session lock is defined.",
+              "label": "AC.L2-3.1.10[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.10b",
+              "prose": "access to the system and viewing of data is prevented by initiating a session lock after the defined period of inactivity.",
+              "label": "AC.L2-3.1.10[b]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.10c",
+              "prose": "previously visible information is concealed via a pattern-hiding display after the defined period of inactivity.",
+              "label": "AC.L2-3.1.10[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.11",
+          "title": "Control 03.01.3.1.11",
+          "label": "AC.L2-3.1.11",
+          "statement": "AC.3.1.11.a conditions requiring a user session to terminate are defined.\n\nAC.3.1.11.b a user session is automatically terminated after any of the defined conditions occur.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.11a",
+              "prose": "conditions requiring a user session to terminate are defined.",
+              "label": "AC.L2-3.1.11[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.11b",
+              "prose": "a user session is automatically terminated after any of the defined conditions occur.",
+              "label": "AC.L2-3.1.11[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.12",
+          "title": "Control 03.01.3.1.12",
+          "label": "AC.L2-3.1.12",
+          "statement": "AC.3.1.12.a remote access sessions are permitted.\n\nAC.3.1.12.b the types of permitted remote access are identified.\n\nAC.3.1.12.c remote access sessions are controlled.\n\nAC.3.1.12.d remote access sessions are monitored.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.12a",
+              "prose": "remote access sessions are permitted.",
+              "label": "AC.L2-3.1.12[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.12b",
+              "prose": "the types of permitted remote access are identified.",
+              "label": "AC.L2-3.1.12[b]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.12c",
+              "prose": "remote access sessions are controlled.",
+              "label": "AC.L2-3.1.12[c]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.12d",
+              "prose": "remote access sessions are monitored.",
+              "label": "AC.L2-3.1.12[d]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.13",
+          "title": "Control 03.01.3.1.13",
+          "label": "AC.L2-3.1.13",
+          "statement": "AC.3.1.13.a cryptographic mechanisms to protect the confidentiality of remote access sessions are identified.\n\nAC.3.1.13.b cryptographic mechanisms to protect the confidentiality of remote access sessions are implemented.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.13a",
+              "prose": "cryptographic mechanisms to protect the confidentiality of remote access sessions are identified.",
+              "label": "AC.L2-3.1.13[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.13b",
+              "prose": "cryptographic mechanisms to protect the confidentiality of remote access sessions are implemented.",
+              "label": "AC.L2-3.1.13[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.14",
+          "title": "Control 03.01.3.1.14",
+          "label": "AC.L2-3.1.14",
+          "statement": "AC.3.1.14.a managed access control points are identified and implemented.\n\nAC.3.1.14.b remote access is routed through managed network access control points.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.14a",
+              "prose": "managed access control points are identified and implemented.",
+              "label": "AC.L2-3.1.14[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.14b",
+              "prose": "remote access is routed through managed network access control points.",
+              "label": "AC.L2-3.1.14[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.15",
+          "title": "Control 03.01.3.1.15",
+          "label": "AC.L2-3.1.15",
+          "statement": "AC.3.1.15.a privileged commands authorized for remote execution are identified.\n\nAC.3.1.15.b security-relevant information authorized to be accessed remotely is identified.\n\nAC.3.1.15.c the execution of the identified privileged commands via remote access is authorized.\n\nAC.3.1.15.d access to the identified security-relevant information via remote access is authorized.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.15a",
+              "prose": "privileged commands authorized for remote execution are identified.",
+              "label": "AC.L2-3.1.15[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.15b",
+              "prose": "security-relevant information authorized to be accessed remotely is identified.",
+              "label": "AC.L2-3.1.15[b]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.15c",
+              "prose": "the execution of the identified privileged commands via remote access is authorized.",
+              "label": "AC.L2-3.1.15[c]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.15d",
+              "prose": "access to the identified security-relevant information via remote access is authorized.",
+              "label": "AC.L2-3.1.15[d]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.16",
+          "title": "Control 03.01.3.1.16",
+          "label": "AC.L2-3.1.16",
+          "statement": "AC.3.1.16.a wireless access points are identified.\n\nAC.3.1.16.b wireless access is authorized prior to allowing such connections.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.16a",
+              "prose": "wireless access points are identified.",
+              "label": "AC.L2-3.1.16[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.16b",
+              "prose": "wireless access is authorized prior to allowing such connections.",
+              "label": "AC.L2-3.1.16[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.17",
+          "title": "Control 03.01.3.1.17",
+          "label": "AC.L2-3.1.17",
+          "statement": "AC.3.1.17.a wireless access to the system is protected using authentication.\n\nAC.3.1.17.b wireless access to the system is protected using encryption.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.17a",
+              "prose": "wireless access to the system is protected using authentication.",
+              "label": "AC.L2-3.1.17[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.17b",
+              "prose": "wireless access to the system is protected using encryption.",
+              "label": "AC.L2-3.1.17[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.18",
+          "title": "Control 03.01.3.1.18",
+          "label": "AC.L2-3.1.18",
+          "statement": "AC.3.1.18.a mobile devices that process, store, or transmit CUI are identified.\n\nAC.3.1.18.b mobile device connections are authorized\n\nAC.3.1.18.c mobile device connections are monitored and logged.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.18a",
+              "prose": "mobile devices that process, store, or transmit CUI are identified.",
+              "label": "AC.L2-3.1.18[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.18b",
+              "prose": "mobile device connections are authorized",
+              "label": "AC.L2-3.1.18[b]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.18c",
+              "prose": "mobile device connections are monitored and logged.",
+              "label": "AC.L2-3.1.18[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.19",
+          "title": "Control 03.01.3.1.19",
+          "label": "AC.L2-3.1.19",
+          "statement": "AC.3.1.19.a mobile devices and mobile computing platforms that process, store, or transmit CUI are identified.\n\nAC.3.1.19.b encryption is employed to protect CUI on identified mobile devices and mobile computing platforms.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.19a",
+              "prose": "mobile devices and mobile computing platforms that process, store, or transmit CUI are identified.",
+              "label": "AC.L2-3.1.19[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.19b",
+              "prose": "encryption is employed to protect CUI on identified mobile devices and mobile computing platforms.",
+              "label": "AC.L2-3.1.19[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.20",
+          "title": "Control 03.01.3.1.20",
+          "label": "AC.L2-3.1.20",
+          "statement": "AC.3.1.20.a connections to external systems are identified.\n\nAC.3.1.20.b the use of external systems is identified.\n\nAC.3.1.20.c connections to external systems are verified.\n\nAC.3.1.20.d the use of external systems is verified.\n\nAC.3.1.20.e connections to external systems are controlled/limited.\n\nAC.3.1.20.f the use of external systems is controlled/limited.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.20a",
+              "prose": "connections to external systems are identified.",
+              "label": "AC.L2-3.1.20[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.20b",
+              "prose": "the use of external systems is identified.",
+              "label": "AC.L2-3.1.20[b]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.20c",
+              "prose": "connections to external systems are verified.",
+              "label": "AC.L2-3.1.20[c]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.20d",
+              "prose": "the use of external systems is verified.",
+              "label": "AC.L2-3.1.20[d]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.20e",
+              "prose": "connections to external systems are controlled/limited.",
+              "label": "AC.L2-3.1.20[e]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.20f",
+              "prose": "the use of external systems is controlled/limited.",
+              "label": "AC.L2-3.1.20[f]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.21",
+          "title": "Control 03.01.3.1.21",
+          "label": "AC.L2-3.1.21",
+          "statement": "AC.3.1.21.a the use of portable storage devices containing CUI on external systems is identified and documented.\n\nAC.3.1.21.b limits on the use of portable storage devices containing CUI on external systems are defined.\n\nAC.3.1.21.c the use of portable storage devices containing CUI on external systems is limited as defined.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.21a",
+              "prose": "the use of portable storage devices containing CUI on external systems is identified and documented.",
+              "label": "AC.L2-3.1.21[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.21b",
+              "prose": "limits on the use of portable storage devices containing CUI on external systems are defined.",
+              "label": "AC.L2-3.1.21[b]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.21c",
+              "prose": "the use of portable storage devices containing CUI on external systems is limited as defined.",
+              "label": "AC.L2-3.1.21[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.01.3.1.22",
+          "title": "Control 03.01.3.1.22",
+          "label": "AC.L2-3.1.22",
+          "statement": "AC.3.1.22.a individuals authorized to post or process information on publicly accessible systems are identified.\n\nAC.3.1.22.b procedures to ensure CUI is not posted or processed on publicly accessible systems are identified.\n\nAC.3.1.22.c a review process is in place prior to posting of any content to publicly accessible systems.\n\nAC.3.1.22.d content on publicly accessible systems is reviewed to ensure that it does not include CUI.\n\nAC.3.1.22.e mechanisms are in place to remove and address improper posting of CUI.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AC-3.1.22a",
+              "prose": "individuals authorized to post or process information on publicly accessible systems are identified.",
+              "label": "AC.L2-3.1.22[a]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.22b",
+              "prose": "procedures to ensure CUI is not posted or processed on publicly accessible systems are identified.",
+              "label": "AC.L2-3.1.22[b]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.22c",
+              "prose": "a review process is in place prior to posting of any content to publicly accessible systems.",
+              "label": "AC.L2-3.1.22[c]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.22d",
+              "prose": "content on publicly accessible systems is reviewed to ensure that it does not include CUI.",
+              "label": "AC.L2-3.1.22[d]"
+            },
+            {
+              "id": "assessment-objective_AC-3.1.22e",
+              "prose": "mechanisms are in place to remove and address improper posting of CUI.",
+              "label": "AC.L2-3.1.22[e]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.02",
+      "title": "Awareness and Training",
+      "label": "Awareness and Training (03.02)",
+      "controls": [
+        {
+          "id": "03.02.3.2.1",
+          "title": "Control 03.02.3.2.1",
+          "label": "AT.L2-3.2.1",
+          "statement": "AT.3.2.1.a security risks associated with organizational activities involving CUI are identified.\n\nAT.3.2.1.b policies, standards, and procedures related to the security of the system are identified.\n\nAT.3.2.1.c managers, systems administrators, and users of the system are made aware of the security risks associated with their activities.\n\nAT.3.2.1.d managers, systems administrators, and users of the system are made aware of the applicable policies, standards and procedures related to the security of the system.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AT-3.2.1a",
+              "prose": "security risks associated with organizational activities involving CUI are identified.",
+              "label": "AT.L2-3.2.1[a]"
+            },
+            {
+              "id": "assessment-objective_AT-3.2.1b",
+              "prose": "policies, standards, and procedures related to the security of the system are identified.",
+              "label": "AT.L2-3.2.1[b]"
+            },
+            {
+              "id": "assessment-objective_AT-3.2.1c",
+              "prose": "managers, systems administrators, and users of the system are made aware of the security risks associated with their activities.",
+              "label": "AT.L2-3.2.1[c]"
+            },
+            {
+              "id": "assessment-objective_AT-3.2.1d",
+              "prose": "managers, systems administrators, and users of the system are made aware of the applicable policies, standards and procedures related to the security of the system.",
+              "label": "AT.L2-3.2.1[d]"
+            }
+          ]
+        },
+        {
+          "id": "03.02.3.2.2",
+          "title": "Control 03.02.3.2.2",
+          "label": "AT.L2-3.2.2",
+          "statement": "AT.3.2.2.a information security-related duties, roles, and responsibilities are defined.\n\nAT.3.2.2.b information security-related duties, roles, and responsibilities are assigned to designated personnel.\n\nAT.3.2.2.c personnel are adequately trained to carry out their assigned information security-related duties, roles, and responsibilities.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AT-3.2.2a",
+              "prose": "information security-related duties, roles, and responsibilities are defined.",
+              "label": "AT.L2-3.2.2[a]"
+            },
+            {
+              "id": "assessment-objective_AT-3.2.2b",
+              "prose": "information security-related duties, roles, and responsibilities are assigned to designated personnel.",
+              "label": "AT.L2-3.2.2[b]"
+            },
+            {
+              "id": "assessment-objective_AT-3.2.2c",
+              "prose": "personnel are adequately trained to carry out their assigned information security-related duties, roles, and responsibilities.",
+              "label": "AT.L2-3.2.2[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.02.3.2.3",
+          "title": "Control 03.02.3.2.3",
+          "label": "AT.L2-3.2.3",
+          "statement": "AT.3.2.3.a potential indicators associated with insider threats are identified.\n\nAT.3.2.3.b security awareness training on recognizing and reporting potential indicators of insider threat is provided to managers and employees.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AT-3.2.3a",
+              "prose": "potential indicators associated with insider threats are identified.",
+              "label": "AT.L2-3.2.3[a]"
+            },
+            {
+              "id": "assessment-objective_AT-3.2.3b",
+              "prose": "security awareness training on recognizing and reporting potential indicators of insider threat is provided to managers and employees.",
+              "label": "AT.L2-3.2.3[b]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.03",
+      "title": "Audit and Accountability",
+      "label": "Audit and Accountability (03.03)",
+      "controls": [
+        {
+          "id": "03.03.3.3.1",
+          "title": "Control 03.03.3.3.1",
+          "label": "AU.L2-3.3.1",
+          "statement": "AU.3.3.1.a audit logs needed (i.e., event types to be logged) to enable the monitoring, analysis, investigation, and reporting of unlawful or unauthorized system activity are specified.\n\nAU.3.3.1.b the content of audit records needed to support monitoring, analysis, investigation, and reporting of unlawful or unauthorized system activity is defined.\n\nAU.3.3.1.c audit records are created (generated).\n\nAU.3.3.1.d audit records, once created, contain the defined content.\n\nAU.3.3.1.e retention requirements for audit records are defined.\n\nAU.3.3.1.f audit records are retained as defined.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AU-3.3.1a",
+              "prose": "audit logs needed (i.e., event types to be logged) to enable the monitoring, analysis, investigation, and reporting of unlawful or unauthorized system activity are specified.",
+              "label": "AU.L2-3.3.1[a]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.1b",
+              "prose": "the content of audit records needed to support monitoring, analysis, investigation, and reporting of unlawful or unauthorized system activity is defined.",
+              "label": "AU.L2-3.3.1[b]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.1c",
+              "prose": "audit records are created (generated).",
+              "label": "AU.L2-3.3.1[c]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.1d",
+              "prose": "audit records, once created, contain the defined content.",
+              "label": "AU.L2-3.3.1[d]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.1e",
+              "prose": "retention requirements for audit records are defined.",
+              "label": "AU.L2-3.3.1[e]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.1f",
+              "prose": "audit records are retained as defined.",
+              "label": "AU.L2-3.3.1[f]"
+            }
+          ]
+        },
+        {
+          "id": "03.03.3.3.2",
+          "title": "Control 03.03.3.3.2",
+          "label": "AU.L2-3.3.2",
+          "statement": "AU.3.3.2.a the content of the audit records needed to support the ability to uniquely trace users to their actions is defined.\n\nAU.3.3.2.b audit records, once created, contain the defined content.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AU-3.3.2a",
+              "prose": "the content of the audit records needed to support the ability to uniquely trace users to their actions is defined.",
+              "label": "AU.L2-3.3.2[a]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.2b",
+              "prose": "audit records, once created, contain the defined content.",
+              "label": "AU.L2-3.3.2[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.03.3.3.3",
+          "title": "Control 03.03.3.3.3",
+          "label": "AU.L2-3.3.3",
+          "statement": "AU.3.3.3.a a process for determining when to review logged events is defined.\n\nAU.3.3.3.b event types being logged are reviewed in accordance with the defined review process.\n\nAU.3.3.3.c event types being logged are updated based on the review.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AU-3.3.3a",
+              "prose": "a process for determining when to review logged events is defined.",
+              "label": "AU.L2-3.3.3[a]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.3b",
+              "prose": "event types being logged are reviewed in accordance with the defined review process.",
+              "label": "AU.L2-3.3.3[b]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.3c",
+              "prose": "event types being logged are updated based on the review.",
+              "label": "AU.L2-3.3.3[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.03.3.3.4",
+          "title": "Control 03.03.3.3.4",
+          "label": "AU.L2-3.3.4",
+          "statement": "AU.3.3.4.a personnel or roles to be alerted in the event of an audit logging process failure are identified.\n\nAU.3.3.4.b types of audit logging process failures for which alert will be generated are defined.\n\nAU.3.3.4.c identified personnel or roles are alerted in the event of an audit logging process failure.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AU-3.3.4a",
+              "prose": "personnel or roles to be alerted in the event of an audit logging process failure are identified.",
+              "label": "AU.L2-3.3.4[a]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.4b",
+              "prose": "types of audit logging process failures for which alert will be generated are defined.",
+              "label": "AU.L2-3.3.4[b]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.4c",
+              "prose": "identified personnel or roles are alerted in the event of an audit logging process failure.",
+              "label": "AU.L2-3.3.4[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.03.3.3.5",
+          "title": "Control 03.03.3.3.5",
+          "label": "AU.L2-3.3.5",
+          "statement": "AU.3.3.5.a audit record review, analysis, and reporting processes for investigation and response to indications of unlawful, unauthorized, suspicious, or unusual activity are defined.\n\nAU.3.3.5.b defined audit record review, analysis, and reporting processes are correlated.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AU-3.3.5a",
+              "prose": "audit record review, analysis, and reporting processes for investigation and response to indications of unlawful, unauthorized, suspicious, or unusual activity are defined.",
+              "label": "AU.L2-3.3.5[a]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.5b",
+              "prose": "defined audit record review, analysis, and reporting processes are correlated.",
+              "label": "AU.L2-3.3.5[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.03.3.3.6",
+          "title": "Control 03.03.3.3.6",
+          "label": "AU.L2-3.3.6",
+          "statement": "AU.3.3.6.a an audit record reduction and report generation capability is provided that supports on-demand audit record review, analysis, and reporting requirements, and after-the-fact investigations of incidents that do not alter the original content or time ordering of audit records.\n\nAU.3.3.6.b a report generation capability that supports on-demand reporting is provided.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AU-3.3.6a",
+              "prose": "an audit record reduction and report generation capability is provided that supports on-demand audit record review, analysis, and reporting requirements, and after-the-fact investigations of incidents that do not alter the original content or time ordering of audit records.",
+              "label": "AU.L2-3.3.6[a]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.6b",
+              "prose": "a report generation capability that supports on-demand reporting is provided.",
+              "label": "AU.L2-3.3.6[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.03.3.3.7",
+          "title": "Control 03.03.3.3.7",
+          "label": "AU.L2-3.3.7",
+          "statement": "AU.3.3.7.a internal system clocks are used to generate time stamps for audit records.\n\nAU.3.3.7.b an authoritative source with which to compare and synchronize internal system clocks is specified.\n\nAU.3.3.7.c internal system clocks used to generate time stamps for audit records are compared to and synchronized with the specified authoritative time source.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AU-3.3.7a",
+              "prose": "internal system clocks are used to generate time stamps for audit records.",
+              "label": "AU.L2-3.3.7[a]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.7b",
+              "prose": "an authoritative source with which to compare and synchronize internal system clocks is specified.",
+              "label": "AU.L2-3.3.7[b]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.7c",
+              "prose": "internal system clocks used to generate time stamps for audit records are compared to and synchronized with the specified authoritative time source.",
+              "label": "AU.L2-3.3.7[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.03.3.3.8",
+          "title": "Control 03.03.3.3.8",
+          "label": "AU.L2-3.3.8",
+          "statement": "AU.3.3.8.a audit information is protected from unauthorized access.\n\nAU.3.3.8.b audit information is protected from unauthorized modification.\n\nAU.3.3.8.c audit information is protected from unauthorized deletion.\n\nAU.3.3.8.d audit logging tools are protected from unauthorized access.\n\nAU.3.3.8.e audit logging tools are protected from unauthorized modification.\n\nAU.3.3.8.f audit logging tools are protected from unauthorized deletion.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AU-3.3.8a",
+              "prose": "audit information is protected from unauthorized access.",
+              "label": "AU.L2-3.3.8[a]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.8b",
+              "prose": "audit information is protected from unauthorized modification.",
+              "label": "AU.L2-3.3.8[b]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.8c",
+              "prose": "audit information is protected from unauthorized deletion.",
+              "label": "AU.L2-3.3.8[c]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.8d",
+              "prose": "audit logging tools are protected from unauthorized access.",
+              "label": "AU.L2-3.3.8[d]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.8e",
+              "prose": "audit logging tools are protected from unauthorized modification.",
+              "label": "AU.L2-3.3.8[e]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.8f",
+              "prose": "audit logging tools are protected from unauthorized deletion.",
+              "label": "AU.L2-3.3.8[f]"
+            }
+          ]
+        },
+        {
+          "id": "03.03.3.3.9",
+          "title": "Control 03.03.3.3.9",
+          "label": "AU.L2-3.3.9",
+          "statement": "AU.3.3.9.a a subset of privileged users granted access to manage audit logging functionality is defined.\n\nAU.3.3.9.b management of audit logging functionality is limited to the defined subset of privileged users.",
+          "objectives": [
+            {
+              "id": "assessment-objective_AU-3.3.9a",
+              "prose": "a subset of privileged users granted access to manage audit logging functionality is defined.",
+              "label": "AU.L2-3.3.9[a]"
+            },
+            {
+              "id": "assessment-objective_AU-3.3.9b",
+              "prose": "management of audit logging functionality is limited to the defined subset of privileged users.",
+              "label": "AU.L2-3.3.9[b]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.04",
+      "title": "Configuration Management",
+      "label": "Configuration Management (03.04)",
+      "controls": [
+        {
+          "id": "03.04.3.4.1",
+          "title": "Control 03.04.3.4.1",
+          "label": "CM.L2-3.4.1",
+          "statement": "CM.3.4.1.a a current baseline configuration of the system, application, or service is developed and documented.\n\nCM.3.4.1.b the baseline configuration includes hardware, software, firmware, and documentation.\n\nCM.3.4.1.c the baseline configuration is maintained (reviewed and updated) throughout the system development life cycle.\n\nCM.3.4.1.d a documented, up-to-date, complete, accurate, and readily available inventory of systems and system components exists.\n\nCM.3.4.1.e the system inventory includes hardware, software, firmware, and documentation.\n\nCM.3.4.1.f the inventory is maintained (reviewed and updated) throughout the system development life cycle.",
+          "objectives": [
+            {
+              "id": "assessment-objective_CM-3.4.1a",
+              "prose": "a current baseline configuration of the system, application, or service is developed and documented.",
+              "label": "CM.L2-3.4.1[a]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.1b",
+              "prose": "the baseline configuration includes hardware, software, firmware, and documentation.",
+              "label": "CM.L2-3.4.1[b]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.1c",
+              "prose": "the baseline configuration is maintained (reviewed and updated) throughout the system development life cycle.",
+              "label": "CM.L2-3.4.1[c]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.1d",
+              "prose": "a documented, up-to-date, complete, accurate, and readily available inventory of systems and system components exists.",
+              "label": "CM.L2-3.4.1[d]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.1e",
+              "prose": "the system inventory includes hardware, software, firmware, and documentation.",
+              "label": "CM.L2-3.4.1[e]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.1f",
+              "prose": "the inventory is maintained (reviewed and updated) throughout the system development life cycle.",
+              "label": "CM.L2-3.4.1[f]"
+            }
+          ]
+        },
+        {
+          "id": "03.04.3.4.2",
+          "title": "Control 03.04.3.4.2",
+          "label": "CM.L2-3.4.2",
+          "statement": "CM.3.4.2.a security configuration settings for information technology products employed in the system are established and included in the baseline configuration.\n\nCM.3.4.2.b security configuration settings for information technology products employed in the system are enforced.",
+          "objectives": [
+            {
+              "id": "assessment-objective_CM-3.4.2a",
+              "prose": "security configuration settings for information technology products employed in the system are established and included in the baseline configuration.",
+              "label": "CM.L2-3.4.2[a]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.2b",
+              "prose": "security configuration settings for information technology products employed in the system are enforced.",
+              "label": "CM.L2-3.4.2[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.04.3.4.3",
+          "title": "Control 03.04.3.4.3",
+          "label": "CM.L2-3.4.3",
+          "statement": "CM.3.4.3.a changes to the system are tracked.\n\nCM.3.4.3.b changes to the system are reviewed.\n\nCM.3.4.3.c changes to the system are approved or disapproved.\n\nCM.3.4.3.d changes to the system are logged.",
+          "objectives": [
+            {
+              "id": "assessment-objective_CM-3.4.3a",
+              "prose": "changes to the system are tracked.",
+              "label": "CM.L2-3.4.3[a]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.3b",
+              "prose": "changes to the system are reviewed.",
+              "label": "CM.L2-3.4.3[b]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.3c",
+              "prose": "changes to the system are approved or disapproved.",
+              "label": "CM.L2-3.4.3[c]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.3d",
+              "prose": "changes to the system are logged.",
+              "label": "CM.L2-3.4.3[d]"
+            }
+          ]
+        },
+        {
+          "id": "03.04.3.4.4",
+          "title": "Control 03.04.3.4.4",
+          "label": "CM.L2-3.4.4",
+          "statement": "CM.3.4.4.a the security impact of changes to the system is analyzed prior to implementation.",
+          "objectives": [
+            {
+              "id": "assessment-objective_CM-3.4.4a",
+              "prose": "the security impact of changes to the system is analyzed prior to implementation.",
+              "label": "CM.L2-3.4.4[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.04.3.4.5",
+          "title": "Control 03.04.3.4.5",
+          "label": "CM.L2-3.4.5",
+          "statement": "CM.3.4.5.a physical access restrictions associated with changes to the system are defined.\n\nCM.3.4.5.b physical access restrictions associated with changes to the system are documented.\n\nCM.3.4.5.c physical access restrictions associated with changes to the system are approved.\n\nCM.3.4.5.d physical access restrictions associated with changes to the system are enforced.\n\nCM.3.4.5.e logical access restrictions associated with changes to the system are defined.\n\nCM.3.4.5.f logical access restrictions associated with changes to the system are documented.\n\nCM.3.4.5.g logical access restrictions associated with changes to the system are approved.\n\nCM.3.4.5.h logical access restrictions associated with changes to the system are enforced.",
+          "objectives": [
+            {
+              "id": "assessment-objective_CM-3.4.5a",
+              "prose": "physical access restrictions associated with changes to the system are defined.",
+              "label": "CM.L2-3.4.5[a]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.5b",
+              "prose": "physical access restrictions associated with changes to the system are documented.",
+              "label": "CM.L2-3.4.5[b]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.5c",
+              "prose": "physical access restrictions associated with changes to the system are approved.",
+              "label": "CM.L2-3.4.5[c]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.5d",
+              "prose": "physical access restrictions associated with changes to the system are enforced.",
+              "label": "CM.L2-3.4.5[d]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.5e",
+              "prose": "logical access restrictions associated with changes to the system are defined.",
+              "label": "CM.L2-3.4.5[e]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.5f",
+              "prose": "logical access restrictions associated with changes to the system are documented.",
+              "label": "CM.L2-3.4.5[f]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.5g",
+              "prose": "logical access restrictions associated with changes to the system are approved.",
+              "label": "CM.L2-3.4.5[g]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.5h",
+              "prose": "logical access restrictions associated with changes to the system are enforced.",
+              "label": "CM.L2-3.4.5[h]"
+            }
+          ]
+        },
+        {
+          "id": "03.04.3.4.6",
+          "title": "Control 03.04.3.4.6",
+          "label": "CM.L2-3.4.6",
+          "statement": "CM.3.4.6.a essential system capabilities are defined based on the principle of least functionality.\n\nCM.3.4.6.b the system is configured to provide only the defined essential capabilities.",
+          "objectives": [
+            {
+              "id": "assessment-objective_CM-3.4.6a",
+              "prose": "essential system capabilities are defined based on the principle of least functionality.",
+              "label": "CM.L2-3.4.6[a]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.6b",
+              "prose": "the system is configured to provide only the defined essential capabilities.",
+              "label": "CM.L2-3.4.6[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.04.3.4.7",
+          "title": "Control 03.04.3.4.7",
+          "label": "CM.L2-3.4.7",
+          "statement": "CM.3.4.7.a essential programs are defined.\n\nCM.3.4.7.b the use of nonessential programs is defined.\n\nCM.3.4.7.c the use of nonessential programs is restricted, disabled, or prevented as defined.\n\nCM.3.4.7.d essential functions are defined.\n\nCM.3.4.7.e the use of nonessential functions is defined.\n\nCM.3.4.7.f the use of nonessential functions is restricted, disabled, or prevented as defined.\n\nCM.3.4.7.g essential ports are defined.\n\nCM.3.4.7.h the use of nonessential ports is defined.\n\nCM.3.4.7.i the use of nonessential ports is restricted, disabled, or prevented as defined.\n\nCM.3.4.7.j essential protocols are defined.\n\nCM.3.4.7.k the use of nonessential protocols is defined.\n\nCM.3.4.7.l the use of nonessential protocols is restricted, disabled, or prevented as defined.\n\nCM.3.4.7.m essential services are defined.\n\nCM.3.4.7.n the use of nonessential services is defined.\n\nCM.3.4.7.o the use of nonessential services is restricted, disabled, or prevented as defined.",
+          "objectives": [
+            {
+              "id": "assessment-objective_CM-3.4.7a",
+              "prose": "essential programs are defined.",
+              "label": "CM.L2-3.4.7[a]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.7b",
+              "prose": "the use of nonessential programs is defined.",
+              "label": "CM.L2-3.4.7[b]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.7c",
+              "prose": "the use of nonessential programs is restricted, disabled, or prevented as defined.",
+              "label": "CM.L2-3.4.7[c]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.7d",
+              "prose": "essential functions are defined.",
+              "label": "CM.L2-3.4.7[d]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.7e",
+              "prose": "the use of nonessential functions is defined.",
+              "label": "CM.L2-3.4.7[e]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.7f",
+              "prose": "the use of nonessential functions is restricted, disabled, or prevented as defined.",
+              "label": "CM.L2-3.4.7[f]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.7g",
+              "prose": "essential ports are defined.",
+              "label": "CM.L2-3.4.7[g]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.7h",
+              "prose": "the use of nonessential ports is defined.",
+              "label": "CM.L2-3.4.7[h]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.7i",
+              "prose": "the use of nonessential ports is restricted, disabled, or prevented as defined.",
+              "label": "CM.L2-3.4.7[i]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.7j",
+              "prose": "essential protocols are defined.",
+              "label": "CM.L2-3.4.7[j]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.7k",
+              "prose": "the use of nonessential protocols is defined.",
+              "label": "CM.L2-3.4.7[k]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.7l",
+              "prose": "the use of nonessential protocols is restricted, disabled, or prevented as defined.",
+              "label": "CM.L2-3.4.7[l]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.7m",
+              "prose": "essential services are defined.",
+              "label": "CM.L2-3.4.7[m]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.7n",
+              "prose": "the use of nonessential services is defined.",
+              "label": "CM.L2-3.4.7[n]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.7o",
+              "prose": "the use of nonessential services is restricted, disabled, or prevented as defined.",
+              "label": "CM.L2-3.4.7[o]"
+            }
+          ]
+        },
+        {
+          "id": "03.04.3.4.8",
+          "title": "Control 03.04.3.4.8",
+          "label": "CM.L2-3.4.8",
+          "statement": "CM.3.4.8.a a policy specifying whether whitelisting or blacklisting is to be implemented is specified.\n\nCM.3.4.8.b the software allowed to execute under whitelisting or denied use under blacklisting is specified.\n\nCM.3.4.8.c whitelisting to allow the execution of authorized software or blacklisting to prevent the use of unauthorized software is implemented as specified.",
+          "objectives": [
+            {
+              "id": "assessment-objective_CM-3.4.8a",
+              "prose": "a policy specifying whether whitelisting or blacklisting is to be implemented is specified.",
+              "label": "CM.L2-3.4.8[a]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.8b",
+              "prose": "the software allowed to execute under whitelisting or denied use under blacklisting is specified.",
+              "label": "CM.L2-3.4.8[b]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.8c",
+              "prose": "whitelisting to allow the execution of authorized software or blacklisting to prevent the use of unauthorized software is implemented as specified.",
+              "label": "CM.L2-3.4.8[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.04.3.4.9",
+          "title": "Control 03.04.3.4.9",
+          "label": "CM.L2-3.4.9",
+          "statement": "CM.3.4.9.a a policy for controlling the installation of software by users is established.\n\nCM.3.4.9.b installation of software by users is controlled based on the established policy.\n\nCM.3.4.9.c installation of software by users is monitored.",
+          "objectives": [
+            {
+              "id": "assessment-objective_CM-3.4.9a",
+              "prose": "a policy for controlling the installation of software by users is established.",
+              "label": "CM.L2-3.4.9[a]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.9b",
+              "prose": "installation of software by users is controlled based on the established policy.",
+              "label": "CM.L2-3.4.9[b]"
+            },
+            {
+              "id": "assessment-objective_CM-3.4.9c",
+              "prose": "installation of software by users is monitored.",
+              "label": "CM.L2-3.4.9[c]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.05",
+      "title": "Identification and Authentication",
+      "label": "Identification and Authentication (03.05)",
+      "controls": [
+        {
+          "id": "03.05.3.5.1",
+          "title": "Control 03.05.3.5.1",
+          "label": "IA.L2-3.5.1",
+          "statement": "IA.3.5.1.a system users are identified.\n\nIA.3.5.1.b processes acting on behalf of users are identified.\n\nIA.3.5.1.c devices accessing the system are identified.",
+          "objectives": [
+            {
+              "id": "assessment-objective_IA-3.5.1a",
+              "prose": "system users are identified.",
+              "label": "IA.L2-3.5.1[a]"
+            },
+            {
+              "id": "assessment-objective_IA-3.5.1b",
+              "prose": "processes acting on behalf of users are identified.",
+              "label": "IA.L2-3.5.1[b]"
+            },
+            {
+              "id": "assessment-objective_IA-3.5.1c",
+              "prose": "devices accessing the system are identified.",
+              "label": "IA.L2-3.5.1[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.05.3.5.2",
+          "title": "Control 03.05.3.5.2",
+          "label": "IA.L2-3.5.2",
+          "statement": "IA.3.5.2.a the identity of each user is authenticated or verified as a prerequisite to system access.\n\nIA.3.5.2.b the identity of each process acting on behalf of a user is authenticated or verified as a prerequisite to system access.\n\nIA.3.5.2.c the identity of each device accessing or connecting to the system is authenticated or verified as a prerequisite to system access.",
+          "objectives": [
+            {
+              "id": "assessment-objective_IA-3.5.2a",
+              "prose": "the identity of each user is authenticated or verified as a prerequisite to system access.",
+              "label": "IA.L2-3.5.2[a]"
+            },
+            {
+              "id": "assessment-objective_IA-3.5.2b",
+              "prose": "the identity of each process acting on behalf of a user is authenticated or verified as a prerequisite to system access.",
+              "label": "IA.L2-3.5.2[b]"
+            },
+            {
+              "id": "assessment-objective_IA-3.5.2c",
+              "prose": "the identity of each device accessing or connecting to the system is authenticated or verified as a prerequisite to system access.",
+              "label": "IA.L2-3.5.2[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.05.3.5.3",
+          "title": "Control 03.05.3.5.3",
+          "label": "IA.L2-3.5.3",
+          "statement": "IA.3.5.3.a privileged accounts are identified.\n\nIA.3.5.3.b multifactor authentication is implemented for local access to privileged accounts.\n\nIA.3.5.3.c multifactor authentication is implemented for network access to privileged accounts.\n\nIA.3.5.3.d multifactor authentication is implemented for network access to non-privileged accounts.",
+          "objectives": [
+            {
+              "id": "assessment-objective_IA-3.5.3a",
+              "prose": "privileged accounts are identified.",
+              "label": "IA.L2-3.5.3[a]"
+            },
+            {
+              "id": "assessment-objective_IA-3.5.3b",
+              "prose": "multifactor authentication is implemented for local access to privileged accounts.",
+              "label": "IA.L2-3.5.3[b]"
+            },
+            {
+              "id": "assessment-objective_IA-3.5.3c",
+              "prose": "multifactor authentication is implemented for network access to privileged accounts.",
+              "label": "IA.L2-3.5.3[c]"
+            },
+            {
+              "id": "assessment-objective_IA-3.5.3d",
+              "prose": "multifactor authentication is implemented for network access to non-privileged accounts.",
+              "label": "IA.L2-3.5.3[d]"
+            }
+          ]
+        },
+        {
+          "id": "03.05.3.5.4",
+          "title": "Control 03.05.3.5.4",
+          "label": "IA.L2-3.5.4",
+          "statement": "IA.3.5.4.a replay-resistant authentication mechanisms are implemented for network account access to privileged and non-privileged accounts.",
+          "objectives": [
+            {
+              "id": "assessment-objective_IA-3.5.4a",
+              "prose": "replay-resistant authentication mechanisms are implemented for network account access to privileged and non-privileged accounts.",
+              "label": "IA.L2-3.5.4[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.05.3.5.5",
+          "title": "Control 03.05.3.5.5",
+          "label": "IA.L2-3.5.5",
+          "statement": "IA.3.5.5.a a period within which identifiers cannot be reused is defined.\n\nIA.3.5.5.b reuse of identifiers is prevented within the defined period.",
+          "objectives": [
+            {
+              "id": "assessment-objective_IA-3.5.5a",
+              "prose": "a period within which identifiers cannot be reused is defined.",
+              "label": "IA.L2-3.5.5[a]"
+            },
+            {
+              "id": "assessment-objective_IA-3.5.5b",
+              "prose": "reuse of identifiers is prevented within the defined period.",
+              "label": "IA.L2-3.5.5[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.05.3.5.6",
+          "title": "Control 03.05.3.5.6",
+          "label": "IA.L2-3.5.6",
+          "statement": "IA.3.5.6.a a period of inactivity after which an identifier is disabled is defined.\n\nIA.3.5.6.b identifiers are disabled after the defined period of inactivity.",
+          "objectives": [
+            {
+              "id": "assessment-objective_IA-3.5.6a",
+              "prose": "a period of inactivity after which an identifier is disabled is defined.",
+              "label": "IA.L2-3.5.6[a]"
+            },
+            {
+              "id": "assessment-objective_IA-3.5.6b",
+              "prose": "identifiers are disabled after the defined period of inactivity.",
+              "label": "IA.L2-3.5.6[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.05.3.5.7",
+          "title": "Control 03.05.3.5.7",
+          "label": "IA.L2-3.5.7",
+          "statement": "IA.3.5.7.a password complexity requirements are defined.\n\nIA.3.5.7.b password change of character requirements are defined.\n\nIA.3.5.7.c minimum password complexity requirements, as defined, are enforced when new passwords are created.\n\nIA.3.5.7.d minimum password change of character requirements as defined are enforced when new passwords are created.",
+          "objectives": [
+            {
+              "id": "assessment-objective_IA-3.5.7a",
+              "prose": "password complexity requirements are defined.",
+              "label": "IA.L2-3.5.7[a]"
+            },
+            {
+              "id": "assessment-objective_IA-3.5.7b",
+              "prose": "password change of character requirements are defined.",
+              "label": "IA.L2-3.5.7[b]"
+            },
+            {
+              "id": "assessment-objective_IA-3.5.7c",
+              "prose": "minimum password complexity requirements, as defined, are enforced when new passwords are created.",
+              "label": "IA.L2-3.5.7[c]"
+            },
+            {
+              "id": "assessment-objective_IA-3.5.7d",
+              "prose": "minimum password change of character requirements as defined are enforced when new passwords are created.",
+              "label": "IA.L2-3.5.7[d]"
+            }
+          ]
+        },
+        {
+          "id": "03.05.3.5.8",
+          "title": "Control 03.05.3.5.8",
+          "label": "IA.L2-3.5.8",
+          "statement": "IA.3.5.8.a the number of generations during which a password cannot be reused is specified.\n\nIA.3.5.8.b reuse of passwords is prohibited during the specified number of generations.",
+          "objectives": [
+            {
+              "id": "assessment-objective_IA-3.5.8a",
+              "prose": "the number of generations during which a password cannot be reused is specified.",
+              "label": "IA.L2-3.5.8[a]"
+            },
+            {
+              "id": "assessment-objective_IA-3.5.8b",
+              "prose": "reuse of passwords is prohibited during the specified number of generations.",
+              "label": "IA.L2-3.5.8[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.05.3.5.9",
+          "title": "Control 03.05.3.5.9",
+          "label": "IA.L2-3.5.9",
+          "statement": "IA.3.5.9.a an immediate change to a permanent password is required when a temporary password is used for system logon.",
+          "objectives": [
+            {
+              "id": "assessment-objective_IA-3.5.9a",
+              "prose": "an immediate change to a permanent password is required when a temporary password is used for system logon.",
+              "label": "IA.L2-3.5.9[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.05.3.5.10",
+          "title": "Control 03.05.3.5.10",
+          "label": "IA.L2-3.5.10",
+          "statement": "IA.3.5.10.a passwords are cryptographically protected in storage.\n\nIA.3.5.10.b passwords are cryptographically protected in transit.",
+          "objectives": [
+            {
+              "id": "assessment-objective_IA-3.5.10a",
+              "prose": "passwords are cryptographically protected in storage.",
+              "label": "IA.L2-3.5.10[a]"
+            },
+            {
+              "id": "assessment-objective_IA-3.5.10b",
+              "prose": "passwords are cryptographically protected in transit.",
+              "label": "IA.L2-3.5.10[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.05.3.5.11",
+          "title": "Control 03.05.3.5.11",
+          "label": "IA.L2-3.5.11",
+          "statement": "IA.3.5.11.a authentication information is obscured during the authentication process.",
+          "objectives": [
+            {
+              "id": "assessment-objective_IA-3.5.11a",
+              "prose": "authentication information is obscured during the authentication process.",
+              "label": "IA.L2-3.5.11[a]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.06",
+      "title": "Incident Response",
+      "label": "Incident Response (03.06)",
+      "controls": [
+        {
+          "id": "03.06.3.6.1",
+          "title": "Control 03.06.3.6.1",
+          "label": "IR.L2-3.6.1",
+          "statement": "IR.3.6.1.a an operational incident-handling capability is established.\n\nIR.3.6.1.b the operational incident-handling capability includes preparation.\n\nIR.3.6.1.c the operational incident-handling capability includes detection.\n\nIR.3.6.1.d the operational incident-handling capability includes analysis.\n\nIR.3.6.1.e the operational incident-handling capability includes containment.\n\nIR.3.6.1.f the operational incident-handling capability includes recovery.\n\nIR.3.6.1.g the operational incident-handling capability includes user response activities.",
+          "objectives": [
+            {
+              "id": "assessment-objective_IR-3.6.1a",
+              "prose": "an operational incident-handling capability is established.",
+              "label": "IR.L2-3.6.1[a]"
+            },
+            {
+              "id": "assessment-objective_IR-3.6.1b",
+              "prose": "the operational incident-handling capability includes preparation.",
+              "label": "IR.L2-3.6.1[b]"
+            },
+            {
+              "id": "assessment-objective_IR-3.6.1c",
+              "prose": "the operational incident-handling capability includes detection.",
+              "label": "IR.L2-3.6.1[c]"
+            },
+            {
+              "id": "assessment-objective_IR-3.6.1d",
+              "prose": "the operational incident-handling capability includes analysis.",
+              "label": "IR.L2-3.6.1[d]"
+            },
+            {
+              "id": "assessment-objective_IR-3.6.1e",
+              "prose": "the operational incident-handling capability includes containment.",
+              "label": "IR.L2-3.6.1[e]"
+            },
+            {
+              "id": "assessment-objective_IR-3.6.1f",
+              "prose": "the operational incident-handling capability includes recovery.",
+              "label": "IR.L2-3.6.1[f]"
+            },
+            {
+              "id": "assessment-objective_IR-3.6.1g",
+              "prose": "the operational incident-handling capability includes user response activities.",
+              "label": "IR.L2-3.6.1[g]"
+            }
+          ]
+        },
+        {
+          "id": "03.06.3.6.2",
+          "title": "Control 03.06.3.6.2",
+          "label": "IR.L2-3.6.2",
+          "statement": "IR.3.6.2.a incidents are tracked.\n\nIR.3.6.2.b incidents are documented.\n\nIR.3.6.2.c authorities to whom incidents are to be reported are identified.\n\nIR.3.6.2.d organizational officials to whom incidents are to be reported are identified.\n\nIR.3.6.2.e identified authorities are notified of incidents.\n\nIR.3.6.2.f identified organizational officials are notified of incidents.",
+          "objectives": [
+            {
+              "id": "assessment-objective_IR-3.6.2a",
+              "prose": "incidents are tracked.",
+              "label": "IR.L2-3.6.2[a]"
+            },
+            {
+              "id": "assessment-objective_IR-3.6.2b",
+              "prose": "incidents are documented.",
+              "label": "IR.L2-3.6.2[b]"
+            },
+            {
+              "id": "assessment-objective_IR-3.6.2c",
+              "prose": "authorities to whom incidents are to be reported are identified.",
+              "label": "IR.L2-3.6.2[c]"
+            },
+            {
+              "id": "assessment-objective_IR-3.6.2d",
+              "prose": "organizational officials to whom incidents are to be reported are identified.",
+              "label": "IR.L2-3.6.2[d]"
+            },
+            {
+              "id": "assessment-objective_IR-3.6.2e",
+              "prose": "identified authorities are notified of incidents.",
+              "label": "IR.L2-3.6.2[e]"
+            },
+            {
+              "id": "assessment-objective_IR-3.6.2f",
+              "prose": "identified organizational officials are notified of incidents.",
+              "label": "IR.L2-3.6.2[f]"
+            }
+          ]
+        },
+        {
+          "id": "03.06.3.6.3",
+          "title": "Control 03.06.3.6.3",
+          "label": "IR.L2-3.6.3",
+          "statement": "IR.3.6.3.a the incident response capability is tested.",
+          "objectives": [
+            {
+              "id": "assessment-objective_IR-3.6.3a",
+              "prose": "the incident response capability is tested.",
+              "label": "IR.L2-3.6.3[a]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.07",
+      "title": "Maintenance",
+      "label": "Maintenance (03.07)",
+      "controls": [
+        {
+          "id": "03.07.3.7.1",
+          "title": "Control 03.07.3.7.1",
+          "label": "MA.L2-3.7.1",
+          "statement": "MA.3.7.1.a system maintenance is performed.",
+          "objectives": [
+            {
+              "id": "assessment-objective_MA-3.7.1a",
+              "prose": "system maintenance is performed.",
+              "label": "MA.L2-3.7.1[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.07.3.7.2",
+          "title": "Control 03.07.3.7.2",
+          "label": "MA.L2-3.7.2",
+          "statement": "MA.3.7.2.a tools used to conduct system maintenance are controlled.\n\nMA.3.7.2.b techniques used to conduct system maintenance are controlled.\n\nMA.3.7.2.c mechanisms used to conduct system maintenance are controlled.\n\nMA.3.7.2.d personnel used to conduct system maintenance are controlled.",
+          "objectives": [
+            {
+              "id": "assessment-objective_MA-3.7.2a",
+              "prose": "tools used to conduct system maintenance are controlled.",
+              "label": "MA.L2-3.7.2[a]"
+            },
+            {
+              "id": "assessment-objective_MA-3.7.2b",
+              "prose": "techniques used to conduct system maintenance are controlled.",
+              "label": "MA.L2-3.7.2[b]"
+            },
+            {
+              "id": "assessment-objective_MA-3.7.2c",
+              "prose": "mechanisms used to conduct system maintenance are controlled.",
+              "label": "MA.L2-3.7.2[c]"
+            },
+            {
+              "id": "assessment-objective_MA-3.7.2d",
+              "prose": "personnel used to conduct system maintenance are controlled.",
+              "label": "MA.L2-3.7.2[d]"
+            }
+          ]
+        },
+        {
+          "id": "03.07.3.7.3",
+          "title": "Control 03.07.3.7.3",
+          "label": "MA.L2-3.7.3",
+          "statement": "MA.3.7.3.a equipment to be removed from organizational spaces for off-site maintenance is sanitized of any CUI.",
+          "objectives": [
+            {
+              "id": "assessment-objective_MA-3.7.3a",
+              "prose": "equipment to be removed from organizational spaces for off-site maintenance is sanitized of any CUI.",
+              "label": "MA.L2-3.7.3[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.07.3.7.4",
+          "title": "Control 03.07.3.7.4",
+          "label": "MA.L2-3.7.4",
+          "statement": "MA.3.7.4.a media containing diagnostic and test programs are checked for malicious code before being used in organizational systems that process, store, or transmit CUI.",
+          "objectives": [
+            {
+              "id": "assessment-objective_MA-3.7.4a",
+              "prose": "media containing diagnostic and test programs are checked for malicious code before being used in organizational systems that process, store, or transmit CUI.",
+              "label": "MA.L2-3.7.4[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.07.3.7.5",
+          "title": "Control 03.07.3.7.5",
+          "label": "MA.L2-3.7.5",
+          "statement": "MA.3.7.5.a multifactor authentication is used to establish nonlocal maintenance sessions via external network connections.\n\nMA.3.7.5.b nonlocal maintenance sessions established via external network connections are terminated when nonlocal maintenance is complete.",
+          "objectives": [
+            {
+              "id": "assessment-objective_MA-3.7.5a",
+              "prose": "multifactor authentication is used to establish nonlocal maintenance sessions via external network connections.",
+              "label": "MA.L2-3.7.5[a]"
+            },
+            {
+              "id": "assessment-objective_MA-3.7.5b",
+              "prose": "nonlocal maintenance sessions established via external network connections are terminated when nonlocal maintenance is complete.",
+              "label": "MA.L2-3.7.5[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.07.3.7.6",
+          "title": "Control 03.07.3.7.6",
+          "label": "MA.L2-3.7.6",
+          "statement": "MA.3.7.6.a maintenance personnel without required access authorization are supervised during maintenance activities.",
+          "objectives": [
+            {
+              "id": "assessment-objective_MA-3.7.6a",
+              "prose": "maintenance personnel without required access authorization are supervised during maintenance activities.",
+              "label": "MA.L2-3.7.6[a]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.08",
+      "title": "Media Protection",
+      "label": "Media Protection (03.08)",
+      "controls": [
+        {
+          "id": "03.08.3.8.1",
+          "title": "Control 03.08.3.8.1",
+          "label": "MP.L2-3.8.1",
+          "statement": "MP.3.8.1.a paper media containing CUI is physically controlled.\n\nMP.3.8.1.b digital media containing CUI is physically controlled.\n\nMP.3.8.1.c paper media containing CUI is securely stored.\n\nMP.3.8.1.d digital media containing CUI is securely stored.",
+          "objectives": [
+            {
+              "id": "assessment-objective_MP-3.8.1a",
+              "prose": "paper media containing CUI is physically controlled.",
+              "label": "MP.L2-3.8.1[a]"
+            },
+            {
+              "id": "assessment-objective_MP-3.8.1b",
+              "prose": "digital media containing CUI is physically controlled.",
+              "label": "MP.L2-3.8.1[b]"
+            },
+            {
+              "id": "assessment-objective_MP-3.8.1c",
+              "prose": "paper media containing CUI is securely stored.",
+              "label": "MP.L2-3.8.1[c]"
+            },
+            {
+              "id": "assessment-objective_MP-3.8.1d",
+              "prose": "digital media containing CUI is securely stored.",
+              "label": "MP.L2-3.8.1[d]"
+            }
+          ]
+        },
+        {
+          "id": "03.08.3.8.2",
+          "title": "Control 03.08.3.8.2",
+          "label": "MP.L2-3.8.2",
+          "statement": "MP.3.8.2.a access to CUI on system media is limited to authorized users.",
+          "objectives": [
+            {
+              "id": "assessment-objective_MP-3.8.2a",
+              "prose": "access to CUI on system media is limited to authorized users.",
+              "label": "MP.L2-3.8.2[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.08.3.8.3",
+          "title": "Control 03.08.3.8.3",
+          "label": "MP.L2-3.8.3",
+          "statement": "MP.3.8.3.a system media containing CUI is sanitized or destroyed before disposal.\n\nMP.3.8.3.b system media containing CUI is sanitized before it is released for reuse.",
+          "objectives": [
+            {
+              "id": "assessment-objective_MP-3.8.3a",
+              "prose": "system media containing CUI is sanitized or destroyed before disposal.",
+              "label": "MP.L2-3.8.3[a]"
+            },
+            {
+              "id": "assessment-objective_MP-3.8.3b",
+              "prose": "system media containing CUI is sanitized before it is released for reuse.",
+              "label": "MP.L2-3.8.3[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.08.3.8.4",
+          "title": "Control 03.08.3.8.4",
+          "label": "MP.L2-3.8.4",
+          "statement": "MP.3.8.4.a media containing CUI is marked with applicable CUI markings.\n\nMP.3.8.4.b media containing CUI is marked with distribution limitations.",
+          "objectives": [
+            {
+              "id": "assessment-objective_MP-3.8.4a",
+              "prose": "media containing CUI is marked with applicable CUI markings.",
+              "label": "MP.L2-3.8.4[a]"
+            },
+            {
+              "id": "assessment-objective_MP-3.8.4b",
+              "prose": "media containing CUI is marked with distribution limitations.",
+              "label": "MP.L2-3.8.4[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.08.3.8.5",
+          "title": "Control 03.08.3.8.5",
+          "label": "MP.L2-3.8.5",
+          "statement": "MP.3.8.5.a access to media containing CUI is controlled.\n\nMP.3.8.5.b accountability for media containing CUI is maintained during transport outside of controlled areas.",
+          "objectives": [
+            {
+              "id": "assessment-objective_MP-3.8.5a",
+              "prose": "access to media containing CUI is controlled.",
+              "label": "MP.L2-3.8.5[a]"
+            },
+            {
+              "id": "assessment-objective_MP-3.8.5b",
+              "prose": "accountability for media containing CUI is maintained during transport outside of controlled areas.",
+              "label": "MP.L2-3.8.5[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.08.3.8.6",
+          "title": "Control 03.08.3.8.6",
+          "label": "MP.L2-3.8.6",
+          "statement": "MP.3.8.6.a the confidentiality of CUI stored on digital media is protected during transport using cryptographic mechanisms or alternative physical safeguards.",
+          "objectives": [
+            {
+              "id": "assessment-objective_MP-3.8.6a",
+              "prose": "the confidentiality of CUI stored on digital media is protected during transport using cryptographic mechanisms or alternative physical safeguards.",
+              "label": "MP.L2-3.8.6[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.08.3.8.7",
+          "title": "Control 03.08.3.8.7",
+          "label": "MP.L2-3.8.7",
+          "statement": "MP.3.8.7.a the use of removable media on system components is controlled.",
+          "objectives": [
+            {
+              "id": "assessment-objective_MP-3.8.7a",
+              "prose": "the use of removable media on system components is controlled.",
+              "label": "MP.L2-3.8.7[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.08.3.8.8",
+          "title": "Control 03.08.3.8.8",
+          "label": "MP.L2-3.8.8",
+          "statement": "MP.3.8.8.a the use of portable storage devices is prohibited when such devices have no identifiable owner.",
+          "objectives": [
+            {
+              "id": "assessment-objective_MP-3.8.8a",
+              "prose": "the use of portable storage devices is prohibited when such devices have no identifiable owner.",
+              "label": "MP.L2-3.8.8[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.08.3.8.9",
+          "title": "Control 03.08.3.8.9",
+          "label": "MP.L2-3.8.9",
+          "statement": "MP.3.8.9.a the confidentiality of backup CUI is protected at storage locations.",
+          "objectives": [
+            {
+              "id": "assessment-objective_MP-3.8.9a",
+              "prose": "the confidentiality of backup CUI is protected at storage locations.",
+              "label": "MP.L2-3.8.9[a]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.11",
+      "title": "Personnel Security",
+      "label": "Personnel Security (03.11)",
+      "controls": [
+        {
+          "id": "03.11.3.9.1",
+          "title": "Control 03.11.3.9.1",
+          "label": "PS.L2-3.9.1",
+          "statement": "PS.3.9.1.a individuals are screened prior to authorizing access to organizational systems containing CUI.",
+          "objectives": [
+            {
+              "id": "assessment-objective_PS-3.9.1a",
+              "prose": "individuals are screened prior to authorizing access to organizational systems containing CUI.",
+              "label": "PS.L2-3.9.1[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.11.3.9.2",
+          "title": "Control 03.11.3.9.2",
+          "label": "PS.L2-3.9.2",
+          "statement": "PS.3.9.2.a a policy and/or process for terminating system access and any credentials coincident with personnel actions is established.\n\nPS.3.9.2.b system access and credentials are terminated consistent with personnel actions such as termination or transfer.\n\nPS.3.9.2.c the system is protected during and after personnel transfer actions.",
+          "objectives": [
+            {
+              "id": "assessment-objective_PS-3.9.2a",
+              "prose": "a policy and/or process for terminating system access and any credentials coincident with personnel actions is established.",
+              "label": "PS.L2-3.9.2[a]"
+            },
+            {
+              "id": "assessment-objective_PS-3.9.2b",
+              "prose": "system access and credentials are terminated consistent with personnel actions such as termination or transfer.",
+              "label": "PS.L2-3.9.2[b]"
+            },
+            {
+              "id": "assessment-objective_PS-3.9.2c",
+              "prose": "the system is protected during and after personnel transfer actions.",
+              "label": "PS.L2-3.9.2[c]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.09",
+      "title": "Physical Protection",
+      "label": "Physical Protection (03.09)",
+      "controls": [
+        {
+          "id": "03.09.3.10.1",
+          "title": "Control 03.09.3.10.1",
+          "label": "PE.L2-3.10.1",
+          "statement": "PE.3.10.1.a authorized individuals allowed physical access are identified.\n\nPE.3.10.1.b physical access to organizational systems is limited to authorized individuals.\n\nPE.3.10.1.c physical access to equipment is limited to authorized individuals.\n\nPE.3.10.1.d physical access to operating environments is limited to authorized individuals.",
+          "objectives": [
+            {
+              "id": "assessment-objective_PE-3.10.1a",
+              "prose": "authorized individuals allowed physical access are identified.",
+              "label": "PE.L2-3.10.1[a]"
+            },
+            {
+              "id": "assessment-objective_PE-3.10.1b",
+              "prose": "physical access to organizational systems is limited to authorized individuals.",
+              "label": "PE.L2-3.10.1[b]"
+            },
+            {
+              "id": "assessment-objective_PE-3.10.1c",
+              "prose": "physical access to equipment is limited to authorized individuals.",
+              "label": "PE.L2-3.10.1[c]"
+            },
+            {
+              "id": "assessment-objective_PE-3.10.1d",
+              "prose": "physical access to operating environments is limited to authorized individuals.",
+              "label": "PE.L2-3.10.1[d]"
+            }
+          ]
+        },
+        {
+          "id": "03.09.3.10.2",
+          "title": "Control 03.09.3.10.2",
+          "label": "PE.L2-3.10.2",
+          "statement": "PE.3.10.2.a the physical facility where organizational systems reside is protected.\n\nPE.3.10.2.b the support infrastructure for organizational systems is protected.\n\nPE.3.10.2.c the physical facility where organizational systems reside is monitored.\n\nPE.3.10.2.d the support infrastructure for organizational systems is monitored.",
+          "objectives": [
+            {
+              "id": "assessment-objective_PE-3.10.2a",
+              "prose": "the physical facility where organizational systems reside is protected.",
+              "label": "PE.L2-3.10.2[a]"
+            },
+            {
+              "id": "assessment-objective_PE-3.10.2b",
+              "prose": "the support infrastructure for organizational systems is protected.",
+              "label": "PE.L2-3.10.2[b]"
+            },
+            {
+              "id": "assessment-objective_PE-3.10.2c",
+              "prose": "the physical facility where organizational systems reside is monitored.",
+              "label": "PE.L2-3.10.2[c]"
+            },
+            {
+              "id": "assessment-objective_PE-3.10.2d",
+              "prose": "the support infrastructure for organizational systems is monitored.",
+              "label": "PE.L2-3.10.2[d]"
+            }
+          ]
+        },
+        {
+          "id": "03.09.3.10.3",
+          "title": "Control 03.09.3.10.3",
+          "label": "PE.L2-3.10.3",
+          "statement": "PE.3.10.3.a visitors are escorted.\n\nPE.3.10.3.b visitor activity is monitored.",
+          "objectives": [
+            {
+              "id": "assessment-objective_PE-3.10.3a",
+              "prose": "visitors are escorted.",
+              "label": "PE.L2-3.10.3[a]"
+            },
+            {
+              "id": "assessment-objective_PE-3.10.3b",
+              "prose": "visitor activity is monitored.",
+              "label": "PE.L2-3.10.3[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.09.3.10.4",
+          "title": "Control 03.09.3.10.4",
+          "label": "PE.L2-3.10.4",
+          "statement": "PE.3.10.4.a audit logs of physical access are maintained.",
+          "objectives": [
+            {
+              "id": "assessment-objective_PE-3.10.4a",
+              "prose": "audit logs of physical access are maintained.",
+              "label": "PE.L2-3.10.4[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.09.3.10.5",
+          "title": "Control 03.09.3.10.5",
+          "label": "PE.L2-3.10.5",
+          "statement": "PE.3.10.5.a physical access devices are identified.\n\nPE.3.10.5.b physical access devices are controlled.\n\nPE.3.10.5.c physical access devices are managed.",
+          "objectives": [
+            {
+              "id": "assessment-objective_PE-3.10.5a",
+              "prose": "physical access devices are identified.",
+              "label": "PE.L2-3.10.5[a]"
+            },
+            {
+              "id": "assessment-objective_PE-3.10.5b",
+              "prose": "physical access devices are controlled.",
+              "label": "PE.L2-3.10.5[b]"
+            },
+            {
+              "id": "assessment-objective_PE-3.10.5c",
+              "prose": "physical access devices are managed.",
+              "label": "PE.L2-3.10.5[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.09.3.10.6",
+          "title": "Control 03.09.3.10.6",
+          "label": "PE.L2-3.10.6",
+          "statement": "PE.3.10.6.a safeguarding measures for CUI are defined for alternate work sites.\n\nPE.3.10.6.b safeguarding measures for CUI are enforced for alternate work sites.",
+          "objectives": [
+            {
+              "id": "assessment-objective_PE-3.10.6a",
+              "prose": "safeguarding measures for CUI are defined for alternate work sites.",
+              "label": "PE.L2-3.10.6[a]"
+            },
+            {
+              "id": "assessment-objective_PE-3.10.6b",
+              "prose": "safeguarding measures for CUI are enforced for alternate work sites.",
+              "label": "PE.L2-3.10.6[b]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.12",
+      "title": "Risk Assessment",
+      "label": "Risk Assessment (03.12)",
+      "controls": [
+        {
+          "id": "03.12.3.11.1",
+          "title": "Control 03.12.3.11.1",
+          "label": "RA.L2-3.11.1",
+          "statement": "RA.3.11.1.a the frequency to assess risk to organizational operations, organizational assets, and individuals is defined.\n\nRA.3.11.1.b risk to organizational operations, organizational assets, and individuals resulting from the operation of an organizational system that processes, stores, or transmits sensitive / regulated data is assessed with the defined frequency.",
+          "objectives": [
+            {
+              "id": "assessment-objective_RA-3.11.1a",
+              "prose": "the frequency to assess risk to organizational operations, organizational assets, and individuals is defined.",
+              "label": "RA.L2-3.11.1[a]"
+            },
+            {
+              "id": "assessment-objective_RA-3.11.1b",
+              "prose": "risk to organizational operations, organizational assets, and individuals resulting from the operation of an organizational system that processes, stores, or transmits sensitive / regulated data is assessed with the defined frequency.",
+              "label": "RA.L2-3.11.1[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.12.3.11.2",
+          "title": "Control 03.12.3.11.2",
+          "label": "RA.L2-3.11.2",
+          "statement": "RA.3.11.2.a the frequency to scan for vulnerabilities in organizational systems and applications is defined.\n\nRA.3.11.2.b vulnerability scans are performed on organizational systems with the defined frequency.\n\nRA.3.11.2.c vulnerability scans are performed on applications with the defined frequency.\n\nRA.3.11.2.d vulnerability scans are performed on organizational systems when new vulnerabilities are identified.\n\nRA.3.11.2.e vulnerability scans are performed on applications when new vulnerabilities are identified.",
+          "objectives": [
+            {
+              "id": "assessment-objective_RA-3.11.2a",
+              "prose": "the frequency to scan for vulnerabilities in organizational systems and applications is defined.",
+              "label": "RA.L2-3.11.2[a]"
+            },
+            {
+              "id": "assessment-objective_RA-3.11.2b",
+              "prose": "vulnerability scans are performed on organizational systems with the defined frequency.",
+              "label": "RA.L2-3.11.2[b]"
+            },
+            {
+              "id": "assessment-objective_RA-3.11.2c",
+              "prose": "vulnerability scans are performed on applications with the defined frequency.",
+              "label": "RA.L2-3.11.2[c]"
+            },
+            {
+              "id": "assessment-objective_RA-3.11.2d",
+              "prose": "vulnerability scans are performed on organizational systems when new vulnerabilities are identified.",
+              "label": "RA.L2-3.11.2[d]"
+            },
+            {
+              "id": "assessment-objective_RA-3.11.2e",
+              "prose": "vulnerability scans are performed on applications when new vulnerabilities are identified.",
+              "label": "RA.L2-3.11.2[e]"
+            }
+          ]
+        },
+        {
+          "id": "03.12.3.11.3",
+          "title": "Control 03.12.3.11.3",
+          "label": "RA.L2-3.11.3",
+          "statement": "RA.3.11.3.a vulnerabilities are identified.\n\nRA.3.11.3.b vulnerabilities are remediated in accordance with risk assessments.",
+          "objectives": [
+            {
+              "id": "assessment-objective_RA-3.11.3a",
+              "prose": "vulnerabilities are identified.",
+              "label": "RA.L2-3.11.3[a]"
+            },
+            {
+              "id": "assessment-objective_RA-3.11.3b",
+              "prose": "vulnerabilities are remediated in accordance with risk assessments.",
+              "label": "RA.L2-3.11.3[b]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.13",
+      "title": "Security Assessment",
+      "label": "Security Assessment (03.13)",
+      "controls": [
+        {
+          "id": "03.13.3.12.1",
+          "title": "Control 03.13.3.12.1",
+          "label": "CA.L2-3.12.1",
+          "statement": "CA.3.12.1.a the frequency of security control assessments is defined.\n\nCA.3.12.1.b security controls are assessed with the defined frequency to determine if the controls are effective in their application.",
+          "objectives": [
+            {
+              "id": "assessment-objective_CA-3.12.1a",
+              "prose": "the frequency of security control assessments is defined.",
+              "label": "CA.L2-3.12.1[a]"
+            },
+            {
+              "id": "assessment-objective_CA-3.12.1b",
+              "prose": "security controls are assessed with the defined frequency to determine if the controls are effective in their application.",
+              "label": "CA.L2-3.12.1[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.13.3.12.2",
+          "title": "Control 03.13.3.12.2",
+          "label": "CA.L2-3.12.2",
+          "statement": "CA.3.12.2.a deficiencies and vulnerabilities to be addressed by the plan of action are identified.\n\nCA.3.12.2.b a plan of action is developed to correct identified deficiencies and reduce or eliminate identified vulnerabilities.\n\nCA.3.12.2.c the plan of action is implemented to correct identified deficiencies and reduce or eliminate identified vulnerabilities.",
+          "objectives": [
+            {
+              "id": "assessment-objective_CA-3.12.2a",
+              "prose": "deficiencies and vulnerabilities to be addressed by the plan of action are identified.",
+              "label": "CA.L2-3.12.2[a]"
+            },
+            {
+              "id": "assessment-objective_CA-3.12.2b",
+              "prose": "a plan of action is developed to correct identified deficiencies and reduce or eliminate identified vulnerabilities.",
+              "label": "CA.L2-3.12.2[b]"
+            },
+            {
+              "id": "assessment-objective_CA-3.12.2c",
+              "prose": "the plan of action is implemented to correct identified deficiencies and reduce or eliminate identified vulnerabilities.",
+              "label": "CA.L2-3.12.2[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.13.3.12.3",
+          "title": "Control 03.13.3.12.3",
+          "label": "CA.L2-3.12.3",
+          "statement": "CA.3.12.3.a security controls are monitored on an ongoing basis to ensure the continued effectiveness of those controls.",
+          "objectives": [
+            {
+              "id": "assessment-objective_CA-3.12.3a",
+              "prose": "security controls are monitored on an ongoing basis to ensure the continued effectiveness of those controls.",
+              "label": "CA.L2-3.12.3[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.13.3.12.4",
+          "title": "Control 03.13.3.12.4",
+          "label": "CA.L2-3.12.4",
+          "statement": "CA.3.12.4.a a system security plan is developed.\n\nCA.3.12.4.b the system boundary is described and documented in the system security plan.\n\nCA.3.12.4.c the system environment of operation is described and documented in the system security plan.\n\nCA.3.12.4.d the security requirements identified and approved by the designated authority as non-applicable are identified.\n\nCA.3.12.4.e the method of security requirement implementation is described and documented in the system security plan.\n\nCA.3.12.4.f the relationship with or connection to other systems is described and documented in the system security plan.\n\nCA.3.12.4.g the frequency to update the system security plan is defined.\n\nCA.3.12.4.h system security plan is updated with the defined frequency.",
+          "objectives": [
+            {
+              "id": "assessment-objective_CA-3.12.4a",
+              "prose": "a system security plan is developed.",
+              "label": "CA.L2-3.12.4[a]"
+            },
+            {
+              "id": "assessment-objective_CA-3.12.4b",
+              "prose": "the system boundary is described and documented in the system security plan.",
+              "label": "CA.L2-3.12.4[b]"
+            },
+            {
+              "id": "assessment-objective_CA-3.12.4c",
+              "prose": "the system environment of operation is described and documented in the system security plan.",
+              "label": "CA.L2-3.12.4[c]"
+            },
+            {
+              "id": "assessment-objective_CA-3.12.4d",
+              "prose": "the security requirements identified and approved by the designated authority as non-applicable are identified.",
+              "label": "CA.L2-3.12.4[d]"
+            },
+            {
+              "id": "assessment-objective_CA-3.12.4e",
+              "prose": "the method of security requirement implementation is described and documented in the system security plan.",
+              "label": "CA.L2-3.12.4[e]"
+            },
+            {
+              "id": "assessment-objective_CA-3.12.4f",
+              "prose": "the relationship with or connection to other systems is described and documented in the system security plan.",
+              "label": "CA.L2-3.12.4[f]"
+            },
+            {
+              "id": "assessment-objective_CA-3.12.4g",
+              "prose": "the frequency to update the system security plan is defined.",
+              "label": "CA.L2-3.12.4[g]"
+            },
+            {
+              "id": "assessment-objective_CA-3.12.4h",
+              "prose": "system security plan is updated with the defined frequency.",
+              "label": "CA.L2-3.12.4[h]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.15",
+      "title": "System and Communications Protection",
+      "label": "System and Communications Protection (03.15)",
+      "controls": [
+        {
+          "id": "03.15.3.13.1",
+          "title": "Control 03.15.3.13.1",
+          "label": "SC.L2-3.13.1",
+          "statement": "SC.3.13.1.a the external system boundary is defined.\n\nSC.3.13.1.b key internal system boundaries are defined.\n\nSC.3.13.1.c communications are monitored at the external system boundary.\n\nSC.3.13.1.d communications are monitored at key internal boundaries.\n\nSC.3.13.1.e communications are controlled at the external system boundary.\n\nSC.3.13.1.f communications are controlled at key internal boundaries.\n\nSC.3.13.1.g communications are protected at the external system boundary.\n\nSC.3.13.1.h communications are protected at key internal boundaries.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SC-3.13.1a",
+              "prose": "the external system boundary is defined.",
+              "label": "SC.L2-3.13.1[a]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.1b",
+              "prose": "key internal system boundaries are defined.",
+              "label": "SC.L2-3.13.1[b]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.1c",
+              "prose": "communications are monitored at the external system boundary.",
+              "label": "SC.L2-3.13.1[c]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.1d",
+              "prose": "communications are monitored at key internal boundaries.",
+              "label": "SC.L2-3.13.1[d]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.1e",
+              "prose": "communications are controlled at the external system boundary.",
+              "label": "SC.L2-3.13.1[e]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.1f",
+              "prose": "communications are controlled at key internal boundaries.",
+              "label": "SC.L2-3.13.1[f]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.1g",
+              "prose": "communications are protected at the external system boundary.",
+              "label": "SC.L2-3.13.1[g]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.1h",
+              "prose": "communications are protected at key internal boundaries.",
+              "label": "SC.L2-3.13.1[h]"
+            }
+          ]
+        },
+        {
+          "id": "03.15.3.13.2",
+          "title": "Control 03.15.3.13.2",
+          "label": "SC.L2-3.13.2",
+          "statement": "SC.3.13.2.a architectural designs that promote effective information security are identified.\n\nSC.3.13.2.b software development techniques that promote effective information security are identified.\n\nSC.3.13.2.c systems engineering principles that promote effective information security are identified.\n\nSC.3.13.2.d identified architectural designs that promote effective information security are employed.\n\nSC.3.13.2.e identified software development techniques that promote effective information security are employed.\n\nSC.3.13.2.f identified systems engineering principles that promote effective information security are employed.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SC-3.13.2a",
+              "prose": "architectural designs that promote effective information security are identified.",
+              "label": "SC.L2-3.13.2[a]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.2b",
+              "prose": "software development techniques that promote effective information security are identified.",
+              "label": "SC.L2-3.13.2[b]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.2c",
+              "prose": "systems engineering principles that promote effective information security are identified.",
+              "label": "SC.L2-3.13.2[c]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.2d",
+              "prose": "identified architectural designs that promote effective information security are employed.",
+              "label": "SC.L2-3.13.2[d]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.2e",
+              "prose": "identified software development techniques that promote effective information security are employed.",
+              "label": "SC.L2-3.13.2[e]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.2f",
+              "prose": "identified systems engineering principles that promote effective information security are employed.",
+              "label": "SC.L2-3.13.2[f]"
+            }
+          ]
+        },
+        {
+          "id": "03.15.3.13.3",
+          "title": "Control 03.15.3.13.3",
+          "label": "SC.L2-3.13.3",
+          "statement": "SC.3.13.3.a user functionality is identified.\n\nSC.3.13.3.b system management functionality is identified.\n\nSC.3.13.3.c user functionality is separated from system management functionality.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SC-3.13.3a",
+              "prose": "user functionality is identified.",
+              "label": "SC.L2-3.13.3[a]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.3b",
+              "prose": "system management functionality is identified.",
+              "label": "SC.L2-3.13.3[b]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.3c",
+              "prose": "user functionality is separated from system management functionality.",
+              "label": "SC.L2-3.13.3[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.15.3.13.4",
+          "title": "Control 03.15.3.13.4",
+          "label": "SC.L2-3.13.4",
+          "statement": "SC.3.13.4.a unauthorized and unintended information transfer via shared system resources is prevented.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SC-3.13.4a",
+              "prose": "unauthorized and unintended information transfer via shared system resources is prevented.",
+              "label": "SC.L2-3.13.4[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.15.3.13.5",
+          "title": "Control 03.15.3.13.5",
+          "label": "SC.L2-3.13.5",
+          "statement": "SC.3.13.5.a publicly accessible system components are identified.\n\nSC.3.13.5.b subnetworks for publicly accessible system components are physically or logically separated from internal networks.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SC-3.13.5a",
+              "prose": "publicly accessible system components are identified.",
+              "label": "SC.L2-3.13.5[a]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.5b",
+              "prose": "subnetworks for publicly accessible system components are physically or logically separated from internal networks.",
+              "label": "SC.L2-3.13.5[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.15.3.13.6",
+          "title": "Control 03.15.3.13.6",
+          "label": "SC.L2-3.13.6",
+          "statement": "SC.3.13.6.a network communications traffic is denied by default.\n\nSC.3.13.6.b network communications traffic is allowed by exception.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SC-3.13.6a",
+              "prose": "network communications traffic is denied by default.",
+              "label": "SC.L2-3.13.6[a]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.6b",
+              "prose": "network communications traffic is allowed by exception.",
+              "label": "SC.L2-3.13.6[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.15.3.13.7",
+          "title": "Control 03.15.3.13.7",
+          "label": "SC.L2-3.13.7",
+          "statement": "SC.3.13.7.a remote devices are prevented from simultaneously establishing non-remote connections with the system and communicating via some other connection to resources in external networks (e.g., split tunneling).",
+          "objectives": [
+            {
+              "id": "assessment-objective_SC-3.13.7a",
+              "prose": "remote devices are prevented from simultaneously establishing non-remote connections with the system and communicating via some other connection to resources in external networks (e.g., split tunneling).",
+              "label": "SC.L2-3.13.7[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.15.3.13.8",
+          "title": "Control 03.15.3.13.8",
+          "label": "SC.L2-3.13.8",
+          "statement": "SC.3.13.8.a cryptographic mechanisms intended to prevent unauthorized disclosure of CUI are identified.\n\nSC.3.13.8.b alternative physical safeguards intended to prevent unauthorized disclosure of CUI are identified.\n\nSC.3.13.8.c either cryptographic mechanisms or alternative physical safeguards are implemented to prevent unauthorized disclosure of CUI during transmission.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SC-3.13.8a",
+              "prose": "cryptographic mechanisms intended to prevent unauthorized disclosure of CUI are identified.",
+              "label": "SC.L2-3.13.8[a]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.8b",
+              "prose": "alternative physical safeguards intended to prevent unauthorized disclosure of CUI are identified.",
+              "label": "SC.L2-3.13.8[b]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.8c",
+              "prose": "either cryptographic mechanisms or alternative physical safeguards are implemented to prevent unauthorized disclosure of CUI during transmission.",
+              "label": "SC.L2-3.13.8[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.15.3.13.9",
+          "title": "Control 03.15.3.13.9",
+          "label": "SC.L2-3.13.9",
+          "statement": "SC.3.13.9.a a period of inactivity to terminate network connections associated with communications sessions is defined.\n\nSC.3.13.9.b network connections associated with communications sessions are terminated at the end of the sessions.\n\nSC.3.13.9.c network connections associated with communications sessions are terminated after the defined period of inactivity.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SC-3.13.9a",
+              "prose": "a period of inactivity to terminate network connections associated with communications sessions is defined.",
+              "label": "SC.L2-3.13.9[a]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.9b",
+              "prose": "network connections associated with communications sessions are terminated at the end of the sessions.",
+              "label": "SC.L2-3.13.9[b]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.9c",
+              "prose": "network connections associated with communications sessions are terminated after the defined period of inactivity.",
+              "label": "SC.L2-3.13.9[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.15.3.13.10",
+          "title": "Control 03.15.3.13.10",
+          "label": "SC.L2-3.13.10",
+          "statement": "SC.3.13.10.a cryptographic keys are established whenever cryptography is employed.\n\nSC.3.13.10.b cryptographic keys are managed whenever cryptography is employed.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SC-3.13.10a",
+              "prose": "cryptographic keys are established whenever cryptography is employed.",
+              "label": "SC.L2-3.13.10[a]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.10b",
+              "prose": "cryptographic keys are managed whenever cryptography is employed.",
+              "label": "SC.L2-3.13.10[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.15.3.13.11",
+          "title": "Control 03.15.3.13.11",
+          "label": "SC.L2-3.13.11",
+          "statement": "SC.3.13.11.a FIPS-validated cryptography is employed to protect the confidentiality of CUI.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SC-3.13.11a",
+              "prose": "FIPS-validated cryptography is employed to protect the confidentiality of CUI.",
+              "label": "SC.L2-3.13.11[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.15.3.13.12",
+          "title": "Control 03.15.3.13.12",
+          "label": "SC.L2-3.13.12",
+          "statement": "SC.3.13.12.a collaborative computing devices are identified.\n\nSC.3.13.12.b collaborative computing devices provide indication to users of devices in use.\n\nSC.3.13.12.c remote activation of collaborative computing devices is prohibited.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SC-3.13.12a",
+              "prose": "collaborative computing devices are identified.",
+              "label": "SC.L2-3.13.12[a]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.12b",
+              "prose": "collaborative computing devices provide indication to users of devices in use.",
+              "label": "SC.L2-3.13.12[b]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.12c",
+              "prose": "remote activation of collaborative computing devices is prohibited.",
+              "label": "SC.L2-3.13.12[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.15.3.13.13",
+          "title": "Control 03.15.3.13.13",
+          "label": "SC.L2-3.13.13",
+          "statement": "SC.3.13.13.a the use of mobile code is controlled.\n\nSC.3.13.13.b the use of mobile code is monitored.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SC-3.13.13a",
+              "prose": "the use of mobile code is controlled.",
+              "label": "SC.L2-3.13.13[a]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.13b",
+              "prose": "the use of mobile code is monitored.",
+              "label": "SC.L2-3.13.13[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.15.3.13.14",
+          "title": "Control 03.15.3.13.14",
+          "label": "SC.L2-3.13.14",
+          "statement": "SC.3.13.14.a use of Voice over Internet Protocol (VoIP) technologies is controlled.\n\nSC.3.13.14.b use of Voice over Internet Protocol (VoIP) technologies is monitored.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SC-3.13.14a",
+              "prose": "use of Voice over Internet Protocol (VoIP) technologies is controlled.",
+              "label": "SC.L2-3.13.14[a]"
+            },
+            {
+              "id": "assessment-objective_SC-3.13.14b",
+              "prose": "use of Voice over Internet Protocol (VoIP) technologies is monitored.",
+              "label": "SC.L2-3.13.14[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.15.3.13.15",
+          "title": "Control 03.15.3.13.15",
+          "label": "SC.L2-3.13.15",
+          "statement": "SC.3.13.15.a the authenticity of communications sessions is protected.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SC-3.13.15a",
+              "prose": "the authenticity of communications sessions is protected.",
+              "label": "SC.L2-3.13.15[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.15.3.13.16",
+          "title": "Control 03.15.3.13.16",
+          "label": "SC.L2-3.13.16",
+          "statement": "SC.3.13.16.a the confidentiality of CUI at rest is protected.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SC-3.13.16a",
+              "prose": "the confidentiality of CUI at rest is protected.",
+              "label": "SC.L2-3.13.16[a]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.14",
+      "title": "System and Information Integrity",
+      "label": "System and Information Integrity (03.14)",
+      "controls": [
+        {
+          "id": "03.14.3.14.1",
+          "title": "Control 03.14.3.14.1",
+          "label": "SI.L2-3.14.1",
+          "statement": "SI.3.14.1.a the time within which to identify system flaws is specified.\n\nSI.3.14.1.b system flaws are identified within the specified time frame.\n\nSI.3.14.1.c the time within which to report system flaws is specified.\n\nSI.3.14.1.d system flaws are reported within the specified time frame.\n\nSI.3.14.1.e the time within which to correct system flaws is specified.\n\nSI.3.14.1.f system flaws are corrected within the specified time frame.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SI-3.14.1a",
+              "prose": "the time within which to identify system flaws is specified.",
+              "label": "SI.L2-3.14.1[a]"
+            },
+            {
+              "id": "assessment-objective_SI-3.14.1b",
+              "prose": "system flaws are identified within the specified time frame.",
+              "label": "SI.L2-3.14.1[b]"
+            },
+            {
+              "id": "assessment-objective_SI-3.14.1c",
+              "prose": "the time within which to report system flaws is specified.",
+              "label": "SI.L2-3.14.1[c]"
+            },
+            {
+              "id": "assessment-objective_SI-3.14.1d",
+              "prose": "system flaws are reported within the specified time frame.",
+              "label": "SI.L2-3.14.1[d]"
+            },
+            {
+              "id": "assessment-objective_SI-3.14.1e",
+              "prose": "the time within which to correct system flaws is specified.",
+              "label": "SI.L2-3.14.1[e]"
+            },
+            {
+              "id": "assessment-objective_SI-3.14.1f",
+              "prose": "system flaws are corrected within the specified time frame.",
+              "label": "SI.L2-3.14.1[f]"
+            }
+          ]
+        },
+        {
+          "id": "03.14.3.14.2",
+          "title": "Control 03.14.3.14.2",
+          "label": "SI.L2-3.14.2",
+          "statement": "SI.3.14.2.a designated locations for malicious code protection are identified.\n\nSI.3.14.2.b protection from malicious code at designated locations is provided.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SI-3.14.2a",
+              "prose": "designated locations for malicious code protection are identified.",
+              "label": "SI.L2-3.14.2[a]"
+            },
+            {
+              "id": "assessment-objective_SI-3.14.2b",
+              "prose": "protection from malicious code at designated locations is provided.",
+              "label": "SI.L2-3.14.2[b]"
+            }
+          ]
+        },
+        {
+          "id": "03.14.3.14.3",
+          "title": "Control 03.14.3.14.3",
+          "label": "SI.L2-3.14.3",
+          "statement": "SI.3.14.3.a response actions to system security alerts and advisories are identified.\n\nSI.3.14.3.b system security alerts and advisories are monitored.\n\nSI.3.14.3.c actions in response to system security alerts and advisories are taken.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SI-3.14.3a",
+              "prose": "response actions to system security alerts and advisories are identified.",
+              "label": "SI.L2-3.14.3[a]"
+            },
+            {
+              "id": "assessment-objective_SI-3.14.3b",
+              "prose": "system security alerts and advisories are monitored.",
+              "label": "SI.L2-3.14.3[b]"
+            },
+            {
+              "id": "assessment-objective_SI-3.14.3c",
+              "prose": "actions in response to system security alerts and advisories are taken.",
+              "label": "SI.L2-3.14.3[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.14.3.14.4",
+          "title": "Control 03.14.3.14.4",
+          "label": "SI.L2-3.14.4",
+          "statement": "SI.3.14.4.a malicious code protection mechanisms are updated when new releases are available.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SI-3.14.4a",
+              "prose": "malicious code protection mechanisms are updated when new releases are available.",
+              "label": "SI.L2-3.14.4[a]"
+            }
+          ]
+        },
+        {
+          "id": "03.14.3.14.5",
+          "title": "Control 03.14.3.14.5",
+          "label": "SI.L2-3.14.5",
+          "statement": "SI.3.14.5.a the frequency for malicious code scans is defined.\n\nSI.3.14.5.b malicious code scans are performed with the defined frequency.\n\nSI.3.14.5.c real-time malicious code scans of files from external sources as files are downloaded, opened, or executed are performed.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SI-3.14.5a",
+              "prose": "the frequency for malicious code scans is defined.",
+              "label": "SI.L2-3.14.5[a]"
+            },
+            {
+              "id": "assessment-objective_SI-3.14.5b",
+              "prose": "malicious code scans are performed with the defined frequency.",
+              "label": "SI.L2-3.14.5[b]"
+            },
+            {
+              "id": "assessment-objective_SI-3.14.5c",
+              "prose": "real-time malicious code scans of files from external sources as files are downloaded, opened, or executed are performed.",
+              "label": "SI.L2-3.14.5[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.14.3.14.6",
+          "title": "Control 03.14.3.14.6",
+          "label": "SI.L2-3.14.6",
+          "statement": "SI.3.14.6.a the system is monitored to detect attacks and indicators of potential attacks.\n\nSI.3.14.6.b inbound communications traffic is monitored to detect attacks and indicators of potential attacks.\n\nSI.3.14.6.c outbound communications traffic is monitored to detect attacks and indicators of potential attacks.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SI-3.14.6a",
+              "prose": "the system is monitored to detect attacks and indicators of potential attacks.",
+              "label": "SI.L2-3.14.6[a]"
+            },
+            {
+              "id": "assessment-objective_SI-3.14.6b",
+              "prose": "inbound communications traffic is monitored to detect attacks and indicators of potential attacks.",
+              "label": "SI.L2-3.14.6[b]"
+            },
+            {
+              "id": "assessment-objective_SI-3.14.6c",
+              "prose": "outbound communications traffic is monitored to detect attacks and indicators of potential attacks.",
+              "label": "SI.L2-3.14.6[c]"
+            }
+          ]
+        },
+        {
+          "id": "03.14.3.14.7",
+          "title": "Control 03.14.3.14.7",
+          "label": "SI.L2-3.14.7",
+          "statement": "SI.3.14.7.a authorized use of the system is defined.\n\nSI.3.14.7.b unauthorized use of the system is identified.",
+          "objectives": [
+            {
+              "id": "assessment-objective_SI-3.14.7a",
+              "prose": "authorized use of the system is defined.",
+              "label": "SI.L2-3.14.7[a]"
+            },
+            {
+              "id": "assessment-objective_SI-3.14.7b",
+              "prose": "unauthorized use of the system is identified.",
+              "label": "SI.L2-3.14.7[b]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3240 @@
+{
+  "families": [
+    {
+      "id": "03.01",
+      "title": "Access Control",
+      "label": "Access Control (03.01)",
+      "controls": [
+        {
+          "id": "03.01.01",
+          "title": "Account Management",
+          "label": "Account Management (03.01.01)",
+          "statement": "\\nSR-03.01.01.a Define the types of system accounts allowed and prohibited.\\nSR-03.01.01.b Create, enable, modify, disable, and remove system accounts in accordance with policy, procedures, prerequisites, and criteria.\\nSR-03.01.01.c Specify:\\nSR-03.01.01.c.01 Authorized users of the system,\\nSR-03.01.01.c.02 Group and role membership, and\\nSR-03.01.01.c.03 Access authorizations (i.e., privileges) for each account.\\nSR-03.01.01.d Authorize access to the system based on:\\nSR-03.01.01.d.01 A valid access authorization and\\nSR-03.01.01.d.02 Intended system usage.\\nSR-03.01.01.e Monitor the use of system accounts.\\nSR-03.01.01.f Disable system accounts when:\\nSR-03.01.01.f.01 The accounts have expired,\\nSR-03.01.01.f.02 The accounts have been inactive for {{ insert: param, A.03.01.01.ODP.01 }},\\nSR-03.01.01.f.03 The accounts are no longer associated with a user or individual,\\nSR-03.01.01.f.04 The accounts are in violation of organizational policy, or\\nSR-03.01.01.f.05 Significant risks associated with individuals are discovered.\\nSR-03.01.01.g Notify account managers and designated personnel or roles within:\\nSR-03.01.01.g.01 {{ insert: param, A.03.01.01.ODP.02 }} when accounts are no longer required.\\nSR-03.01.01.g.02 {{ insert: param, A.03.01.01.ODP.03 }} when users are terminated or transferred.\\nSR-03.01.01.g.03 {{ insert: param, A.03.01.01.ODP.04 }} when system usage or the need-to-know changes for an individual.\\nSR-03.01.01.h Require that users log out of the system after {{ insert: param, A.03.01.01.ODP.05 }} of expected inactivity or when {{ insert: param, A.03.01.01.ODP.06 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.01.01.b.01",
+              "prose": "system accounts are created in accordance with organizational policy, procedures, prerequisites, and criteria.",
+              "label": "assessment-objective_DS-A.03.01.01.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.b.02",
+              "prose": "system accounts are enabled in accordance with organizational policy, procedures, prerequisites, and criteria.",
+              "label": "assessment-objective_DS-A.03.01.01.b.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.b.03",
+              "prose": "system accounts are modified in accordance with organizational policy, procedures, prerequisites, and criteria.",
+              "label": "assessment-objective_DS-A.03.01.01.b.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.b.04",
+              "prose": "system accounts are disabled in accordance with organizational policy, procedures, prerequisites, and criteria.",
+              "label": "assessment-objective_DS-A.03.01.01.b.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.b.05",
+              "prose": "system accounts are removed in accordance with organizational policy, procedures, prerequisites, and criteria.",
+              "label": "assessment-objective_DS-A.03.01.01.b.05"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.a.01",
+              "prose": "system account types allowed are defined.",
+              "label": "assessment-objective_DS-A.03.01.01.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.a.02",
+              "prose": "system account types prohibited are defined.",
+              "label": "assessment-objective_DS-A.03.01.01.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.c.01",
+              "prose": "authorized users of the system are specified.",
+              "label": "assessment-objective_DS-A.03.01.01.c.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.c.02",
+              "prose": "group and role memberships are specified.",
+              "label": "assessment-objective_DS-A.03.01.01.c.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.c.03",
+              "prose": "access authorizations (i.e., privileges) for each account are specified.",
+              "label": "assessment-objective_DS-A.03.01.01.c.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.d.01",
+              "prose": "access to the system is authorized based on a valid access authorization.",
+              "label": "assessment-objective_DS-A.03.01.01.d.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.d.02",
+              "prose": "access to the system is authorized based on intended system usage.",
+              "label": "assessment-objective_DS-A.03.01.01.d.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.e",
+              "prose": "the use of system accounts is monitored.",
+              "label": "assessment-objective_DS-A.03.01.01.e"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.f.01",
+              "prose": "system accounts are disabled when the accounts have expired.",
+              "label": "assessment-objective_DS-A.03.01.01.f.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.f.02",
+              "prose": "system accounts are disabled when the accounts have been inactive for {{ insert: param, A.03.01.01.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.01.01.f.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.f.03",
+              "prose": "system accounts are disabled when the accounts are no longer associated with a user or individual.",
+              "label": "assessment-objective_DS-A.03.01.01.f.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.f.04",
+              "prose": "system accounts are disabled when the accounts violate organizational policy.",
+              "label": "assessment-objective_DS-A.03.01.01.f.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.g.01",
+              "prose": "account managers and designated personnel or roles are notified within {{ insert: param, A.03.01.01.ODP.02 }} when accounts are no longer required.",
+              "label": "assessment-objective_DS-A.03.01.01.g.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.g.02",
+              "prose": "account managers and designated personnel or roles are notified within {{ insert: param, A.03.01.01.ODP.03 }} when users are terminated or transferred.",
+              "label": "assessment-objective_DS-A.03.01.01.g.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.g.03",
+              "prose": "account managers and designated personnel or roles are notified within {{ insert: param, A.03.01.01.ODP.04 }} when system usage or the need-to-know changes for an individual.",
+              "label": "assessment-objective_DS-A.03.01.01.g.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.f.05",
+              "prose": "system accounts are disabled when significant risks associated with individuals are discovered.",
+              "label": "assessment-objective_DS-A.03.01.01.f.05"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.01.h",
+              "prose": "users are required to log out of the system after {{ insert: param, A.03.01.01.ODP.05 }} of expected inactivity or when the following circumstances occur: {{ insert: param, A.03.01.01.ODP.06 }}.",
+              "label": "assessment-objective_DS-A.03.01.01.h"
+            }
+          ]
+        },
+        {
+          "id": "03.01.02",
+          "title": "Access Enforcement",
+          "label": "Access Enforcement (03.01.02)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.01.02.01",
+              "prose": "approved authorizations for logical access to CUI are enforced in accordance with applicable access control policies.",
+              "label": "assessment-objective_DS-A.03.01.02.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.02.02",
+              "prose": "approved authorizations for logical access to system resources are enforced in accordance with applicable access control policies.",
+              "label": "assessment-objective_DS-A.03.01.02.02"
+            }
+          ]
+        },
+        {
+          "id": "03.01.03",
+          "title": "Information Flow Enforcement",
+          "label": "Information Flow Enforcement (03.01.03)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.01.03.01",
+              "prose": "approved authorizations are enforced for controlling the flow of CUI within the system.",
+              "label": "assessment-objective_DS-A.03.01.03.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.03.02",
+              "prose": "approved authorizations are enforced for controlling the flow of CUI between connected systems.",
+              "label": "assessment-objective_DS-A.03.01.03.02"
+            }
+          ]
+        },
+        {
+          "id": "03.01.04",
+          "title": "Separation of Duties",
+          "label": "Separation of Duties (03.01.04)",
+          "statement": "\\nSR-03.01.04.a Identify the duties of individuals requiring separation.\\nSR-03.01.04.b Define system access authorizations to support separation of duties.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.01.04.a",
+              "prose": "duties of individuals requiring separation are identified.",
+              "label": "assessment-objective_DS-A.03.01.04.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.04.b",
+              "prose": "system access authorizations to support separation of duties are defined.",
+              "label": "assessment-objective_DS-A.03.01.04.b"
+            }
+          ]
+        },
+        {
+          "id": "03.01.05",
+          "title": "Least Privilege",
+          "label": "Least Privilege (03.01.05)",
+          "statement": "\\nSR-03.01.05.a Allow only authorized system access for users (or processes acting on behalf of users) that is necessary to accomplish assigned organizational tasks.\\nSR-03.01.05.b Authorize access to {{ insert: param, A.03.01.05.ODP.01 }} and {{ insert: param, A.03.01.05.ODP.02 }}.\\nSR-03.01.05.c Review the privileges assigned to roles or classes of users {{ insert: param, A.03.01.05.ODP.03 }} to validate the need for such privileges.\\nSR-03.01.05.d Reassign or remove privileges, as necessary.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.01.05.a",
+              "prose": "system access for users (or processes acting on behalf of users) is authorized only when necessary to accomplish assigned organizational tasks.",
+              "label": "assessment-objective_DS-A.03.01.05.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.05.b.01",
+              "prose": "access to {{ insert: param, A.03.01.05.ODP.01 }} is authorized.",
+              "label": "assessment-objective_DS-A.03.01.05.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.05.b.02",
+              "prose": "access to {{ insert: param, A.03.01.05.ODP.02 }} is authorized.",
+              "label": "assessment-objective_DS-A.03.01.05.b.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.05.c",
+              "prose": "the privileges assigned to roles or classes of users are reviewed {{ insert: param, A.03.01.05.ODP.03 }} to validate the need for such privileges.",
+              "label": "assessment-objective_DS-A.03.01.05.c"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.05.d",
+              "prose": "privileges are reassigned or removed, as necessary.",
+              "label": "assessment-objective_DS-A.03.01.05.d"
+            }
+          ]
+        },
+        {
+          "id": "03.01.06",
+          "title": "Least Privilege – Privileged Accounts",
+          "label": "Least Privilege – Privileged Accounts (03.01.06)",
+          "statement": "\\nSR-03.01.06.a Restrict privileged accounts on the system to {{ insert: param, A.03.01.06.ODP.01 }}..\\nSR-03.01.06.b Require that users (or roles) with privileged accounts use non-privileged accounts when accessing non-security functions or non-security information.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.01.06.a",
+              "prose": "privileged accounts on the system are restricted to {{ insert: param, A.03.01.06.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.01.06.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.06.b",
+              "prose": "users (or roles) with privileged accounts are required to use non-privileged accounts when accessing non-security functions or non-security information.",
+              "label": "assessment-objective_DS-A.03.01.06.b"
+            }
+          ]
+        },
+        {
+          "id": "03.01.07",
+          "title": "Least Privilege – Privileged Functions",
+          "label": "Least Privilege – Privileged Functions (03.01.07)",
+          "statement": "\\nSR-03.01.07.a Prevent non-privileged users from executing privileged functions.\\nSR-03.01.07.b Log the execution of privileged functions.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.01.07.b",
+              "prose": "the execution of privileged functions is logged.",
+              "label": "assessment-objective_DS-A.03.01.07.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.07.a",
+              "prose": "non-privileged users are prevented from executing privileged functions.",
+              "label": "assessment-objective_DS-A.03.01.07.a"
+            }
+          ]
+        },
+        {
+          "id": "03.01.08",
+          "title": "Unsuccessful Logon Attempts",
+          "label": "Unsuccessful Logon Attempts (03.01.08)",
+          "statement": "\\nSR-03.01.08.a Enforce a limit of {{ insert: param, A.03.01.08.ODP.01 }} consecutive invalid logon attempts by a user during a {{ insert: param, A.03.01.08.ODP.02 }}.\\nSR-03.01.08.b Automatically {{ insert: param, A.03.01.08.ODP.03 }} when the maximum number of unsuccessful attempts is exceeded.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.01.08.a",
+              "prose": "a limit of {{ insert: param, A.03.01.08.ODP.01 }} consecutive invalid logon attempts by a user during {{ insert: param, A.03.01.08.ODP.02 }} is enforced.",
+              "label": "assessment-objective_DS-A.03.01.08.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.08.b",
+              "prose": "{{ insert: param, A.03.01.08.ODP.03 }} when the maximum number of unsuccessful attempts is exceeded.",
+              "label": "assessment-objective_DS-A.03.01.08.b"
+            }
+          ]
+        },
+        {
+          "id": "03.01.09",
+          "title": "System Use Notification",
+          "label": "System Use Notification (03.01.09)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.01.09",
+              "prose": "a system use notification message with privacy and security notices consistent with applicable CUI rules is displayed before granting access to the system.",
+              "label": "assessment-objective_DS-A.03.01.09"
+            }
+          ]
+        },
+        {
+          "id": "03.01.10",
+          "title": "Device Lock",
+          "label": "Device Lock (03.01.10)",
+          "statement": "\\nSR-03.01.10.a Prevent access to the system by {{ insert: param, A.03.01.10.ODP.01 }}.\\nSR-03.01.10.b Retain the device lock until the user reestablishes access using established identification and authentication procedures.\\nSR-03.01.10.c Conceal, via the device lock, information previously visible on the display with a publicly viewable image.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.01.10.a",
+              "prose": "access to the system is prevented by {{ insert: param, A.03.01.10.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.01.10.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.10.c",
+              "prose": "information previously visible on the display is concealed via device lock with a publicly viewable image.",
+              "label": "assessment-objective_DS-A.03.01.10.c"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.10.b",
+              "prose": "the device lock is retained until the user reestablishes access using established identification and authentication procedures.",
+              "label": "assessment-objective_DS-A.03.01.10.b"
+            }
+          ]
+        },
+        {
+          "id": "03.01.11",
+          "title": "Session Termination",
+          "label": "Session Termination (03.01.11)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.01.11",
+              "prose": "a user session is terminated automatically after {{ insert: param, A.03.01.11.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.01.11"
+            }
+          ]
+        },
+        {
+          "id": "03.01.12",
+          "title": "Remote Access",
+          "label": "Remote Access (03.01.12)",
+          "statement": "\\nSR-03.01.12.a Establish usage restrictions, configuration requirements, and connection requirements for each type of allowable remote system access.\\nSR-03.01.12.b Authorize each type of remote system access prior to establishing such connections.\\nSR-03.01.12.c Route remote access to the system through authorized and managed access control points.\\nSR-03.01.12.d Authorize the remote execution of privileged commands and remote access to security-relevant information.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.01.12.a.01",
+              "prose": "types of allowable remote system access are defined.",
+              "label": "assessment-objective_DS-A.03.01.12.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.12.a.02",
+              "prose": "usage restrictions are established for each type of allowable remote system access.",
+              "label": "assessment-objective_DS-A.03.01.12.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.12.a.03",
+              "prose": "configuration requirements are established for each type of allowable remote system access.",
+              "label": "assessment-objective_DS-A.03.01.12.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.12.a.04",
+              "prose": "connection requirements are established for each type of allowable remote system access.",
+              "label": "assessment-objective_DS-A.03.01.12.a.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.12.b",
+              "prose": "each type of remote system access is authorized prior to establishing such connections.",
+              "label": "assessment-objective_DS-A.03.01.12.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.12.c.01",
+              "prose": "remote access to the system is routed through authorized access control points.",
+              "label": "assessment-objective_DS-A.03.01.12.c.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.12.c.02",
+              "prose": "remote access to the system is routed through managed access control points.",
+              "label": "assessment-objective_DS-A.03.01.12.c.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.12.d.1",
+              "prose": "remote execution of privileged commands is authorized.",
+              "label": "assessment-objective_DS-A.03.01.12.d.1"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.12.d.2",
+              "prose": "remote access to security-relevant information is authorized.",
+              "label": "assessment-objective_DS-A.03.01.12.d.2"
+            }
+          ]
+        },
+        {
+          "id": "03.01.13",
+          "title": "03.01.13",
+          "label": "03.01.13",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.01.14",
+          "title": "03.01.14",
+          "label": "03.01.14",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.01.15",
+          "title": "03.01.15",
+          "label": "03.01.15",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.01.16",
+          "title": "Wireless Access",
+          "label": "Wireless Access (03.01.16)",
+          "statement": "\\nSR-03.01.16.a Establish usage restrictions, configuration requirements, and connection requirements for each type of wireless access to the system.\\nSR-03.01.16.b Authorize each type of wireless access to the system prior to establishing such connections.\\nSR-03.01.16.c Disable, when not intended for use, wireless networking capabilities prior to issuance and deployment.\\nSR-03.01.16.d Protect wireless access to the system using authentication and encryption.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.01.16.a.01",
+              "prose": "each type of wireless access to the system is defined.",
+              "label": "assessment-objective_DS-A.03.01.16.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.16.a.02",
+              "prose": "usage restrictions are established for each type of wireless access to the system.",
+              "label": "assessment-objective_DS-A.03.01.16.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.16.a.03",
+              "prose": "configuration requirements are established for each type of wireless access to the system.",
+              "label": "assessment-objective_DS-A.03.01.16.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.16.a.04",
+              "prose": "connection requirements are established for each type of wireless access to the system.",
+              "label": "assessment-objective_DS-A.03.01.16.a.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.16.b",
+              "prose": "each type of wireless access to the system is authorized prior to establishing such connections.",
+              "label": "assessment-objective_DS-A.03.01.16.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.16.c",
+              "prose": "wireless networking capabilities not intended for use are disabled prior to issuance and deployment.",
+              "label": "assessment-objective_DS-A.03.01.16.c"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.16.d.01",
+              "prose": "wireless access to the system is protected using authentication.",
+              "label": "assessment-objective_DS-A.03.01.16.d.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.16.d.02",
+              "prose": "wireless access to the system is protected using encryption.",
+              "label": "assessment-objective_DS-A.03.01.16.d.02"
+            }
+          ]
+        },
+        {
+          "id": "03.01.17",
+          "title": "03.01.17",
+          "label": "03.01.17",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.01.18",
+          "title": "Access Control for Mobile Devices",
+          "label": "Access Control for Mobile Devices (03.01.18)",
+          "statement": "\\nSR-03.01.18.a Establish usage restrictions, configuration requirements, and connection requirements for mobile devices.\\nSR-03.01.18.b Authorize the connection of mobile devices to the system.\\nSR-03.01.18.c Implement full-device or container-based encryption to protect the confidentiality of CUI on mobile devices.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.01.18.a.01",
+              "prose": "usage restrictions are established for mobile devices.",
+              "label": "assessment-objective_DS-A.03.01.18.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.18.a.02",
+              "prose": "configuration requirements are established for mobile devices.",
+              "label": "assessment-objective_DS-A.03.01.18.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.18.a.03",
+              "prose": "connection requirements are established for mobile devices.",
+              "label": "assessment-objective_DS-A.03.01.18.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.18.b",
+              "prose": "the connection of mobile devices to the system is authorized.",
+              "label": "assessment-objective_DS-A.03.01.18.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.18.c",
+              "prose": "full-device or container-based encryption is implemented to protect the confidentiality of CUI on mobile devices.",
+              "label": "assessment-objective_DS-A.03.01.18.c"
+            }
+          ]
+        },
+        {
+          "id": "03.01.19",
+          "title": "03.01.19",
+          "label": "03.01.19",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.01.20",
+          "title": "Use of External Systems",
+          "label": "Use of External Systems (03.01.20)",
+          "statement": "\\nSR-03.01.20.a Prohibit the use of external systems unless the systems are specifically authorized.\\nSR-03.01.20.b Establish the following security requirements to be satisfied on external systems prior to allowing use of or access to those systems by authorized individuals: {{ insert: param, A.03.01.20.ODP.01 }}.\\nSR-03.01.20.c Permit authorized individuals to use external systems to access the organizational system or to process, store, or transmit CUI only after:\\nSR-03.01.20.c.01 Verifying that the security requirements on the external systems as specified in the organization’s system security plans have been satisfied and\\nSR-03.01.20.c.02 Retaining approved system connection or processing agreements with the organizational entities hosting the external systems.\\nSR-03.01.20.d Restrict the use of organization-controlled portable storage devices by authorized individuals on external systems.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.01.20.b",
+              "prose": "the following security requirements to be satisfied on external systems prior to allowing the use of or access to those systems by authorized individuals are established: {{ insert: param, A.03.01.20.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.01.20.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.20.a",
+              "prose": "the use of external systems is prohibited unless the systems are specifically authorized.",
+              "label": "assessment-objective_DS-A.03.01.20.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.20.c.01",
+              "prose": "authorized individuals are permitted to use external systems to access the organizational system or to process, store, or transmit CUI only after verifying that the security requirements on the external systems as specified in the organization’s system security plans have been satisfied.",
+              "label": "assessment-objective_DS-A.03.01.20.c.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.20.d",
+              "prose": "the use of organization-controlled portable storage devices by authorized individuals on external systems is restricted.",
+              "label": "assessment-objective_DS-A.03.01.20.d"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.20.c.02",
+              "prose": "authorized individuals are permitted to use external systems to access the organizational system or to process, store, or transmit CUI only after retaining approved system connection or processing agreements with the organizational entity hosting the external systems.",
+              "label": "assessment-objective_DS-A.03.01.20.c.02"
+            }
+          ]
+        },
+        {
+          "id": "03.01.21",
+          "title": "03.01.21",
+          "label": "03.01.21",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.01.22",
+          "title": "Publicly Accessible Content",
+          "label": "Publicly Accessible Content (03.01.22)",
+          "statement": "\\nSR-03.01.22.a Train authorized individuals to ensure that publicly accessible information does not contain CUI.\\nSR-03.01.22.b Review the content on publicly accessible systems for CUI and remove such information, if discovered.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.01.22.a",
+              "prose": "authorized individuals are trained to ensure that publicly accessible information does not contain CUI.",
+              "label": "assessment-objective_DS-A.03.01.22.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.22.b.01",
+              "prose": "the content on publicly accessible systems is reviewed for CUI.",
+              "label": "assessment-objective_DS-A.03.01.22.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.01.22.b.02",
+              "prose": "CUI is removed from publicly accessible systems, if discovered.",
+              "label": "assessment-objective_DS-A.03.01.22.b.02"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.02",
+      "title": "Awareness and Training",
+      "label": "Awareness and Training (03.02)",
+      "controls": [
+        {
+          "id": "03.02.01",
+          "title": "Literacy Training and Awareness",
+          "label": "Literacy Training and Awareness (03.02.01)",
+          "statement": "\\nSR-03.02.01.a Provide security literacy training to system users:\\nSR-03.02.01.a.01 As part of initial training for new users and {{ insert: param, A.03.02.01.ODP.01 }} thereafter,\\nSR-03.02.01.a.02 When required by system changes or following {{ insert: param, A.03.02.01.ODP.02 }}, and\\nSR-03.02.01.a.03 On recognizing and reporting indicators of insider threat, social engineering, and social mining.\\nSR-03.02.01.b Update security literacy training content {{ insert: param, A.03.02.01.ODP.03 }} and following {{ insert: param, A.03.02.01.ODP.04 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.02.01.a.01.01",
+              "prose": "security literacy training is provided to system users as part of initial training for new users.",
+              "label": "assessment-objective_DS-A.03.02.01.a.01.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.02.01.a.01.02",
+              "prose": "security literacy training is provided to system users {{ insert: param, A.03.02.01.ODP.01 }} after initial training.",
+              "label": "assessment-objective_DS-A.03.02.01.a.01.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.02.01.a.02",
+              "prose": "security literacy training is provided to system users when required by system changes or following {{ insert: param, A.03.02.01.ODP.02 }}.",
+              "label": "assessment-objective_DS-A.03.02.01.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.02.01.a.03.01",
+              "prose": "security literacy training is provided to system users on recognizing indicators of insider threat.",
+              "label": "assessment-objective_DS-A.03.02.01.a.03.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.02.01.a.03.02",
+              "prose": "security literacy training is provided to system users on reporting indicators of insider threat.",
+              "label": "assessment-objective_DS-A.03.02.01.a.03.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.02.01.a.03.03",
+              "prose": "security literacy training is provided to system users on recognizing indicators of social engineering.",
+              "label": "assessment-objective_DS-A.03.02.01.a.03.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.02.01.a.03.04",
+              "prose": "security literacy training is provided to system users on reporting indicators of social engineering.",
+              "label": "assessment-objective_DS-A.03.02.01.a.03.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.02.01.a.03.05",
+              "prose": "security literacy training is provided to system users on recognizing indicators of social mining.",
+              "label": "assessment-objective_DS-A.03.02.01.a.03.05"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.02.01.a.03.06",
+              "prose": "security literacy training is provided to system users on reporting indicators of social mining.",
+              "label": "assessment-objective_DS-A.03.02.01.a.03.06"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.02.01.b.01",
+              "prose": "security literacy training content is updated {{ insert: param, A.03.02.01.ODP.03 }}.",
+              "label": "assessment-objective_DS-A.03.02.01.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.02.01.b.02",
+              "prose": "security literacy training content is updated following {{ insert: param, A.03.02.01.ODP.04 }}.",
+              "label": "assessment-objective_DS-A.03.02.01.b.02"
+            }
+          ]
+        },
+        {
+          "id": "03.02.02",
+          "title": "Role-Based Training",
+          "label": "Role-Based Training (03.02.02)",
+          "statement": "\\nSR-03.02.02.a Provide role-based security training to organizational personnel:\\nSR-03.02.02.a.01 Before authorizing access to the system or CUI, before performing assigned duties, and {{ insert: param, A.03.02.02.ODP.01 }} thereafter\\nSR-03.02.02.a.02 When required by system changes or following {{ insert: param, A.03.02.02.ODP.02 }}.\\nSR-03.02.02.b Update role-based training content {{ insert: param, A.03.02.02.ODP.03 }} and following {{ insert: param, A.03.02.02.ODP.04 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.02.02.a.01.01",
+              "prose": "role-based security training is provided to organizational personnel before authorizing access to the system or CUI.",
+              "label": "assessment-objective_DS-A.03.02.02.a.01.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.02.02.a.01.02",
+              "prose": "role-based security training is provided to organizational personnel before performing assigned duties.",
+              "label": "assessment-objective_DS-A.03.02.02.a.01.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.02.02.a.01.03",
+              "prose": "role-based security training is provided to organizational personnel {{ insert: param, A.03.02.02.ODP.01 }} after initial training.",
+              "label": "assessment-objective_DS-A.03.02.02.a.01.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.02.02.a.02",
+              "prose": "role-based security training is provided to organizational personnel when required by system changes or following {{ insert: param, A.03.02.02.ODP.02 }}.",
+              "label": "assessment-objective_DS-A.03.02.02.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.02.02.b.01",
+              "prose": "role-based security training content is updated {{ insert: param, A.03.02.02.ODP.03 }}.",
+              "label": "assessment-objective_DS-A.03.02.02.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.02.02.b.02",
+              "prose": "role-based security training content is updated following {{ insert: param, A.03.02.02.ODP.04 }}.",
+              "label": "assessment-objective_DS-A.03.02.02.b.02"
+            }
+          ]
+        },
+        {
+          "id": "03.02.03",
+          "title": "03.02.03",
+          "label": "03.02.03",
+          "statement": "",
+          "objectives": []
+        }
+      ]
+    },
+    {
+      "id": "03.03",
+      "title": "Audit and Accountability",
+      "label": "Audit and Accountability (03.03)",
+      "controls": [
+        {
+          "id": "03.03.01",
+          "title": "Event Logging",
+          "label": "Event Logging (03.03.01)",
+          "statement": "\\nSR-03.03.01.a Specify the following event types selected for logging within the system: {{ insert: param, A.03.03.01.ODP.01 }}.\\nSR-03.03.01.b Review and update the event types selected for logging {{ insert: param, A.03.03.01.ODP.02 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.03.01.a",
+              "prose": "the following event types are specified for logging within the system: {{ insert: param, A.03.03.01.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.03.01.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.01.b.01",
+              "prose": "the event types selected for logging are reviewed {{ insert: param, A.03.03.01.ODP.02 }}.",
+              "label": "assessment-objective_DS-A.03.03.01.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.01.b.02",
+              "prose": "the event types selected for logging are updated {{ insert: param, A.03.03.01.ODP.02 }}.",
+              "label": "assessment-objective_DS-A.03.03.01.b.02"
+            }
+          ]
+        },
+        {
+          "id": "03.03.02",
+          "title": "Audit Record Content",
+          "label": "Audit Record Content (03.03.02)",
+          "statement": "\\nSR-03.03.02.a Include the following content in audit records:\\nSR-03.03.02.a.01 What type of event occurred\\nSR-03.03.02.a.02 When the event occurred\\nSR-03.03.02.a.03 Where the event occurred\\nSR-03.03.02.a.04 Source of the event\\nSR-03.03.02.a.05 Outcome of the event\\nSR-03.03.02.a.06 Identity of the individuals, subjects, objects, or entities associated with the event\\nSR-03.03.02.b Provide additional information for audit records as needed.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.03.02.a.01",
+              "prose": "audit records contain information that establishes what type of event occurred.",
+              "label": "assessment-objective_DS-A.03.03.02.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.02.a.02",
+              "prose": "audit records contain information that establishes when the event occurred.",
+              "label": "assessment-objective_DS-A.03.03.02.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.02.a.03",
+              "prose": "audit records contain information that establishes where the event occurred.",
+              "label": "assessment-objective_DS-A.03.03.02.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.02.a.04",
+              "prose": "audit records contain information that establishes the source of the event.",
+              "label": "assessment-objective_DS-A.03.03.02.a.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.02.a.05",
+              "prose": "audit records contain information that establishes the outcome of the event.",
+              "label": "assessment-objective_DS-A.03.03.02.a.05"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.02.a.06",
+              "prose": "audit records contain information that establishes the identity of the individuals, subjects, objects, or entities associated with the event.",
+              "label": "assessment-objective_DS-A.03.03.02.a.06"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.02.b",
+              "prose": "additional information for audit records is provided, as needed.",
+              "label": "assessment-objective_DS-A.03.03.02.b"
+            }
+          ]
+        },
+        {
+          "id": "03.03.03",
+          "title": "Audit Record Generation",
+          "label": "Audit Record Generation (03.03.03)",
+          "statement": "\\nSR-03.03.03.a Generate audit records for the selected event types and audit record content specified in 03.03.01 and 03.03.02.\\nSR-03.03.03.b Retain audit records for a time period consistent with the records retention policy.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.03.03.a",
+              "prose": "audit records for the selected event types and audit record content specified in 03.03.01 and 03.03.02 are generated.",
+              "label": "assessment-objective_DS-A.03.03.03.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.03.b",
+              "prose": "audit records are retained for a time period consistent with the records retention policy.",
+              "label": "assessment-objective_DS-A.03.03.03.b"
+            }
+          ]
+        },
+        {
+          "id": "03.03.04",
+          "title": "Response to Audit Logging Process Failures",
+          "label": "Response to Audit Logging Process Failures (03.03.04)",
+          "statement": "\\nSR-03.03.04.a Alert organizational personnel or roles within {{ insert: param, A.03.03.04.ODP.01 }} in the event of an audit logging process failure.\\nSR-03.03.04.b Take the following additional actions: {{ insert: param, A.03.03.04.ODP.02 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.03.04.a",
+              "prose": "organizational personnel or roles are alerted in the event of an audit logging process failure within {{ insert: param, A.03.03.04.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.03.04.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.04.b",
+              "prose": "the following additional actions are taken: {{ insert: param, A.03.03.04.ODP.02 }}.",
+              "label": "assessment-objective_DS-A.03.03.04.b"
+            }
+          ]
+        },
+        {
+          "id": "03.03.05",
+          "title": "Audit Record Review, Analysis, and Reporting",
+          "label": "Audit Record Review, Analysis, and Reporting (03.03.05)",
+          "statement": "\\nSR-03.03.05.a Review and analyze system audit records {{ insert: param, A.03.03.05.ODP.01 }} for indications and the potential impact of inappropriate or unusual activity.\\nSR-03.03.05.b Report findings to organizational personnel or roles.\\nSR-03.03.05.c Analyze and correlate audit records across different repositories to gain organization-wide situational awareness.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.03.05.a",
+              "prose": "system audit records are reviewed and analyzed {{ insert: param, A.03.03.05.ODP.01 }} for indications and the potential impact of inappropriate or unusual activity.",
+              "label": "assessment-objective_DS-A.03.03.05.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.05.b",
+              "prose": "findings are reported to organizational personnel or roles.",
+              "label": "assessment-objective_DS-A.03.03.05.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.05.c.01",
+              "prose": "audit records across different repositories are analyzed to gain organization-wide situational awareness.",
+              "label": "assessment-objective_DS-A.03.03.05.c.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.05.c.02",
+              "prose": "audit records across different repositories are correlated to gain organization-wide situational awareness.",
+              "label": "assessment-objective_DS-A.03.03.05.c.02"
+            }
+          ]
+        },
+        {
+          "id": "03.03.06",
+          "title": "Audit Record Reduction and Report Generation",
+          "label": "Audit Record Reduction and Report Generation (03.03.06)",
+          "statement": "\\nSR-03.03.06.a Implement an audit record reduction and report generation capability that supports audit record review, analysis, reporting requirements, and after-the-fact investigations of incidents.\\nSR-03.03.06.b Preserve the original content and time ordering of audit records.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.03.06.a.01",
+              "prose": "an audit record reduction and report generation capability that supports audit record review is implemented.",
+              "label": "assessment-objective_DS-A.03.03.06.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.06.a.02",
+              "prose": "an audit record reduction and report generation capability that supports audit record analysis is implemented.",
+              "label": "assessment-objective_DS-A.03.03.06.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.06.a.03",
+              "prose": "an audit record reduction and report generation capability that supports audit record reporting requirements is implemented.",
+              "label": "assessment-objective_DS-A.03.03.06.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.06.a.04",
+              "prose": "an audit record reduction and report generation capability that supports after-the-fact investigations of incidents is implemented.",
+              "label": "assessment-objective_DS-A.03.03.06.a.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.06.b.01",
+              "prose": "the original content of audit records is preserved.",
+              "label": "assessment-objective_DS-A.03.03.06.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.06.b.02",
+              "prose": "the original time ordering of audit records is preserved.",
+              "label": "assessment-objective_DS-A.03.03.06.b.02"
+            }
+          ]
+        },
+        {
+          "id": "03.03.07",
+          "title": "Time Stamps",
+          "label": "Time Stamps (03.03.07)",
+          "statement": "\\nSR-03.03.07.a Use internal system clocks to generate time stamps for audit records.\\nSR-03.03.07.b Record time stamps for audit records that meet {{ insert: param, A.03.03.07.ODP.01 }} and that use Coordinated Universal Time (UTC), have a fixed local time offset from UTC, or include the local time offset as part of the time stamp.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.03.07.a",
+              "prose": "internal system clocks are used to generate time stamps for audit records.",
+              "label": "assessment-objective_DS-A.03.03.07.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.07.b.02",
+              "prose": "time stamps are recorded for audit records that use Coordinated Universal Time (UTC), have a fixed local time offset from UTC, or include the local time offset as part of the time stamp.",
+              "label": "assessment-objective_DS-A.03.03.07.b.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.07.b.01",
+              "prose": "time stamps are recorded for audit records that meet {{ insert: param, A.03.03.07.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.03.07.b.01"
+            }
+          ]
+        },
+        {
+          "id": "03.03.08",
+          "title": "Protection of Audit Information",
+          "label": "Protection of Audit Information (03.03.08)",
+          "statement": "\\nSR-03.03.08.a Protect audit information and audit logging tools from unauthorized access, modification, and deletion.\\nSR-03.03.08.b Authorize access to management of audit logging functionality to only a subset of privileged users or roles.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.03.08.b",
+              "prose": "access to management of audit logging functionality is authorized to only a subset of privileged users or roles.",
+              "label": "assessment-objective_DS-A.03.03.08.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.08.a.01",
+              "prose": "audit information is protected from unauthorized access, modification, and deletion.",
+              "label": "assessment-objective_DS-A.03.03.08.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.03.08.a.02",
+              "prose": "audit logging tools are protected from unauthorized access, modification, and deletion.",
+              "label": "assessment-objective_DS-A.03.03.08.a.02"
+            }
+          ]
+        },
+        {
+          "id": "03.03.09",
+          "title": "03.03.09",
+          "label": "03.03.09",
+          "statement": "",
+          "objectives": []
+        }
+      ]
+    },
+    {
+      "id": "03.04",
+      "title": "Configuration Management",
+      "label": "Configuration Management (03.04)",
+      "controls": [
+        {
+          "id": "03.04.01",
+          "title": "Baseline Configuration",
+          "label": "Baseline Configuration (03.04.01)",
+          "statement": "\\nSR-03.04.01.a Develop and maintain under configuration control, a current baseline configuration of the system.\\nSR-03.04.01.b Review and update the baseline configuration of the system {{ insert: param, A.03.04.01.ODP.01 }} and when system components are installed or modified.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.04.01.a.01",
+              "prose": "a current baseline configuration of the system is developed.",
+              "label": "assessment-objective_DS-A.03.04.01.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.01.a.02",
+              "prose": "a current baseline configuration of the system is maintained under configuration control.",
+              "label": "assessment-objective_DS-A.03.04.01.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.01.b.02",
+              "prose": "the baseline configuration of the system is updated {{ insert: param, A.03.04.01.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.04.01.b.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.01.b.03",
+              "prose": "the baseline configuration of the system is reviewed when system components are installed or modified.",
+              "label": "assessment-objective_DS-A.03.04.01.b.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.01.b.04",
+              "prose": "the baseline configuration of the system is updated when system components are installed or modified.",
+              "label": "assessment-objective_DS-A.03.04.01.b.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.01.b.01",
+              "prose": "the baseline configuration of the system is reviewed {{ insert: param, A.03.04.01.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.04.01.b.01"
+            }
+          ]
+        },
+        {
+          "id": "03.04.02",
+          "title": "Configuration Settings",
+          "label": "Configuration Settings (03.04.02)",
+          "statement": "\\nSR-03.04.02.a Establish, document, and implement the following configuration settings for the system that reflect the most restrictive mode consistent with operational requirements: {{ insert: param, A.03.04.02.ODP.01 }} .\\nSR-03.04.02.b Identify, document, and approve any deviations from established configuration settings.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.04.02.a.01",
+              "prose": "the following configuration settings for the system that reflect the most restrictive mode consistent with operational requirements are established and documented: {{ insert: param, A.03.04.02.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.04.02.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.02.b.01",
+              "prose": "any deviations from established configuration settings are identified and documented.",
+              "label": "assessment-objective_DS-A.03.04.02.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.02.b.02",
+              "prose": "any deviations from established configuration settings are approved.",
+              "label": "assessment-objective_DS-A.03.04.02.b.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.02.a.02",
+              "prose": "the following configuration settings for the system are implemented: {{ insert: param, A.03.04.02.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.04.02.a.02"
+            }
+          ]
+        },
+        {
+          "id": "03.04.03",
+          "title": "Configuration Change Control",
+          "label": "Configuration Change Control (03.04.03)",
+          "statement": "\\nSR-03.04.03.a Define the types of changes to the system that are configuration-controlled.\\nSR-03.04.03.b Review proposed configuration-controlled changes to the system, and approve or disapprove such changes with explicit consideration for security impacts.\\nSR-03.04.03.c Implement and document approved configuration-controlled changes to the system.\\nSR-03.04.03.d Monitor and review activities associated with configuration-controlled changes to the system.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.04.03.a",
+              "prose": "the types of changes to the system that are configuration-controlled are defined.",
+              "label": "assessment-objective_DS-A.03.04.03.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.03.b.01",
+              "prose": "proposed configuration-controlled changes to the system are reviewed with explicit consideration for security impacts.",
+              "label": "assessment-objective_DS-A.03.04.03.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.03.b.02",
+              "prose": "proposed configuration-controlled changes to the system are approved or disapproved with explicit consideration for security impacts.",
+              "label": "assessment-objective_DS-A.03.04.03.b.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.03.d.01",
+              "prose": "activities associated with configuration-controlled changes to the system are monitored.",
+              "label": "assessment-objective_DS-A.03.04.03.d.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.03.d.02",
+              "prose": "activities associated with configuration-controlled changes to the system are reviewed.",
+              "label": "assessment-objective_DS-A.03.04.03.d.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.03.c.01",
+              "prose": "approved configuration-controlled changes to the system are implemented.",
+              "label": "assessment-objective_DS-A.03.04.03.c.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.03.c.02",
+              "prose": "approved configuration-controlled changes to the system are documented.",
+              "label": "assessment-objective_DS-A.03.04.03.c.02"
+            }
+          ]
+        },
+        {
+          "id": "03.04.04",
+          "title": "Impact Analyses",
+          "label": "Impact Analyses (03.04.04)",
+          "statement": "\\nSR-03.04.04.a Analyze changes to the system to determine potential security impacts prior to change implementation.\\nSR-03.04.04.b Verify that the security requirements for the system continue to be satisfied after the system changes have been implemented.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.04.04.b",
+              "prose": "the security requirements for the system continue to be satisfied after the system changes have been implemented.",
+              "label": "assessment-objective_DS-A.03.04.04.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.04.a",
+              "prose": "changes to the system are analyzed to determine potential security impacts prior to change implementation.",
+              "label": "assessment-objective_DS-A.03.04.04.a"
+            }
+          ]
+        },
+        {
+          "id": "03.04.05",
+          "title": "Access Restrictions for Change",
+          "label": "Access Restrictions for Change (03.04.05)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.04.05.01",
+              "prose": "physical access restrictions associated with changes to the system are defined and documented.",
+              "label": "assessment-objective_DS-A.03.04.05.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.05.02",
+              "prose": "physical access restrictions associated with changes to the system are approved.",
+              "label": "assessment-objective_DS-A.03.04.05.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.05.03",
+              "prose": "physical access restrictions associated with changes to the system are enforced.",
+              "label": "assessment-objective_DS-A.03.04.05.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.05.04",
+              "prose": "logical access restrictions associated with changes to the system are defined and documented.",
+              "label": "assessment-objective_DS-A.03.04.05.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.05.05",
+              "prose": "logical access restrictions associated with changes to the system are approved.",
+              "label": "assessment-objective_DS-A.03.04.05.05"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.05.06",
+              "prose": "logical access restrictions associated with changes to the system are enforced.",
+              "label": "assessment-objective_DS-A.03.04.05.06"
+            }
+          ]
+        },
+        {
+          "id": "03.04.06",
+          "title": "Least Functionality",
+          "label": "Least Functionality (03.04.06)",
+          "statement": "\\nSR-03.04.06.a Configure the system to provide only mission-essential capabilities.\\nSR-03.04.06.b Prohibit or restrict use of the following functions, ports, protocols, connections, and services: {{ insert: param, A.03.04.06.ODP.01 }} .\\nSR-03.04.06.c Review the system {{ insert: param, A.03.04.06.ODP.06 }} to identify unnecessary or nonsecure functions, ports, protocols, connections, and services.\\nSR-03.04.06.d Disable or remove functions, ports, protocols, connections, and services that are unnecessary or nonsecure.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.04.06.b.01",
+              "prose": "the use of the following functions is prohibited or restricted: {{ insert: param, A.03.04.06.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.04.06.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.06.b.02",
+              "prose": "the use of the following ports is prohibited or restricted: {{ insert: param, A.03.04.06.ODP.02 }}.",
+              "label": "assessment-objective_DS-A.03.04.06.b.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.06.b.03",
+              "prose": "the use of the following protocols is prohibited or restricted: {{ insert: param, A.03.04.06.ODP.03 }}.",
+              "label": "assessment-objective_DS-A.03.04.06.b.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.06.b.04",
+              "prose": "the use of the following connections is prohibited or restricted: {{ insert: param, A.03.04.06.ODP.04 }}.",
+              "label": "assessment-objective_DS-A.03.04.06.b.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.06.b.05",
+              "prose": "the use of the following services is prohibited or restricted: {{ insert: param, A.03.04.06.ODP.05 }}.",
+              "label": "assessment-objective_DS-A.03.04.06.b.05"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.06.c",
+              "prose": "the system is reviewed {{ insert: param, A.03.04.06.ODP.06 }} to identify unnecessary or nonsecure functions, ports, protocols, connections, and services.",
+              "label": "assessment-objective_DS-A.03.04.06.c"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.06.d",
+              "prose": "unnecessary or nonsecure functions, ports, protocols, connections, and services are disabled or removed.",
+              "label": "assessment-objective_DS-A.03.04.06.d"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.06.a",
+              "prose": "the system is configured to provide only mission-essential capabilities.",
+              "label": "assessment-objective_DS-A.03.04.06.a"
+            }
+          ]
+        },
+        {
+          "id": "03.04.07",
+          "title": "03.04.07",
+          "label": "03.04.07",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.04.08",
+          "title": "Authorized Software – Allow by Exception",
+          "label": "Authorized Software – Allow by Exception (03.04.08)",
+          "statement": "\\nSR-03.04.08.a Identify software programs authorized to execute on the system.\\nSR-03.04.08.b Implement a deny-all, allow-by-exception policy for the execution of authorized software programs on the system.\\nSR-03.04.08.c Review and update the list of authorized software programs {{ insert: param, A.03.04.08.ODP.01 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.04.08.a",
+              "prose": "software programs authorized to execute on the system are identified.",
+              "label": "assessment-objective_DS-A.03.04.08.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.08.b",
+              "prose": "a deny-all, allow-by-exception policy for the execution of authorized software programs on the system is implemented.",
+              "label": "assessment-objective_DS-A.03.04.08.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.08.c",
+              "prose": "the list of authorized software programs is reviewed and updated {{ insert: param, A.03.04.08.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.04.08.c"
+            }
+          ]
+        },
+        {
+          "id": "03.04.09",
+          "title": "03.04.09",
+          "label": "03.04.09",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.04.10",
+          "title": "System Component Inventory",
+          "label": "System Component Inventory (03.04.10)",
+          "statement": "\\nSR-03.04.10.a Develop and document an inventory of system components.\\nSR-03.04.10.b Review and update the system component inventory {{ insert: param, A.03.04.10.ODP.01 }}.\\nSR-03.04.10.c Update the system component inventory as part of installations, removals, and system updates.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.04.10.a",
+              "prose": "an inventory of system components is developed and documented.",
+              "label": "assessment-objective_DS-A.03.04.10.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.10.b.01",
+              "prose": "the system component inventory is reviewed {{ insert: param, A.03.04.10.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.04.10.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.10.b.02",
+              "prose": "the system component inventory is updated {{ insert: param, A.03.04.10.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.04.10.b.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.10.c.01",
+              "prose": "the system component inventory is updated as part of component installations.",
+              "label": "assessment-objective_DS-A.03.04.10.c.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.10.c.02",
+              "prose": "the system component inventory is updated as part of component removals.",
+              "label": "assessment-objective_DS-A.03.04.10.c.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.10.c.03",
+              "prose": "the system component inventory is updated as part of system updates.",
+              "label": "assessment-objective_DS-A.03.04.10.c.03"
+            }
+          ]
+        },
+        {
+          "id": "03.04.11",
+          "title": "Information Location",
+          "label": "Information Location (03.04.11)",
+          "statement": "\\nSR-03.04.11.a Identify and document the location of CUI and the system components on which the information is processed and stored.\\nSR-03.04.11.b Document changes to the system or system component location where CUI is processed and stored.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.04.11.a.01",
+              "prose": "the location of CUI is identified and documented.",
+              "label": "assessment-objective_DS-A.03.04.11.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.11.a.02",
+              "prose": "the system components on which CUI is processed are identified and documented.",
+              "label": "assessment-objective_DS-A.03.04.11.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.11.a.03",
+              "prose": "the system components on which CUI is stored are identified and documented.",
+              "label": "assessment-objective_DS-A.03.04.11.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.11.b.01",
+              "prose": "changes to the system or system component location where CUI is processed are documented.",
+              "label": "assessment-objective_DS-A.03.04.11.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.11.b.02",
+              "prose": "changes to the system or system component location where CUI is stored are documented.",
+              "label": "assessment-objective_DS-A.03.04.11.b.02"
+            }
+          ]
+        },
+        {
+          "id": "03.04.12",
+          "title": "System and Component Configuration for High-Risk Areas",
+          "label": "System and Component Configuration for High-Risk Areas (03.04.12)",
+          "statement": "\\nSR-03.04.12.a Issue systems or system components with the following configurations to individuals traveling to high-risk locations: {{ insert: param, A.03.04.12.ODP.01 }}.\\nSR-03.04.12.b Apply the following security requirements to the systems or components when the individuals return from travel: {{ insert: param, A.03.04.12.ODP.02 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.04.12.a",
+              "prose": "systems or system components with the following configurations are issued to individuals traveling to high-risk locations: {{ insert: param, A.03.04.12.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.04.12.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.04.12.b",
+              "prose": "the following security requirements are applied to the system or system components when the individuals return from travel: {{ insert: param, A.03.04.12.ODP.02 }}.",
+              "label": "assessment-objective_DS-A.03.04.12.b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.05",
+      "title": "Identification and Authentication",
+      "label": "Identification and Authentication (03.05)",
+      "controls": [
+        {
+          "id": "03.05.01",
+          "title": "User Identification and Authentication",
+          "label": "User Identification and Authentication (03.05.01)",
+          "statement": "\\nSR-03.05.01.a Uniquely identify and authenticate system users, and associate that unique identification with processes acting on behalf of those users.\\nSR-03.05.01.b Re-authenticate users when {{ insert: param, A.03.05.01.ODP.01 }} .",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.05.01.a.01",
+              "prose": "system users are uniquely identified.",
+              "label": "assessment-objective_DS-A.03.05.01.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.01.a.02",
+              "prose": "system users are authenticated.",
+              "label": "assessment-objective_DS-A.03.05.01.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.01.a.03",
+              "prose": "processes acting on behalf of users are associated with uniquely identified and authenticated system users.",
+              "label": "assessment-objective_DS-A.03.05.01.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.01.b",
+              "prose": "users are reauthenticated when {{ insert: param, A.03.05.01.ODP.01 }} .",
+              "label": "assessment-objective_DS-A.03.05.01.b"
+            }
+          ]
+        },
+        {
+          "id": "03.05.02",
+          "title": "Device Identification and Authentication",
+          "label": "Device Identification and Authentication (03.05.02)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.05.02.02",
+              "prose": "{{ insert: param, A.03.05.02.ODP.01 }} are authenticated before establishing a system connection.",
+              "label": "assessment-objective_DS-A.03.05.02.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.02.01",
+              "prose": "{{ insert: param, A.03.05.02.ODP.01 }} are uniquely identified before establishing a system connection.",
+              "label": "assessment-objective_DS-A.03.05.02.01"
+            }
+          ]
+        },
+        {
+          "id": "03.05.03",
+          "title": "Multi-Factor Authentication",
+          "label": "Multi-Factor Authentication (03.05.03)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.05.03.01",
+              "prose": "multi-factor authentication for access to privileged accounts is implemented.",
+              "label": "assessment-objective_DS-A.03.05.03.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.03.02",
+              "prose": "multi-factor authentication for access to non-privileged accounts is implemented.",
+              "label": "assessment-objective_DS-A.03.05.03.02"
+            }
+          ]
+        },
+        {
+          "id": "03.05.04",
+          "title": "Replay-Resistant Authentication",
+          "label": "Replay-Resistant Authentication (03.05.04)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.05.04.01",
+              "prose": "replay-resistant authentication mechanisms for access to privileged accounts are implemented.",
+              "label": "assessment-objective_DS-A.03.05.04.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.04.02",
+              "prose": "replay-resistant authentication mechanisms for access to non-privileged accounts are implemented.",
+              "label": "assessment-objective_DS-A.03.05.04.02"
+            }
+          ]
+        },
+        {
+          "id": "03.05.05",
+          "title": "Identifier Management",
+          "label": "Identifier Management (03.05.05)",
+          "statement": "\\nSR-03.05.05.a Receive authorization from organizational personnel or roles to assign an individual, group, role, service, or device identifier.\\nSR-03.05.05.b Select and assign an identifier that identifies an individual, group, role, service, or device.\\nSR-03.05.05.c Prevent the reuse of identifiers for {{ insert: param, A.03.05.05.ODP.01 }}.\\nSR-03.05.05.d Manage individual identifiers by uniquely identifying each individual as {{ insert: param, A.03.05.05.ODP.02 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.05.05.a",
+              "prose": "authorization is received from organizational personnel or roles to assign an individual, group, role, service, or device identifier.",
+              "label": "assessment-objective_DS-A.03.05.05.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.05.b.01",
+              "prose": "an identifier that identifies an individual, group, role, service, or device is selected.",
+              "label": "assessment-objective_DS-A.03.05.05.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.05.b.02",
+              "prose": "an identifier that identifies an individual, group, role, service, or device is assigned.",
+              "label": "assessment-objective_DS-A.03.05.05.b.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.05.c",
+              "prose": "the reuse of identifiers for {{ insert: param, A.03.05.05.ODP.01 }} is prevented.",
+              "label": "assessment-objective_DS-A.03.05.05.c"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.05.d",
+              "prose": "individual identifiers are managed by uniquely identifying each individual as {{ insert: param, A.03.05.05.ODP.02 }}.",
+              "label": "assessment-objective_DS-A.03.05.05.d"
+            }
+          ]
+        },
+        {
+          "id": "03.05.06",
+          "title": "03.05.06",
+          "label": "03.05.06",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.05.07",
+          "title": "Password Management",
+          "label": "Password Management (03.05.07)",
+          "statement": "\\nSR-03.05.07.a Maintain a list of commonly-used, expected, or compromised passwords, and update the list {{ insert: param, A.03.05.07.ODP.01 }} and when organizational passwords are suspected to have been compromised.\\nSR-03.05.07.b Verify that passwords are not found on the list of commonly used, expected, or compromised passwords when users create or update passwords.\\nSR-03.05.07.c Transmit passwords only over cryptographically protected channels.\\nSR-03.05.07.d Store passwords in a cryptographically protected form.\\nSR-03.05.07.e Select a new password upon first use after account recovery.\\nSR-03.05.07.f Enforce the following composition and complexity rules for passwords: {{ insert: param, A.03.05.07.ODP.02 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.05.07.a.01",
+              "prose": "a list of commonly used, expected, or compromised passwords is maintained.",
+              "label": "assessment-objective_DS-A.03.05.07.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.07.a.02",
+              "prose": "a list of commonly used, expected, or compromised passwords is updated {{ insert: param, A.03.05.07.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.05.07.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.07.a.03",
+              "prose": "a list of commonly used, expected, or compromised passwords is updated when organizational passwords are suspected to have been compromised.",
+              "label": "assessment-objective_DS-A.03.05.07.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.07.b",
+              "prose": "passwords are verified not to be found on the list of commonly used, expected, or compromised passwords when they are created or updated by users.",
+              "label": "assessment-objective_DS-A.03.05.07.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.07.c",
+              "prose": "passwords are only transmitted over cryptographically protected channels.",
+              "label": "assessment-objective_DS-A.03.05.07.c"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.07.d",
+              "prose": "passwords are stored in a cryptographically protected form.",
+              "label": "assessment-objective_DS-A.03.05.07.d"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.07.e",
+              "prose": "a new password is selected upon first use after account recovery.",
+              "label": "assessment-objective_DS-A.03.05.07.e"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.07.f",
+              "prose": "the following composition and complexity rules for passwords are enforced: {{ insert: param, A.03.05.07.ODP.02 }}.",
+              "label": "assessment-objective_DS-A.03.05.07.f"
+            }
+          ]
+        },
+        {
+          "id": "03.05.08",
+          "title": "03.05.08",
+          "label": "03.05.08",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.05.09",
+          "title": "03.05.09",
+          "label": "03.05.09",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.05.10",
+          "title": "03.05.10",
+          "label": "03.05.10",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.05.11",
+          "title": "Authentication Feedback",
+          "label": "Authentication Feedback (03.05.11)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.05.11",
+              "prose": "feedback of authentication information during the authentication process is obscured.",
+              "label": "assessment-objective_DS-A.03.05.11"
+            }
+          ]
+        },
+        {
+          "id": "03.05.12",
+          "title": "Authenticator Management",
+          "label": "Authenticator Management (03.05.12)",
+          "statement": "\\nSR-03.05.12.a Verify the identity of the individual, group, role, service, or device receiving the authenticator as part of the initial authenticator distribution.\\nSR-03.05.12.b Establish initial authenticator content for any authenticators issued by the organization.\\nSR-03.05.12.c Establish and implement administrative procedures for initial authenticator distribution; for lost, compromised, or damaged authenticators; and for revoking authenticators.\\nSR-03.05.12.d Change default authenticators at first use.\\nSR-03.05.12.e Change or refresh authenticators {{ insert: param, A.03.05.12.ODP.01 }} or when the following events occur: {{ insert: param, A.03.05.12.ODP.02 }}.\\nSR-03.05.12.f Protect authenticator content from unauthorized disclosure and modification.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.05.12.a",
+              "prose": "the identity of the individual, group, role, service, or device receiving the authenticator as part of the initial authenticator distribution is verified.",
+              "label": "assessment-objective_DS-A.03.05.12.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.12.b",
+              "prose": "initial authenticator content for any authenticators issued by the organization is established.",
+              "label": "assessment-objective_DS-A.03.05.12.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.12.c.01",
+              "prose": "administrative procedures for initial authenticator distribution are established.",
+              "label": "assessment-objective_DS-A.03.05.12.c.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.12.c.02",
+              "prose": "administrative procedures for lost, compromised, or damaged authenticators are established.",
+              "label": "assessment-objective_DS-A.03.05.12.c.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.12.c.03",
+              "prose": "administrative procedures for revoking authenticators are established.",
+              "label": "assessment-objective_DS-A.03.05.12.c.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.12.c.04",
+              "prose": "administrative procedures for initial authenticator distribution are implemented.",
+              "label": "assessment-objective_DS-A.03.05.12.c.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.12.c.05",
+              "prose": "administrative procedures for lost, compromised, or damaged authenticators are implemented.",
+              "label": "assessment-objective_DS-A.03.05.12.c.05"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.12.c.06",
+              "prose": "administrative procedures for revoking authenticators are implemented.",
+              "label": "assessment-objective_DS-A.03.05.12.c.06"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.12.d",
+              "prose": "default authenticators are changed at first use.",
+              "label": "assessment-objective_DS-A.03.05.12.d"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.12.e",
+              "prose": "authenticators are changed or refreshed {{ insert: param, A.03.05.12.ODP.01 }} or when the following events occur: {{ insert: param, A.03.05.12.ODP.02 }}.",
+              "label": "assessment-objective_DS-A.03.05.12.e"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.12.f.01",
+              "prose": "authenticator content is protected from unauthorized disclosure.",
+              "label": "assessment-objective_DS-A.03.05.12.f.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.05.12.f.02",
+              "prose": "authenticator content is protected from unauthorized modification.",
+              "label": "assessment-objective_DS-A.03.05.12.f.02"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.06",
+      "title": "Incident Response",
+      "label": "Incident Response (03.06)",
+      "controls": [
+        {
+          "id": "03.06.01",
+          "title": "Incident Handling",
+          "label": "Incident Handling (03.06.01)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.06.01.01",
+              "prose": "an incident-handling capability that is consistent with the incident response plan is implemented.",
+              "label": "assessment-objective_DS-A.03.06.01.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.01.02",
+              "prose": "the incident handling capability includes preparation.",
+              "label": "assessment-objective_DS-A.03.06.01.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.01.03",
+              "prose": "the incident handling capability includes detection and analysis.",
+              "label": "assessment-objective_DS-A.03.06.01.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.01.04",
+              "prose": "the incident handling capability includes containment.",
+              "label": "assessment-objective_DS-A.03.06.01.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.01.05",
+              "prose": "the incident handling capability includes eradication.",
+              "label": "assessment-objective_DS-A.03.06.01.05"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.01.06",
+              "prose": "the incident handling capability includes recovery.",
+              "label": "assessment-objective_DS-A.03.06.01.06"
+            }
+          ]
+        },
+        {
+          "id": "03.06.02",
+          "title": "Incident Monitoring, Reporting, and Response Assistance",
+          "label": "Incident Monitoring, Reporting, and Response Assistance (03.06.02)",
+          "statement": "\\nSR-03.06.02.a Track and document system security incidents.\\nSR-03.06.02.b Report suspected incidents to the organizational incident response capability within {{ insert: param, A.03.06.02.ODP.01 }}.\\nSR-03.06.02.c Report incident information to {{ insert: param, A.03.06.02.ODP.02 }}.\\nSR-03.06.02.d Provide an incident response support resource that offers advice and assistance to system users on handling and reporting incidents.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.06.02.a.01",
+              "prose": "system security incidents are tracked.",
+              "label": "assessment-objective_DS-A.03.06.02.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.02.a.02",
+              "prose": "system security incidents are documented.",
+              "label": "assessment-objective_DS-A.03.06.02.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.02.b",
+              "prose": "suspected incidents are reported to the organizational incident response capability within {{ insert: param, A.03.06.02.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.06.02.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.02.c",
+              "prose": "incident information is reported to {{ insert: param, A.03.06.02.ODP.02 }}.",
+              "label": "assessment-objective_DS-A.03.06.02.c"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.02.d",
+              "prose": "an incident response support resource that offers advice and assistance to system users on handling and reporting incidents is provided.",
+              "label": "assessment-objective_DS-A.03.06.02.d"
+            }
+          ]
+        },
+        {
+          "id": "03.06.03",
+          "title": "Incident Response Testing",
+          "label": "Incident Response Testing (03.06.03)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.06.03",
+              "prose": "the effectiveness of the incident response capability is tested {{ insert: param, A.03.06.03.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.06.03"
+            }
+          ]
+        },
+        {
+          "id": "03.06.04",
+          "title": "Incident Response Training",
+          "label": "Incident Response Training (03.06.04)",
+          "statement": "\\nSR-03.06.04.a Provide incident response training to system users consistent with assigned roles and responsibilities:\\nSR-03.06.04.a.01 Within {{ insert: param, A.03.06.04.ODP.01 }} of assuming an incident response role or responsibility or acquiring system access,\\nSR-03.06.04.a.02 When required by system changes, and\\nSR-03.06.04.a.03 {{ insert: param, A.03.06.04.ODP.02 }} thereafter.\\nSR-03.06.04.b Review and update incident response training content {{ insert: param, A.03.06.04.ODP.03 }} and following {{ insert: param, A.03.06.04.ODP.04 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.06.04.a.01",
+              "prose": "incident response training for system users consistent with assigned roles and responsibilities is provided within {{ insert: param, A.03.06.04.ODP.01 }} of assuming an incident response role or responsibility or acquiring system access.",
+              "label": "assessment-objective_DS-A.03.06.04.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.04.a.02",
+              "prose": "incident response training for system users consistent with assigned roles and responsibilities is provided when required by system changes.",
+              "label": "assessment-objective_DS-A.03.06.04.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.04.a.03",
+              "prose": "incident response training for system users consistent with assigned roles and responsibilities is provided {{ insert: param, A.03.06.04.ODP.02 }} thereafter.",
+              "label": "assessment-objective_DS-A.03.06.04.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.04.b.04",
+              "prose": "incident response training content is updated following {{ insert: param, A.03.06.04.ODP.04 }}.",
+              "label": "assessment-objective_DS-A.03.06.04.b.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.04.b.02",
+              "prose": "incident response training content is updated {{ insert: param, A.03.06.04.ODP.03 }}.",
+              "label": "assessment-objective_DS-A.03.06.04.b.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.04.b.03",
+              "prose": "incident response training content is reviewed following {{ insert: param, A.03.06.04.ODP.04 }}.",
+              "label": "assessment-objective_DS-A.03.06.04.b.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.04.b.01",
+              "prose": "incident response training content is reviewed {{ insert: param, A.03.06.04.ODP.03 }}.",
+              "label": "assessment-objective_DS-A.03.06.04.b.01"
+            }
+          ]
+        },
+        {
+          "id": "03.06.05",
+          "title": "Incident Response Plan",
+          "label": "Incident Response Plan (03.06.05)",
+          "statement": "\\nSR-03.06.05.a Develop an incident response plan that:\\nSR-03.06.05.a.01 Provides the organization with a roadmap for implementing its incident response capability,\\nSR-03.06.05.a.02 Describes the structure and organization of the incident response capability,\\nSR-03.06.05.a.03 Provides a high-level approach for how the incident response capability fits into the overall organization,\\nSR-03.06.05.a.04 Defines reportable incidents,\\nSR-03.06.05.a.05 Addresses the sharing of incident information, and\\nSR-03.06.05.a.06 Designates responsibilities to organizational entities, personnel, or roles.\\nSR-03.06.05.b Distribute copies of the incident response plan to designated incident response personnel (identified by name and/or by role) and organizational elements.\\nSR-03.06.05.c Update the incident response plan to address system and organizational changes or problems encountered during plan implementation, execution, or testing.\\nSR-03.06.05.d Protect the incident response plan from unauthorized disclosure.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.06.05.a.01",
+              "prose": "an incident response plan is developed that provides the organization with a roadmap for implementing its incident response capability.",
+              "label": "assessment-objective_DS-A.03.06.05.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.05.a.02",
+              "prose": "an incident response plan is developed that describes the structure and organization of the incident response capability.",
+              "label": "assessment-objective_DS-A.03.06.05.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.05.a.03",
+              "prose": "an incident response plan is developed that provides a high-level approach for how the incident response capability fits into the overall organization.",
+              "label": "assessment-objective_DS-A.03.06.05.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.05.a.04",
+              "prose": "an incident response plan is developed that defines reportable incidents.",
+              "label": "assessment-objective_DS-A.03.06.05.a.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.05.a.05",
+              "prose": "an incident response plan is developed that addresses the sharing of incident information.",
+              "label": "assessment-objective_DS-A.03.06.05.a.05"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.05.a.06",
+              "prose": "an incident response plan is developed that designates responsibilities to organizational entities, personnel, or roles.",
+              "label": "assessment-objective_DS-A.03.06.05.a.06"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.05.b.01",
+              "prose": "copies of the incident response plan are distributed to designated incident response personnel (identified by name or by role).",
+              "label": "assessment-objective_DS-A.03.06.05.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.05.b.02",
+              "prose": "copies of the incident response plan are distributed to organizational elements.",
+              "label": "assessment-objective_DS-A.03.06.05.b.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.05.d",
+              "prose": "the incident response plan is protected from unauthorized disclosure.",
+              "label": "assessment-objective_DS-A.03.06.05.d"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.06.05.c",
+              "prose": "the incident response plan is updated to address system and organizational changes or problems encountered during plan implementation, execution, or testing.",
+              "label": "assessment-objective_DS-A.03.06.05.c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.07",
+      "title": "Maintenance",
+      "label": "Maintenance (03.07)",
+      "controls": [
+        {
+          "id": "03.07.01",
+          "title": "03.07.01",
+          "label": "03.07.01",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.07.02",
+          "title": "03.07.02",
+          "label": "03.07.02",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.07.03",
+          "title": "03.07.03",
+          "label": "03.07.03",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.07.04",
+          "title": "Maintenance Tools",
+          "label": "Maintenance Tools (03.07.04)",
+          "statement": "\\nSR-03.07.04.a Approve, control, and monitor the use of system maintenance tools.\\nSR-03.07.04.b Check media with diagnostic and test programs for malicious code before it is used in the system.\\nSR-03.07.04.c Prevent the removal of system maintenance equipment containing CUI by verifying that there is no CUI on the equipment, sanitizing or destroying the equipment, or retaining the equipment within the facility.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.07.04.a.01",
+              "prose": "the use of system maintenance tools is approved.",
+              "label": "assessment-objective_DS-A.03.07.04.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.07.04.a.02",
+              "prose": "the use of system maintenance tools is controlled.",
+              "label": "assessment-objective_DS-A.03.07.04.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.07.04.a.03",
+              "prose": "the use of system maintenance tools is monitored.",
+              "label": "assessment-objective_DS-A.03.07.04.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.07.04.b",
+              "prose": "media with diagnostic and test programs are checked for malicious code before the media are used in the system.",
+              "label": "assessment-objective_DS-A.03.07.04.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.07.04.c",
+              "prose": "the removal of system maintenance equipment containing CUI is prevented by verifying that there is no CUI on the equipment, sanitizing or destroying the equipment, or retaining the equipment within the facility.",
+              "label": "assessment-objective_DS-A.03.07.04.c"
+            }
+          ]
+        },
+        {
+          "id": "03.07.05",
+          "title": "Nonlocal Maintenance",
+          "label": "Nonlocal Maintenance (03.07.05)",
+          "statement": "\\nSR-03.07.05.a Approve and monitor nonlocal maintenance and diagnostic activities.\\nSR-03.07.05.b Implement multi-factor authentication and replay resistance in the establishment of nonlocal maintenance and diagnostic sessions.\\nSR-03.07.05.c Terminate session and network connections when nonlocal maintenance is completed.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.07.05.a.01",
+              "prose": "nonlocal maintenance and diagnostic activities are approved.",
+              "label": "assessment-objective_DS-A.03.07.05.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.07.05.a.02",
+              "prose": "nonlocal maintenance and diagnostic activities are monitored.",
+              "label": "assessment-objective_DS-A.03.07.05.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.07.05.c.01",
+              "prose": "session connections are terminated when nonlocal maintenance is completed.",
+              "label": "assessment-objective_DS-A.03.07.05.c.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.07.05.c.02",
+              "prose": "network connections are terminated when nonlocal maintenance is completed.",
+              "label": "assessment-objective_DS-A.03.07.05.c.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.07.05.b.01",
+              "prose": "multi-factor authentication is implemented in the establishment of nonlocal maintenance and diagnostic sessions.",
+              "label": "assessment-objective_DS-A.03.07.05.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.07.05.b.02",
+              "prose": "replay resistance is implemented in the establishment of nonlocal maintenance and diagnostic sessions.",
+              "label": "assessment-objective_DS-A.03.07.05.b.02"
+            }
+          ]
+        },
+        {
+          "id": "03.07.06",
+          "title": "Maintenance Personnel",
+          "label": "Maintenance Personnel (03.07.06)",
+          "statement": "\\nSR-03.07.06.a Establish a process for maintenance personnel authorization.\\nSR-03.07.06.b Maintain a list of authorized maintenance organizations or personnel.\\nSR-03.07.06.c Verify that non-escorted personnel who perform maintenance on the system possess the required access authorizations.\\nSR-03.07.06.d Designate organizational personnel with required access authorizations and technical competence to supervise the maintenance activities of personnel who do not possess the required access authorizations.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.07.06.a",
+              "prose": "a process for maintenance personnel authorization is established.",
+              "label": "assessment-objective_DS-A.03.07.06.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.07.06.b",
+              "prose": "a list of authorized maintenance organizations or personnel is maintained.",
+              "label": "assessment-objective_DS-A.03.07.06.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.07.06.d.01",
+              "prose": "organizational personnel with required access authorizations are designated to supervise the maintenance activities of personnel who do not possess the required access authorizations.",
+              "label": "assessment-objective_DS-A.03.07.06.d.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.07.06.d.02",
+              "prose": "organizational personnel with required technical competence are designated to supervise the maintenance activities of personnel who do not possess the required access authorizations.",
+              "label": "assessment-objective_DS-A.03.07.06.d.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.07.06.c",
+              "prose": "non-escorted personnel who perform maintenance on the system possess the required access authorizations.",
+              "label": "assessment-objective_DS-A.03.07.06.c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.08",
+      "title": "Media Protection",
+      "label": "Media Protection (03.08)",
+      "controls": [
+        {
+          "id": "03.08.01",
+          "title": "Media Storage",
+          "label": "Media Storage (03.08.01)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.08.01.01",
+              "prose": "system media that contain CUI are physically controlled.",
+              "label": "assessment-objective_DS-A.03.08.01.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.08.01.02",
+              "prose": "system media that contain CUI are securely stored.",
+              "label": "assessment-objective_DS-A.03.08.01.02"
+            }
+          ]
+        },
+        {
+          "id": "03.08.02",
+          "title": "Media Access",
+          "label": "Media Access (03.08.02)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.08.02",
+              "prose": "access to CUI on system media is restricted to authorized personnel or roles.",
+              "label": "assessment-objective_DS-A.03.08.02"
+            }
+          ]
+        },
+        {
+          "id": "03.08.03",
+          "title": "Media Sanitization",
+          "label": "Media Sanitization (03.08.03)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.08.03",
+              "prose": "system media that contain CUI are sanitized prior to disposal, release out of organizational control, or release for reuse.",
+              "label": "assessment-objective_DS-A.03.08.03"
+            }
+          ]
+        },
+        {
+          "id": "03.08.04",
+          "title": "Media Marking",
+          "label": "Media Marking (03.08.04)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.08.04.01",
+              "prose": "system media that contain CUI are marked to indicate distribution limitations.",
+              "label": "assessment-objective_DS-A.03.08.04.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.08.04.02",
+              "prose": "system media that contain CUI are marked to indicate handling caveats.",
+              "label": "assessment-objective_DS-A.03.08.04.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.08.04.03",
+              "prose": "system media that contain CUI are marked to indicate applicable CUI markings.",
+              "label": "assessment-objective_DS-A.03.08.04.03"
+            }
+          ]
+        },
+        {
+          "id": "03.08.05",
+          "title": "Media Transport",
+          "label": "Media Transport (03.08.05)",
+          "statement": "\\nSR-03.08.05.a Protect and control system media that contain CUI during transport outside of controlled areas.\\nSR-03.08.05.b Maintain accountability of system media that contain CUI during transport outside of controlled areas.\\nSR-03.08.05.c Document activities associated with the transport of system media that contain CUI.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.08.05.a.01",
+              "prose": "system media that contain CUI are protected during transport outside of controlled areas.",
+              "label": "assessment-objective_DS-A.03.08.05.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.08.05.a.02",
+              "prose": "system media that contain CUI are controlled during transport outside of controlled areas.",
+              "label": "assessment-objective_DS-A.03.08.05.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.08.05.c",
+              "prose": "activities associated with the transport of system media that contain CUI are documented.",
+              "label": "assessment-objective_DS-A.03.08.05.c"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.08.05.b",
+              "prose": "accountability for system media that contain CUI is maintained during transport outside of controlled areas.",
+              "label": "assessment-objective_DS-A.03.08.05.b"
+            }
+          ]
+        },
+        {
+          "id": "03.08.06",
+          "title": "03.08.06",
+          "label": "03.08.06",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.08.07",
+          "title": "Media Use",
+          "label": "Media Use (03.08.07)",
+          "statement": "\\nSR-03.08.07.a Restrict or prohibit the use of {{ insert: param, A.03.08.07.ODP.01 }}.\\nSR-03.08.07.b Prohibit the use of removable system media without an identifiable owner.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.08.07.a",
+              "prose": "the use of the following types of system media is restricted or prohibited: {{ insert: param, A.03.08.07.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.08.07.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.08.07.b",
+              "prose": "the use of removable system media without an identifiable owner is prohibited.",
+              "label": "assessment-objective_DS-A.03.08.07.b"
+            }
+          ]
+        },
+        {
+          "id": "03.08.08",
+          "title": "03.08.08",
+          "label": "03.08.08",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.08.09",
+          "title": "System Backup – Cryptographic Protection",
+          "label": "System Backup – Cryptographic Protection (03.08.09)",
+          "statement": "\\nSR-03.08.09.a Protect the confidentiality of backup information.\\nSR-03.08.09.b Implement cryptographic mechanisms to prevent the unauthorized disclosure of CUI at backup storage locations.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.08.09.b",
+              "prose": "cryptographic mechanisms are implemented to prevent the unauthorized disclosure of CUI at backup storage locations.",
+              "label": "assessment-objective_DS-A.03.08.09.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.08.09.a",
+              "prose": "the confidentiality of backup information is protected.",
+              "label": "assessment-objective_DS-A.03.08.09.a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.09",
+      "title": "Personnel Security",
+      "label": "Personnel Security (03.09)",
+      "controls": [
+        {
+          "id": "03.09.01",
+          "title": "Personnel Screening",
+          "label": "Personnel Screening (03.09.01)",
+          "statement": "\\nSR-03.09.01.a Screen individuals prior to authorizing access to the system.\\nSR-03.09.01.b Rescreen individuals in accordance with {{ insert: param, A.03.09.01.ODP.01 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.09.01.a",
+              "prose": "individuals are screened prior to authorizing access to the system.",
+              "label": "assessment-objective_DS-A.03.09.01.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.09.01.b",
+              "prose": "individuals are rescreened in accordance with the following conditions: {{ insert: param, A.03.09.01.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.09.01.b"
+            }
+          ]
+        },
+        {
+          "id": "03.09.02",
+          "title": "Personnel Termination and Transfer",
+          "label": "Personnel Termination and Transfer (03.09.02)",
+          "statement": "\\nSR-03.09.02.a When individual employment is terminated:\\nSR-03.09.02.a.01 Disable system access within {{ insert: param, A.03.09.02.ODP.01 }},\\nSR-03.09.02.a.02 Terminate or revoke authenticators and credentials associated with the individual, and\\nSR-03.09.02.a.03 Retrieve security-related system property.\\nSR-03.09.02.b When individuals are reassigned or transferred to other positions in the organization:\\nSR-03.09.02.b.01 Review and confirm the ongoing operational need for current logical and physical access authorizations to the system and facility, and\\nSR-03.09.02.b.02 Modify access authorization to correspond with any changes in operational need.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.09.02.a.01",
+              "prose": "upon termination of individual employment, system access is disabled within {{ insert: param, A.03.09.02.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.09.02.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.09.02.a.02.01",
+              "prose": "upon termination of individual employment, authenticators associated with the individual are terminated or revoked.",
+              "label": "assessment-objective_DS-A.03.09.02.a.02.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.09.02.a.02.02",
+              "prose": "upon termination of individual employment, credentials associated with the individual are terminated or revoked.",
+              "label": "assessment-objective_DS-A.03.09.02.a.02.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.09.02.a.03",
+              "prose": "upon termination of individual employment, security-related system property is retrieved.",
+              "label": "assessment-objective_DS-A.03.09.02.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.09.02.b.02",
+              "prose": "upon individual reassignment or transfer to other positions in the organization, access authorization is modified to correspond with any changes in operational need.",
+              "label": "assessment-objective_DS-A.03.09.02.b.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.09.02.b.01.01",
+              "prose": "upon individual reassignment or transfer to other positions in the organization, the ongoing operational need for current logical and physical access authorizations to the system and facility is reviewed.",
+              "label": "assessment-objective_DS-A.03.09.02.b.01.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.09.02.b.01.02",
+              "prose": "upon individual reassignment or transfer to other positions in the organization, the ongoing operational need for current logical and physical access authorizations to the system and facility is confirmed.",
+              "label": "assessment-objective_DS-A.03.09.02.b.01.02"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.10",
+      "title": "Physical Protection",
+      "label": "Physical Protection (03.10)",
+      "controls": [
+        {
+          "id": "03.10.01",
+          "title": "Physical Access Authorizations",
+          "label": "Physical Access Authorizations (03.10.01)",
+          "statement": "\\nSR-03.10.01.a Develop, approve, and maintain a list of individuals with authorized access to the facility where the system resides.\\nSR-03.10.01.b Issue authorization credentials for facility access.\\nSR-03.10.01.c Review the facility access list {{ insert: param, A.03.10.01.ODP.01 }}.\\nSR-03.10.01.d Remove individuals from the facility access list when access is no longer required.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.10.01.a.01",
+              "prose": "a list of individuals with authorized access to the facility where the system resides is developed.",
+              "label": "assessment-objective_DS-A.03.10.01.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.10.01.a.02",
+              "prose": "a list of individuals with authorized access to the facility where the system resides is approved.",
+              "label": "assessment-objective_DS-A.03.10.01.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.10.01.a.03",
+              "prose": "a list of individuals with authorized access to the facility where the system resides is maintained.",
+              "label": "assessment-objective_DS-A.03.10.01.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.10.01.c",
+              "prose": "the facility access list is reviewed {{ insert: param, A.03.10.01.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.10.01.c"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.10.01.d",
+              "prose": "individuals from the facility access list are removed when access is no longer required.",
+              "label": "assessment-objective_DS-A.03.10.01.d"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.10.01.b",
+              "prose": "authorization credentials for facility access are issued.",
+              "label": "assessment-objective_DS-A.03.10.01.b"
+            }
+          ]
+        },
+        {
+          "id": "03.10.02",
+          "title": "Monitoring Physical Access",
+          "label": "Monitoring Physical Access (03.10.02)",
+          "statement": "\\nSR-03.10.02.a Monitor physical access to the facility where the system resides to detect and respond to physical security incidents.\\nSR-03.10.02.b Review physical access logs {{ insert: param, A.03.10.02.ODP.01 }} and upon occurrence of {{ insert: param, A.03.10.02.ODP.02 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.10.02.a.01",
+              "prose": "physical access to the facility where the system resides is monitored to detect physical security incidents.",
+              "label": "assessment-objective_DS-A.03.10.02.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.10.02.a.02",
+              "prose": "physical security incidents are responded to.",
+              "label": "assessment-objective_DS-A.03.10.02.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.10.02.b.01",
+              "prose": "physical access logs are reviewed {{ insert: param, A.03.10.02.ODP.01 }} .",
+              "label": "assessment-objective_DS-A.03.10.02.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.10.02.b.02",
+              "prose": "physical access logs are reviewed upon occurrence of {{ insert: param, A.03.10.02.ODP.02 }}.",
+              "label": "assessment-objective_DS-A.03.10.02.b.02"
+            }
+          ]
+        },
+        {
+          "id": "03.10.03",
+          "title": "03.10.03",
+          "label": "03.10.03",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.10.04",
+          "title": "03.10.04",
+          "label": "03.10.04",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.10.05",
+          "title": "03.10.05",
+          "label": "03.10.05",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.10.06",
+          "title": "Alternate Work Site",
+          "label": "Alternate Work Site (03.10.06)",
+          "statement": "\\nSR-03.10.06.a Determine alternate work sites allowed for use by employees.\\nSR-03.10.06.b Employ the following security requirements at alternate work sites: {{ insert: param, A.03.10.06.ODP.01 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.10.06.a",
+              "prose": "alternate work sites allowed for use by employees are determined.",
+              "label": "assessment-objective_DS-A.03.10.06.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.10.06.b",
+              "prose": "the following security requirements are employed at alternate work sites: {{ insert: param, A.03.10.06.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.10.06.b"
+            }
+          ]
+        },
+        {
+          "id": "03.10.07",
+          "title": "Physical Access Control",
+          "label": "Physical Access Control (03.10.07)",
+          "statement": "\\nSR-03.10.07.a Enforce physical access authorizations at entry and exit points to the facility where the system resides by:\\nSR-03.10.07.a.01 Verifying individual physical access authorizations before granting access to the facility and\\nSR-03.10.07.a.02 Controlling ingress and egress with physical access control systems, devices, or guards.\\nSR-03.10.07.b Maintain physical access audit logs for entry or exit points.\\nSR-03.10.07.c Escort visitors, and control visitor activity.\\nSR-03.10.07.d Secure keys, combinations, and other physical access devices.\\nSR-03.10.07.e Control physical access to output devices to prevent unauthorized individuals from obtaining access to CUI.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.10.07.a.01",
+              "prose": "physical access authorizations are enforced at entry and exit points to the facility where the system resides by verifying individual physical access authorizations before granting access.",
+              "label": "assessment-objective_DS-A.03.10.07.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.10.07.a.02",
+              "prose": "physical access authorizations are enforced at entry and exit points to the facility where the system resides by controlling ingress and egress with physical access control systems, devices, or guards.",
+              "label": "assessment-objective_DS-A.03.10.07.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.10.07.b",
+              "prose": "physical access audit logs for entry or exit points are maintained.",
+              "label": "assessment-objective_DS-A.03.10.07.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.10.07.c.01",
+              "prose": "visitors are escorted.",
+              "label": "assessment-objective_DS-A.03.10.07.c.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.10.07.c.02",
+              "prose": "visitor activity is controlled.",
+              "label": "assessment-objective_DS-A.03.10.07.c.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.10.07.e",
+              "prose": "physical access to output devices is controlled to prevent unauthorized individuals from obtaining access to CUI.",
+              "label": "assessment-objective_DS-A.03.10.07.e"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.10.07.d",
+              "prose": "keys, combinations, and other physical access devices are secured.",
+              "label": "assessment-objective_DS-A.03.10.07.d"
+            }
+          ]
+        },
+        {
+          "id": "03.10.08",
+          "title": "Access Control for Transmission",
+          "label": "Access Control for Transmission (03.10.08)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.10.08",
+              "prose": "physical access to system distribution and transmission lines within organizational facilities is controlled.",
+              "label": "assessment-objective_DS-A.03.10.08"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.11",
+      "title": "Risk Assessment",
+      "label": "Risk Assessment (03.11)",
+      "controls": [
+        {
+          "id": "03.11.01",
+          "title": "Risk Assessment",
+          "label": "Risk Assessment (03.11.01)",
+          "statement": "\\nSR-03.11.01.a Assess the risk (including supply chain risk) of unauthorized disclosure resulting from the processing, storage, or transmission of CUI.\\nSR-03.11.01.b Update risk assessments {{ insert: param, A.03.11.01.ODP.01 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.11.01.a",
+              "prose": "the risk (including supply chain risk) of unauthorized disclosure resulting from the processing, storage, or transmission of CUI is assessed.",
+              "label": "assessment-objective_DS-A.03.11.01.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.11.01.b",
+              "prose": "risk assessments are updated {{ insert: param, A.03.11.01.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.11.01.b"
+            }
+          ]
+        },
+        {
+          "id": "03.11.02",
+          "title": "Vulnerability Monitoring and Scanning",
+          "label": "Vulnerability Monitoring and Scanning (03.11.02)",
+          "statement": "\\nSR-03.11.02.a Monitor and scan the system for vulnerabilities {{ insert: param, A.03.11.02.ODP.01 }} and when new vulnerabilities affecting the system are identified.\\nSR-03.11.02.b Remediate system vulnerabilities within {{ insert: param, A.03.11.02.ODP.03 }}.\\nSR-03.11.02.c Update system vulnerabilities to be scanned {{ insert: param, A.03.11.02.ODP.04 }} and when new vulnerabilities are identified and reported.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.11.02.a.01",
+              "prose": "the system is monitored for vulnerabilities {{ insert: param, A.03.11.02.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.11.02.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.11.02.a.02",
+              "prose": "the system is scanned for vulnerabilities {{ insert: param, A.03.11.02.ODP.02 }}.",
+              "label": "assessment-objective_DS-A.03.11.02.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.11.02.b",
+              "prose": "system vulnerabilities are remediated within {{ insert: param, A.03.11.02.ODP.03 }}.",
+              "label": "assessment-objective_DS-A.03.11.02.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.11.02.a.03",
+              "prose": "the system is monitored for vulnerabilities when new vulnerabilities that affect the system are identified.",
+              "label": "assessment-objective_DS-A.03.11.02.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.11.02.a.04",
+              "prose": "the system is scanned for vulnerabilities when new vulnerabilities that affect the system are identified.",
+              "label": "assessment-objective_DS-A.03.11.02.a.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.11.02.c.01",
+              "prose": "system vulnerabilities to be scanned are updated {{ insert: param, A.03.11.02.ODP.04 }}.",
+              "label": "assessment-objective_DS-A.03.11.02.c.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.11.02.c.02",
+              "prose": "system vulnerabilities to be scanned are updated when new vulnerabilities are identified and reported.",
+              "label": "assessment-objective_DS-A.03.11.02.c.02"
+            }
+          ]
+        },
+        {
+          "id": "03.11.03",
+          "title": "03.11.03",
+          "label": "03.11.03",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.11.04",
+          "title": "Risk Response",
+          "label": "Risk Response (03.11.04)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.11.04.01",
+              "prose": "findings from security assessments are responded to.",
+              "label": "assessment-objective_DS-A.03.11.04.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.11.04.02",
+              "prose": "findings from security monitoring are responded to.",
+              "label": "assessment-objective_DS-A.03.11.04.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.11.04.03",
+              "prose": "findings from security audits are responded to.",
+              "label": "assessment-objective_DS-A.03.11.04.03"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.12",
+      "title": "Security Assessment and Monitoring",
+      "label": "Security Assessment and Monitoring (03.12)",
+      "controls": [
+        {
+          "id": "03.12.01",
+          "title": "Security Assessment",
+          "label": "Security Assessment (03.12.01)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.12.01",
+              "prose": "the security requirements for the system and its environment of operation are assessed {{ insert: param, A.03.12.01.ODP.01 }} to determine if the requirements have been satisfied.",
+              "label": "assessment-objective_DS-A.03.12.01"
+            }
+          ]
+        },
+        {
+          "id": "03.12.02",
+          "title": "Plan of Action and Milestones",
+          "label": "Plan of Action and Milestones (03.12.02)",
+          "statement": "\\nSR-03.12.02.a Develop a plan of action and milestones for the system:\\nSR-03.12.02.a.01 To document the planned remediation actions to correct weaknesses or deficiencies noted during security assessments and\\nSR-03.12.02.a.02 To reduce or eliminate known system vulnerabilities.\\nSR-03.12.02.b Update the existing plan of action and milestones based on the findings from:\\nSR-03.12.02.b.01 Security assessments,\\nSR-03.12.02.b.02 Audits or reviews, and\\nSR-03.12.02.b.03 Continuous monitoring activities.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.12.02.a.01",
+              "prose": "a plan of action and milestones for the system is developed to document the planned remediation actions for correcting weaknesses or deficiencies noted during security assessments.",
+              "label": "assessment-objective_DS-A.03.12.02.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.12.02.a.02",
+              "prose": "a plan of action and milestones for the system is developed to reduce or eliminate known system vulnerabilities.",
+              "label": "assessment-objective_DS-A.03.12.02.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.12.02.b.01",
+              "prose": "the existing plan of action and milestones is updated based on the findings from security assessments.",
+              "label": "assessment-objective_DS-A.03.12.02.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.12.02.b.03",
+              "prose": "the existing plan of action and milestones is updated based on the findings from continuous monitoring activities.",
+              "label": "assessment-objective_DS-A.03.12.02.b.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.12.02.b.02",
+              "prose": "the existing plan of action and milestones is updated based on the findings from audits or reviews.",
+              "label": "assessment-objective_DS-A.03.12.02.b.02"
+            }
+          ]
+        },
+        {
+          "id": "03.12.03",
+          "title": "Continuous Monitoring",
+          "label": "Continuous Monitoring (03.12.03)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.12.03.01",
+              "prose": "a system-level continuous monitoring strategy is developed.",
+              "label": "assessment-objective_DS-A.03.12.03.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.12.03.02",
+              "prose": "a system-level continuous monitoring strategy is implemented.",
+              "label": "assessment-objective_DS-A.03.12.03.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.12.03.03",
+              "prose": "ongoing monitoring is included in the continuous monitoring strategy.",
+              "label": "assessment-objective_DS-A.03.12.03.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.12.03.04",
+              "prose": "security assessments are included in the continuous monitoring strategy.",
+              "label": "assessment-objective_DS-A.03.12.03.04"
+            }
+          ]
+        },
+        {
+          "id": "03.12.04",
+          "title": "03.12.04",
+          "label": "03.12.04",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.12.05",
+          "title": "Information Exchange",
+          "label": "Information Exchange (03.12.05)",
+          "statement": "\\nSR-03.12.05.a Approve and manage the exchange of CUI between the system and other systems using {{ insert: param, A.03.12.05.ODP.01 }}.\\nSR-03.12.05.b Document interface characteristics, security requirements, and responsibilities for each system as part of the exchange agreements.\\nSR-03.12.05.c Review and update the exchange agreements {{ insert: param, A.03.12.05.ODP.02 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.12.05.a.01",
+              "prose": "the exchange of CUI between the system and other systems is approved using {{ insert: param, A.03.12.05.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.12.05.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.12.05.a.02",
+              "prose": "the exchange of CUI between the system and other systems is managed using {{ insert: param, A.03.12.05.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.12.05.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.12.05.b.01",
+              "prose": "interface characteristics for each system are documented as part of the exchange agreements.",
+              "label": "assessment-objective_DS-A.03.12.05.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.12.05.b.02",
+              "prose": "security requirements for each system are documented as part of the exchange agreements.",
+              "label": "assessment-objective_DS-A.03.12.05.b.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.12.05.b.03",
+              "prose": "responsibilities for each system are documented as part of the exchange agreements.",
+              "label": "assessment-objective_DS-A.03.12.05.b.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.12.05.c.01",
+              "prose": "exchange agreements are reviewed {{ insert: param, A.03.12.05.ODP.02 }} .",
+              "label": "assessment-objective_DS-A.03.12.05.c.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.12.05.c.02",
+              "prose": "exchange agreements are updated {{ insert: param, A.03.12.05.ODP.02 }} .",
+              "label": "assessment-objective_DS-A.03.12.05.c.02"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.13",
+      "title": "System and Communications Protection",
+      "label": "System and Communications Protection (03.13)",
+      "controls": [
+        {
+          "id": "03.13.01",
+          "title": "Boundary Protection",
+          "label": "Boundary Protection (03.13.01)",
+          "statement": "\\nSR-03.13.01.a Monitor and control communications at external managed interfaces to the system and key internal managed interfaces within the system.\\nSR-03.13.01.b Implement subnetworks for publicly accessible system components that are physically or logically separated from internal networks.\\nSR-03.13.01.c Connect to external systems only through managed interfaces that consist of boundary protection devices arranged in accordance with an organizational security architecture.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.13.01.a.01",
+              "prose": "communications at external managed interfaces to the system are monitored.",
+              "label": "assessment-objective_DS-A.03.13.01.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.13.01.a.02",
+              "prose": "communications at external managed interfaces to the system are controlled.",
+              "label": "assessment-objective_DS-A.03.13.01.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.13.01.a.03",
+              "prose": "communications at key internal managed interfaces within the system are monitored.",
+              "label": "assessment-objective_DS-A.03.13.01.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.13.01.a.04",
+              "prose": "communications at key internal managed interfaces within the system are controlled.",
+              "label": "assessment-objective_DS-A.03.13.01.a.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.13.01.b",
+              "prose": "subnetworks are implemented for publicly accessible system components that are physically or logically separated from internal networks.",
+              "label": "assessment-objective_DS-A.03.13.01.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.13.01.c",
+              "prose": "external system connections are only made through managed interfaces that consist of boundary protection devices arranged in accordance with an organizational security architecture.",
+              "label": "assessment-objective_DS-A.03.13.01.c"
+            }
+          ]
+        },
+        {
+          "id": "03.13.02",
+          "title": "03.13.02",
+          "label": "03.13.02",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.13.03",
+          "title": "03.13.03",
+          "label": "03.13.03",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.13.04",
+          "title": "Information in Shared System Resources",
+          "label": "Information in Shared System Resources (03.13.04)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.13.04.01",
+              "prose": "unauthorized information transfer via shared system resources is prevented.",
+              "label": "assessment-objective_DS-A.03.13.04.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.13.04.02",
+              "prose": "unintended information transfer via shared system resources is prevented.",
+              "label": "assessment-objective_DS-A.03.13.04.02"
+            }
+          ]
+        },
+        {
+          "id": "03.13.05",
+          "title": "03.13.05",
+          "label": "03.13.05",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.13.06",
+          "title": "Network Communications – Deny by Default – Allow by Exception",
+          "label": "Network Communications – Deny by Default – Allow by Exception (03.13.06)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.13.06.01",
+              "prose": "network communications traffic is denied by default.",
+              "label": "assessment-objective_DS-A.03.13.06.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.13.06.02",
+              "prose": "network communications traffic is allowed by exception.",
+              "label": "assessment-objective_DS-A.03.13.06.02"
+            }
+          ]
+        },
+        {
+          "id": "03.13.07",
+          "title": "03.13.07",
+          "label": "03.13.07",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.13.08",
+          "title": "Transmission and Storage Confidentiality",
+          "label": "Transmission and Storage Confidentiality (03.13.08)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.13.08.01",
+              "prose": "cryptographic mechanisms are implemented to prevent the unauthorized disclosure of CUI during transmission.",
+              "label": "assessment-objective_DS-A.03.13.08.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.13.08.02",
+              "prose": "cryptographic mechanisms are implemented to prevent the unauthorized disclosure of CUI while in storage.",
+              "label": "assessment-objective_DS-A.03.13.08.02"
+            }
+          ]
+        },
+        {
+          "id": "03.13.09",
+          "title": "Network Disconnect",
+          "label": "Network Disconnect (03.13.09)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.13.09",
+              "prose": "the network connection associated with a communications session is terminated at the end of the session or after {{ insert: param, A.03.13.09.ODP.01 }} of inactivity.",
+              "label": "assessment-objective_DS-A.03.13.09"
+            }
+          ]
+        },
+        {
+          "id": "03.13.10",
+          "title": "Cryptographic Key Establishment and Management",
+          "label": "Cryptographic Key Establishment and Management (03.13.10)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.13.10.01",
+              "prose": "cryptographic keys are established in the system in accordance with the following key management requirements: {{ insert: param, A.03.13.10.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.13.10.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.13.10.02",
+              "prose": "cryptographic keys are managed in the system in accordance with the following key management requirements: {{ insert: param, A.03.13.10.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.13.10.02"
+            }
+          ]
+        },
+        {
+          "id": "03.13.11",
+          "title": "Cryptographic Protection",
+          "label": "Cryptographic Protection (03.13.11)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.13.11",
+              "prose": "the following types of cryptography are implemented to protect the confidentiality of CUI: {{ insert: param, A.03.13.11.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.13.11"
+            }
+          ]
+        },
+        {
+          "id": "03.13.12",
+          "title": "Collaborative Computing Devices and Applications",
+          "label": "Collaborative Computing Devices and Applications (03.13.12)",
+          "statement": "\\nSR-03.13.12.a Prohibit the remote activation of collaborative computing devices and applications with the following exceptions: {{ insert: param, A.03.13.12.ODP.01 }}.\\nSR-03.13.12.b Provide an explicit indication of use to users physically present at the devices.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.13.12.a",
+              "prose": "the remote activation of collaborative computing devices and applications is prohibited with the following exceptions: {{ insert: param, A.03.13.12.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.13.12.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.13.12.b",
+              "prose": "an explicit indication of use is provided to users who are physically present at the devices.",
+              "label": "assessment-objective_DS-A.03.13.12.b"
+            }
+          ]
+        },
+        {
+          "id": "03.13.13",
+          "title": "Mobile Code",
+          "label": "Mobile Code (03.13.13)",
+          "statement": "\\nSR-03.13.13.a Define acceptable mobile code and mobile code technologies.\\nSR-03.13.13.b Authorize, monitor, and control the use of mobile code.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.13.13.b.01",
+              "prose": "the use of mobile code is authorized.",
+              "label": "assessment-objective_DS-A.03.13.13.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.13.13.b.02",
+              "prose": "the use of mobile code is monitored.",
+              "label": "assessment-objective_DS-A.03.13.13.b.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.13.13.b.03",
+              "prose": "the use of mobile code is controlled.",
+              "label": "assessment-objective_DS-A.03.13.13.b.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.13.13.a.01",
+              "prose": "acceptable mobile code is defined.",
+              "label": "assessment-objective_DS-A.03.13.13.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.13.13.a.02",
+              "prose": "acceptable mobile code technologies are defined.",
+              "label": "assessment-objective_DS-A.03.13.13.a.02"
+            }
+          ]
+        },
+        {
+          "id": "03.13.14",
+          "title": "03.13.14",
+          "label": "03.13.14",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.13.15",
+          "title": "Session Authenticity",
+          "label": "Session Authenticity (03.13.15)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.13.15",
+              "prose": "the authenticity of communications sessions is protected.",
+              "label": "assessment-objective_DS-A.03.13.15"
+            }
+          ]
+        },
+        {
+          "id": "03.13.16",
+          "title": "03.13.16",
+          "label": "03.13.16",
+          "statement": "",
+          "objectives": []
+        }
+      ]
+    },
+    {
+      "id": "03.14",
+      "title": "System and Information Integrity",
+      "label": "System and Information Integrity (03.14)",
+      "controls": [
+        {
+          "id": "03.14.01",
+          "title": "Flaw Remediation",
+          "label": "Flaw Remediation (03.14.01)",
+          "statement": "\\nSR-03.14.01.a Identify, report, and correct system flaws.\\nSR-03.14.01.b Install security-relevant software and firmware updates within {{ insert: param, A.03.14.01.ODP.01 }} of the release of the updates.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.14.01.a.01",
+              "prose": "system flaws are identified.",
+              "label": "assessment-objective_DS-A.03.14.01.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.01.a.02",
+              "prose": "system flaws are reported.",
+              "label": "assessment-objective_DS-A.03.14.01.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.01.a.03",
+              "prose": "system flaws are corrected.",
+              "label": "assessment-objective_DS-A.03.14.01.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.01.b.01",
+              "prose": "security-relevant software updates are installed within {{ insert: param, A.03.14.01.ODP.01 }} of the release of the updates.",
+              "label": "assessment-objective_DS-A.03.14.01.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.01.b.02",
+              "prose": "security-relevant firmware updates are installed within {{ insert: param, A.03.14.01.ODP.02 }} of the release of the updates.",
+              "label": "assessment-objective_DS-A.03.14.01.b.02"
+            }
+          ]
+        },
+        {
+          "id": "03.14.02",
+          "title": "Malicious Code Protection",
+          "label": "Malicious Code Protection (03.14.02)",
+          "statement": "\\nSR-03.14.02.a Implement malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code.\\nSR-03.14.02.b Update malicious code protection mechanisms as new releases are available in accordance with configuration management policies and procedures.\\nSR-03.14.02.c Configure malicious code protection mechanisms to:\\nSR-03.14.02.c.01 Perform scans of the system {{ insert: param, A.03.14.02.ODP.01 }} and real-time scans of files from external sources at endpoints or system entry and exit points as the files are downloaded, opened, or executed; and\\nSR-03.14.02.c.02 Block malicious code, quarantine malicious code, or take other mitigation actions in response to malicious code detection.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.14.02.a.01",
+              "prose": "malicious code protection mechanisms are implemented at system entry and exit points to detect malicious code.",
+              "label": "assessment-objective_DS-A.03.14.02.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.02.a.02",
+              "prose": "malicious code protection mechanisms are implemented at system entry and exit points to eradicate malicious code.",
+              "label": "assessment-objective_DS-A.03.14.02.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.02.b",
+              "prose": "malicious code protection mechanisms are updated as new releases are available in accordance with configuration management policy and procedures.",
+              "label": "assessment-objective_DS-A.03.14.02.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.02.c.01.01",
+              "prose": "malicious code protection mechanisms are configured to perform scans of the system {{ insert: param, A.03.14.02.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.14.02.c.01.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.02.c.02",
+              "prose": "malicious code protection mechanisms are configured to block malicious code, quarantine malicious code, or take other actions in response to malicious code detection.",
+              "label": "assessment-objective_DS-A.03.14.02.c.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.02.c.01.02",
+              "prose": "malicious code protection mechanisms are configured to perform real-time scans of files from external sources at endpoints or system entry and exit points as the files are downloaded, opened, or executed.",
+              "label": "assessment-objective_DS-A.03.14.02.c.01.02"
+            }
+          ]
+        },
+        {
+          "id": "03.14.03",
+          "title": "Security Alerts, Advisories, and Directives",
+          "label": "Security Alerts, Advisories, and Directives (03.14.03)",
+          "statement": "\\nSR-03.14.03.a Receive system security alerts, advisories, and directives from external organizations on an ongoing basis.\\nSR-03.14.03.b Generate and disseminate internal system security alerts, advisories, and directives, as necessary.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.14.03.a",
+              "prose": "system security alerts, advisories, and directives from external organizations are received on an ongoing basis.",
+              "label": "assessment-objective_DS-A.03.14.03.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.03.b.01",
+              "prose": "internal security alerts, advisories, and directives are generated, as necessary.",
+              "label": "assessment-objective_DS-A.03.14.03.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.03.b.02",
+              "prose": "internal security alerts, advisories, and directives are disseminated, as necessary.",
+              "label": "assessment-objective_DS-A.03.14.03.b.02"
+            }
+          ]
+        },
+        {
+          "id": "03.14.04",
+          "title": "03.14.04",
+          "label": "03.14.04",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.14.05",
+          "title": "03.14.05",
+          "label": "03.14.05",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.14.06",
+          "title": "System Monitoring",
+          "label": "System Monitoring (03.14.06)",
+          "statement": "\\nSR-03.14.06.a Monitor the system to detect:\\nSR-03.14.06.a.01 Attacks and indicators of potential attacks and\\nSR-03.14.06.a.02 Unauthorized connections.\\nSR-03.14.06.b Identify unauthorized use of the system.\\nSR-03.14.06.c Monitor inbound and outbound communications traffic to detect unusual or unauthorized activities or conditions.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.14.06.a.01.01",
+              "prose": "the system is monitored to detect attacks.",
+              "label": "assessment-objective_DS-A.03.14.06.a.01.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.06.a.01.02",
+              "prose": "the system is monitored to detect indicators of potential attacks.",
+              "label": "assessment-objective_DS-A.03.14.06.a.01.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.06.a.02",
+              "prose": "the system is monitored to detect unauthorized connections.",
+              "label": "assessment-objective_DS-A.03.14.06.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.06.b",
+              "prose": "unauthorized use of the system is identified.",
+              "label": "assessment-objective_DS-A.03.14.06.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.06.c.01",
+              "prose": "inbound communications traffic is monitored to detect unusual or unauthorized activities or conditions.",
+              "label": "assessment-objective_DS-A.03.14.06.c.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.06.c.02",
+              "prose": "outbound communications traffic is monitored to detect unusual or unauthorized activities or conditions.",
+              "label": "assessment-objective_DS-A.03.14.06.c.02"
+            }
+          ]
+        },
+        {
+          "id": "03.14.07",
+          "title": "03.14.07",
+          "label": "03.14.07",
+          "statement": "",
+          "objectives": []
+        },
+        {
+          "id": "03.14.08",
+          "title": "Information Management and Retention",
+          "label": "Information Management and Retention (03.14.08)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.14.08.01",
+              "prose": "CUI within the system is managed in accordance with applicable laws, Executive Orders, directives, regulations, policies, standards, guidelines, and operational requirements.",
+              "label": "assessment-objective_DS-A.03.14.08.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.08.02",
+              "prose": "CUI within the system is retained in accordance with applicable laws, Executive Orders, directives, regulations, policies, standards, guidelines, and operational requirements.",
+              "label": "assessment-objective_DS-A.03.14.08.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.08.03",
+              "prose": "CUI output from the system is managed in accordance with applicable laws, Executive Orders, directives, regulations, policies, standards, guidelines, and operational requirements.",
+              "label": "assessment-objective_DS-A.03.14.08.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.14.08.04",
+              "prose": "CUI output from the system is retained in accordance with applicable laws, Executive Orders, directives, regulations, policies, standards, guidelines, and operational requirements.",
+              "label": "assessment-objective_DS-A.03.14.08.04"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.15",
+      "title": "Planning",
+      "label": "Planning (03.15)",
+      "controls": [
+        {
+          "id": "03.15.01",
+          "title": "Policy and Procedures",
+          "label": "Policy and Procedures (03.15.01)",
+          "statement": "\\nSR-03.15.01.a Develop, document, and disseminate to organizational personnel or roles the policies and procedures needed to satisfy the security requirements for the protection of CUI.\\nSR-03.15.01.b Review and update policies and procedures {{ insert: param, A.03.15.01.ODP.01 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.15.01.a.01",
+              "prose": "policies needed to satisfy the security requirements for the protection of CUI are developed and documented.",
+              "label": "assessment-objective_DS-A.03.15.01.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.01.a.02",
+              "prose": "policies needed to satisfy the security requirements for the protection of CUI are disseminated to organizational personnel or roles.",
+              "label": "assessment-objective_DS-A.03.15.01.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.01.a.03",
+              "prose": "procedures needed to satisfy the security requirements for the protection of CUI are developed and documented.",
+              "label": "assessment-objective_DS-A.03.15.01.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.01.a.04",
+              "prose": "procedures needed to satisfy the security requirements for the protection of CUI are disseminated to organizational personnel or roles.",
+              "label": "assessment-objective_DS-A.03.15.01.a.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.01.b.01",
+              "prose": "policies and procedures are reviewed {{ insert: param, A.03.15.01.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.15.01.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.01.b.02",
+              "prose": "policies and procedures are updated {{ insert: param, A.03.15.01.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.15.01.b.02"
+            }
+          ]
+        },
+        {
+          "id": "03.15.02",
+          "title": "System Security Plan",
+          "label": "System Security Plan (03.15.02)",
+          "statement": "\\nSR-03.15.02.a Develop a system security plan that:\\nSR-03.15.02.a.01 Defines the constituent system components;\\nSR-03.15.02.a.02 Identifies the information types processed, stored, and transmitted by the system;\\nSR-03.15.02.a.03 Describes specific threats to the system that are of concern to the organization;\\nSR-03.15.02.a.04 Describes the operational environment for the system and any dependencies on or connections to other systems or system components;\\nSR-03.15.02.a.05 Provides an overview of the security requirements for the system;\\nSR-03.15.02.a.06 Describes the safeguards in place or planned for meeting the security requirements;\\nSR-03.15.02.a.07 Identifies individuals that fulfill system roles and responsibilities; and\\nSR-03.15.02.a.08 Includes other relevant information necessary for the protection of CUI.\\nSR-03.15.02.b Review and update the system security plan {{ insert: param, A.03.15.02.ODP.01 }}.\\nSR-03.15.02.c Protect the system security plan from unauthorized disclosure.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.15.02.a.01",
+              "prose": "a system security plan that defines the constituent system components is developed.",
+              "label": "assessment-objective_DS-A.03.15.02.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.02.a.02",
+              "prose": "a system security plan that identifies the information types processed, stored, and transmitted by the system is developed.",
+              "label": "assessment-objective_DS-A.03.15.02.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.02.a.03",
+              "prose": "a system security plan that describes specific threats to the system that are of concern to the organization is developed.",
+              "label": "assessment-objective_DS-A.03.15.02.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.02.a.04",
+              "prose": "a system security plan that describes the operational environment for the system and any dependencies on or connections to other systems or system components is developed.",
+              "label": "assessment-objective_DS-A.03.15.02.a.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.02.a.05",
+              "prose": "a system security plan that provides an overview of the security requirements for the system is developed.",
+              "label": "assessment-objective_DS-A.03.15.02.a.05"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.02.a.06",
+              "prose": "a system security plan that describes the safeguards in place or planned for meeting the security requirements is developed.",
+              "label": "assessment-objective_DS-A.03.15.02.a.06"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.02.a.07",
+              "prose": "a system security plan that identifies individuals that fulfill system roles and responsibilities is developed.",
+              "label": "assessment-objective_DS-A.03.15.02.a.07"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.02.a.08",
+              "prose": "a system security plan that includes other relevant information necessary for the protection of CUI is developed.",
+              "label": "assessment-objective_DS-A.03.15.02.a.08"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.02.b.01",
+              "prose": "the system security plan is reviewed {{ insert: param, A.03.15.02.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.15.02.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.02.b.02",
+              "prose": "the system security plan is updated {{ insert: param, A.03.15.02.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.15.02.b.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.02.c",
+              "prose": "the system security plan is protected from unauthorized disclosure.",
+              "label": "assessment-objective_DS-A.03.15.02.c"
+            }
+          ]
+        },
+        {
+          "id": "03.15.03",
+          "title": "Rules of Behavior",
+          "label": "Rules of Behavior (03.15.03)",
+          "statement": "\\nSR-03.15.03.a Establish rules that describe the responsibilities and expected behavior for system usage and protecting CUI.\\nSR-03.15.03.b Provide rules to individuals who require access to the system.\\nSR-03.15.03.c Receive a documented acknowledgement from individuals indicating that they have read, understand, and agree to abide by the rules of behavior before authorizing access to CUI and the system.\\nSR-03.15.03.d Review and update the rules of behavior {{ insert: param, A.03.15.03.ODP.01 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.15.03.a",
+              "prose": "rules that describe responsibilities and expected behavior for system usage and protecting CUI are established.",
+              "label": "assessment-objective_DS-A.03.15.03.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.03.b",
+              "prose": "rules are provided to individuals who require access to the system.",
+              "label": "assessment-objective_DS-A.03.15.03.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.03.c",
+              "prose": "a documented acknowledgement from individuals indicating that they have read, understand, and agree to abide by the rules of behavior is received before authorizing access to CUI and the system.",
+              "label": "assessment-objective_DS-A.03.15.03.c"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.03.d.02",
+              "prose": "the rules of behavior are updated {{ insert: param, A.03.15.03.ODP.01 }} .",
+              "label": "assessment-objective_DS-A.03.15.03.d.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.15.03.d.01",
+              "prose": "the rules of behavior are reviewed {{ insert: param, A.03.15.03.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.15.03.d.01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.16",
+      "title": "System and Services Acquisition",
+      "label": "System and Services Acquisition (03.16)",
+      "controls": [
+        {
+          "id": "03.16.01",
+          "title": "Security Engineering Principles",
+          "label": "Security Engineering Principles (03.16.01)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.16.01",
+              "prose": "{{ insert: param, A.03.16.01.ODP.01 }} are applied to the development or modification of the system and system components.",
+              "label": "assessment-objective_DS-A.03.16.01"
+            }
+          ]
+        },
+        {
+          "id": "03.16.02",
+          "title": "Unsupported System Components",
+          "label": "Unsupported System Components (03.16.02)",
+          "statement": "\\nSR-03.16.02.a Replace system components when support for the components is no longer available from the developer, vendor, or manufacturer.\\nSR-03.16.02.b Provide options for risk mitigation or alternative sources for continued support for unsupported components that cannot be replaced.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.16.02.b",
+              "prose": "options for risk mitigation or alternative sources for continued support for unsupported components that cannot be replaced are provided.",
+              "label": "assessment-objective_DS-A.03.16.02.b"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.16.02.a",
+              "prose": "system components are replaced when support for the components is no longer available from the developer, vendor, or manufacturer.",
+              "label": "assessment-objective_DS-A.03.16.02.a"
+            }
+          ]
+        },
+        {
+          "id": "03.16.03",
+          "title": "External System Services",
+          "label": "External System Services (03.16.03)",
+          "statement": "\\nSR-03.16.03.a Require the providers of external system services used for the processing, storage, or transmission of CUI to comply with the following security requirements: {{ insert: param, A.03.16.03.ODP.01 }}.\\nSR-03.16.03.b Define and document user roles and responsibilities with regard to external system services, including shared responsibilities with external service providers.\\nSR-03.16.03.c Implement processes, methods, and techniques to monitor security requirement compliance by external service providers on an ongoing basis.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.16.03.a",
+              "prose": "the providers of external system services used for the processing, storage, or transmission of CUI comply with the following security requirements: {{ insert: param, A.03.16.03.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.16.03.a"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.16.03.c",
+              "prose": "processes, methods, and techniques to monitor security requirement compliance by external service providers on an ongoing basis are implemented.",
+              "label": "assessment-objective_DS-A.03.16.03.c"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.16.03.b",
+              "prose": "user roles and responsibilities with regard to external system services, including shared responsibilities with external service providers, are defined and documented.",
+              "label": "assessment-objective_DS-A.03.16.03.b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03.17",
+      "title": "Supply Chain Risk Management",
+      "label": "Supply Chain Risk Management (03.17)",
+      "controls": [
+        {
+          "id": "03.17.01",
+          "title": "Supply Chain Risk Management Plan",
+          "label": "Supply Chain Risk Management Plan (03.17.01)",
+          "statement": "\\nSR-03.17.01.a Develop a plan for managing supply chain risks associated with the research and development, design, manufacturing, acquisition, delivery, integration, operations, maintenance, and disposal of the system, system components, or system services.\\nSR-03.17.01.b Review and update the supply chain risk management plan {{ insert: param, A.03.17.01.ODP.01 }}.\\nSR-03.17.01.c Protect the supply chain risk management plan from unauthorized disclosure.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.17.01.a.01",
+              "prose": "a plan for managing supply chain risks is developed.",
+              "label": "assessment-objective_DS-A.03.17.01.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.01.a.02",
+              "prose": "the SCRM plan addresses risks associated with the research and development of the system, system components, or system services.",
+              "label": "assessment-objective_DS-A.03.17.01.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.01.a.03",
+              "prose": "the SCRM plan addresses risks associated with the design of the system, system components, or system services.",
+              "label": "assessment-objective_DS-A.03.17.01.a.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.01.a.04",
+              "prose": "the SCRM plan addresses risks associated with the manufacturing of the system, system components, or system services.",
+              "label": "assessment-objective_DS-A.03.17.01.a.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.01.a.05",
+              "prose": "the SCRM plan addresses risks associated with the acquisition of the system, system components, or system services.",
+              "label": "assessment-objective_DS-A.03.17.01.a.05"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.01.a.06",
+              "prose": "the SCRM plan addresses risks associated with the delivery of the system, system components, or system services.",
+              "label": "assessment-objective_DS-A.03.17.01.a.06"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.01.a.07",
+              "prose": "the SCRM plan addresses risks associated with the integration of the system, system components, or system services.",
+              "label": "assessment-objective_DS-A.03.17.01.a.07"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.01.a.08",
+              "prose": "the SCRM plan addresses risks associated with the operation of the system, system components, or system services.",
+              "label": "assessment-objective_DS-A.03.17.01.a.08"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.01.a.09",
+              "prose": "the SCRM plan addresses risks associated with the maintenance of the system, system components, or system services.",
+              "label": "assessment-objective_DS-A.03.17.01.a.09"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.01.a.10",
+              "prose": "the SCRM plan addresses risks associated with the disposal of the system, system components, or system services.",
+              "label": "assessment-objective_DS-A.03.17.01.a.10"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.01.b.01",
+              "prose": "the SCRM plan is reviewed {{ insert: param, A.03.17.01.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.17.01.b.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.01.b.02",
+              "prose": "the SCRM plan is updated {{ insert: param, A.03.17.01.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.17.01.b.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.01.c",
+              "prose": "the SCRM plan is protected from unauthorized disclosure.",
+              "label": "assessment-objective_DS-A.03.17.01.c"
+            }
+          ]
+        },
+        {
+          "id": "03.17.02",
+          "title": "Acquisition Strategies, Tools, and Methods",
+          "label": "Acquisition Strategies, Tools, and Methods (03.17.02)",
+          "statement": "",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.17.02.01",
+              "prose": "acquisition strategies, contract tools, and procurement methods are developed to identify supply chain risks.",
+              "label": "assessment-objective_DS-A.03.17.02.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.02.02",
+              "prose": "acquisition strategies, contract tools, and procurement methods are developed to protect against supply chain risks.",
+              "label": "assessment-objective_DS-A.03.17.02.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.02.03",
+              "prose": "acquisition strategies, contract tools, and procurement methods are developed to mitigate supply chain risks.",
+              "label": "assessment-objective_DS-A.03.17.02.03"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.02.04",
+              "prose": "acquisition strategies, contract tools, and procurement methods are implemented to identify supply chain risks.",
+              "label": "assessment-objective_DS-A.03.17.02.04"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.02.05",
+              "prose": "acquisition strategies, contract tools, and procurement methods are implemented to protect against supply chain risks.",
+              "label": "assessment-objective_DS-A.03.17.02.05"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.02.06",
+              "prose": "acquisition strategies, contract tools, and procurement methods are implemented to mitigate supply chain risks.",
+              "label": "assessment-objective_DS-A.03.17.02.06"
+            }
+          ]
+        },
+        {
+          "id": "03.17.03",
+          "title": "Supply Chain Requirements and Processes",
+          "label": "Supply Chain Requirements and Processes (03.17.03)",
+          "statement": "\\nSR-03.17.03.a Establish a process for identifying and addressing weaknesses or deficiencies in the supply chain elements and processes.\\nSR-03.17.03.b Enforce the following security requirements to protect against supply chain risks to the system, system components, or system services and to limit the harm or consequences from supply chain-related events: {{ insert: param, A.03.17.03.ODP.01 }}.",
+          "objectives": [
+            {
+              "id": "assessment-objective_DS-A.03.17.03.a.01",
+              "prose": "a process for identifying weaknesses or deficiencies in the supply chain elements and processes is established.",
+              "label": "assessment-objective_DS-A.03.17.03.a.01"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.03.a.02",
+              "prose": "a process for addressing weaknesses or deficiencies in the supply chain elements and processes is established.",
+              "label": "assessment-objective_DS-A.03.17.03.a.02"
+            },
+            {
+              "id": "assessment-objective_DS-A.03.17.03.b",
+              "prose": "the following security requirements are enforced to protect against supply chain risks to the system, system components, or system services and to limit the harm or consequences of supply chain-related events: {{ insert: param, A.03.17.03.ODP.01 }}.",
+              "label": "assessment-objective_DS-A.03.17.03.b"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
