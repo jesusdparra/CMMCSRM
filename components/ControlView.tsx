@@ -1,9 +1,10 @@
 'use client';
 
-import { memo, useCallback, useState, useEffect } from 'react';
+import { memo, useCallback, useState } from 'react';
 import { NISTFamily, NISTControl, NISTObjective } from '@/types/nist';
 import { useSRMStore, Responsibility } from '@/store/useSRMStore';
 import { Users, User, ShieldCheck, FileText, Lightbulb } from 'lucide-react';
+import controlTipsData from '@/public/data/control-tips.json';
 
 interface ControlViewProps {
   family: NISTFamily | undefined;
@@ -15,6 +16,16 @@ interface TipsData {
     implementation_tips: string;
   };
 }
+
+const tipsData: TipsData = (controlTipsData as unknown as { CMC_Level_2_Practices?: { practices: { id: string; evidence_artifacts: string[]; implementation_tips: string }[] }[] }).CMC_Level_2_Practices?.reduce((acc, family) => {
+  family.practices.forEach(practice => {
+    acc[practice.id] = {
+      evidence_artifacts: practice.evidence_artifacts || [],
+      implementation_tips: practice.implementation_tips || '',
+    };
+  });
+  return acc;
+}, {} as TipsData) || {};
 
 interface ObjectiveRowProps {
   obj: NISTObjective;
@@ -183,45 +194,7 @@ const ControlSection = memo(function ControlSection({ control, tips }: ControlSe
 
 ControlSection.displayName = 'ControlSection';
 
-let globalTipsData: TipsData | null = null;
-let tipsLoading = false;
-
-function useTipsData() {
-  const [tips, setTips] = useState<TipsData | null>(globalTipsData);
-
-  useEffect(() => {
-    if (globalTipsData || tipsLoading) return;
-    
-    tipsLoading = true;
-    fetch('/data/control-tips.json', { cache: 'no-store' })
-      .then(res => res.json())
-      .then(data => {
-        const tipsMap: TipsData = {};
-        if (data.CMC_Level_2_Practices) {
-          data.CMC_Level_2_Practices.forEach((family: { practices: { id: string; evidence_artifacts: string[]; implementation_tips: string }[] }) => {
-            family.practices.forEach(practice => {
-              tipsMap[practice.id] = {
-                evidence_artifacts: practice.evidence_artifacts || [],
-                implementation_tips: practice.implementation_tips || '',
-              };
-            });
-          });
-        }
-        globalTipsData = tipsMap;
-        setTips(tipsMap);
-      })
-      .catch(err => {
-        console.error('Failed to load tips:', err);
-        tipsLoading = false;
-      });
-  }, []);
-
-  return tips;
-}
-
 export default function ControlView({ family }: ControlViewProps) {
-  const tipsData = useTipsData();
-
   if (!family) return null;
 
   return (
@@ -240,7 +213,7 @@ export default function ControlView({ family }: ControlViewProps) {
             <ControlSection 
               key={control.id} 
               control={control} 
-              tips={tipsData ? tipsData[control.label] : undefined}
+              tips={tipsData[control.label]}
             />
           ))}
         </div>
