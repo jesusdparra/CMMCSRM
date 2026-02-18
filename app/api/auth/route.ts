@@ -8,7 +8,8 @@ export async function POST(request: NextRequest) {
   const { password } = body;
 
   if (password === APP_PASSWORD) {
-    cookies().set('auth', 'true', {
+    const cookieStore = await cookies();
+    cookieStore.set('auth', 'true', {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
       sameSite: 'strict',
