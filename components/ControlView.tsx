@@ -17,7 +17,7 @@ interface TipsData {
   };
 }
 
-const tipsData: TipsData = (controlTipsData as unknown as { CMC_Level_2_Practices?: { practices: { id: string; evidence_artifacts: string[]; implementation_tips: string }[] }[] }).CMC_Level_2_Practices?.reduce((acc, family) => {
+const tipsData: TipsData = (controlTipsData as unknown as { CMMC_Level_2_Practices?: { practices: { id: string; evidence_artifacts: string[]; implementation_tips: string }[] }[] }).CMMC_Level_2_Practices?.reduce((acc, family) => {
   family.practices.forEach(practice => {
     acc[practice.id] = {
       evidence_artifacts: practice.evidence_artifacts || [],
